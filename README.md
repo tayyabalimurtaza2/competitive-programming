@@ -1,1 +1,1 @@
-# competitive-programming
+this is my journey to IOI Champion 
