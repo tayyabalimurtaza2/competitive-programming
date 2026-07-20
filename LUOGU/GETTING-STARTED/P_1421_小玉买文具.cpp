@@ -26,10 +26,9 @@ const int MOD = 1e9 + 7;
 int main(){
     start();
 
-    int a; cin>>a;
-    for(int i=0;i<a;i++){
-        
-    }
-    
+    int a,b; cin>>a>>b;
+    int t = a*10+b;
+    cout << t/19;
+
     return 0;
 }

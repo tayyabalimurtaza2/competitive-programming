@@ -26,10 +26,8 @@ const int MOD = 1e9 + 7;
 int main(){
     start();
 
-    int a; cin>>a;
-    for(int i=0;i<a;i++){
-        
-    }
-    
+    char c; cin>>c;
+    cout << char(toupper(c));
+
     return 0;
 }
