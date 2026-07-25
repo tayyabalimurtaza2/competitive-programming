@@ -1,2 +1,0 @@
-# Approach: Planets and Kingdoms
-

@@ -1,0 +1,1 @@
+# Approach: Strange Function

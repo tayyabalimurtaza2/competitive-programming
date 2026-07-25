@@ -1,2 +1,0 @@
-# Notes: De Bruijn Sequence
-

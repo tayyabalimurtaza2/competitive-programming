@@ -1,2 +1,0 @@
-# Notes: Range Interval Queries
-

@@ -1,0 +1,1 @@
+# Approach: Triples of Cows

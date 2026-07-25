@@ -1,2 +1,0 @@
-# Approach: Planets Queries II
-

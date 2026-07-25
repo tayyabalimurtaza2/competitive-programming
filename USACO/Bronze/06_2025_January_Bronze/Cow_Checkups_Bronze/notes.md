@@ -1,0 +1,1 @@
+# Notes: Cow Checkups (Bronze)

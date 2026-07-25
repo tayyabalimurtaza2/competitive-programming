@@ -1,2 +1,0 @@
-# Notes: Prefix Sum Queries
-

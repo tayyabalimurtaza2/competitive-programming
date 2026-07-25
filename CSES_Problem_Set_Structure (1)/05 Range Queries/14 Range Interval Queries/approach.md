@@ -1,2 +1,0 @@
-# Approach: Range Interval Queries
-

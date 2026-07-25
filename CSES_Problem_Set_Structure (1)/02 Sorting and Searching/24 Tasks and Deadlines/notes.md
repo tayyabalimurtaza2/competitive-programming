@@ -1,2 +1,0 @@
-# Notes: Tasks and Deadlines
-

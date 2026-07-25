@@ -1,2 +1,0 @@
-# Notes: Money Sums
-

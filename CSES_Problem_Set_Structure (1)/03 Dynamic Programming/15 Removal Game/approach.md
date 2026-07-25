@@ -1,2 +1,0 @@
-# Approach: Removal Game
-

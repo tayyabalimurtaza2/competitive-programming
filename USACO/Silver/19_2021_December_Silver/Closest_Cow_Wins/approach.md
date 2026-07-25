@@ -1,0 +1,1 @@
+# Approach: Closest Cow Wins

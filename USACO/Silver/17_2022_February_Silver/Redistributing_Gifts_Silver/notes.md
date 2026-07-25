@@ -1,0 +1,1 @@
+# Notes: Redistributing Gifts (Silver)

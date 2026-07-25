@@ -1,0 +1,1 @@
+# Notes: Triples of Cows

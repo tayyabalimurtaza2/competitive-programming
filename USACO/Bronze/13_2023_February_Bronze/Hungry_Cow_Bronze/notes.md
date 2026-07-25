@@ -1,0 +1,1 @@
+# Notes: Hungry Cow (Bronze)

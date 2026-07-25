@@ -1,2 +1,0 @@
-# Approach: Missing Coin Sum
-

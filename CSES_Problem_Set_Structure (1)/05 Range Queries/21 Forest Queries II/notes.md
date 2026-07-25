@@ -1,2 +1,0 @@
-# Notes: Forest Queries II
-

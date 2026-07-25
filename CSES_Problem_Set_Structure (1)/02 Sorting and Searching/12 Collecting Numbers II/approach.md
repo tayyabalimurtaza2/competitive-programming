@@ -1,2 +1,0 @@
-# Approach: Collecting Numbers II
-

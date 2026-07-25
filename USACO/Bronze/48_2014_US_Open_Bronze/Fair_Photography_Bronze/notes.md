@@ -1,0 +1,1 @@
+# Notes: Fair Photography (Bronze)

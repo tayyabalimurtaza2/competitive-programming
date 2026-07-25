@@ -1,2 +1,0 @@
-# Approach: Salary Queries
-

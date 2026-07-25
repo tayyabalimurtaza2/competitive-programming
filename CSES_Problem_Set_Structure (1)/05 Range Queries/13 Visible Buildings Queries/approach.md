@@ -1,2 +1,0 @@
-# Approach: Visible Buildings Queries
-

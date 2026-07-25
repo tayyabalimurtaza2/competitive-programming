@@ -1,2 +1,0 @@
-# Approach: De Bruijn Sequence
-

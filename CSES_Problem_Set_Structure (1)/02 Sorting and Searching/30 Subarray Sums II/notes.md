@@ -1,2 +1,0 @@
-# Notes: Subarray Sums II
-

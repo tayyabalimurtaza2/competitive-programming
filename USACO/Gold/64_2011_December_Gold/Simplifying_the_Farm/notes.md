@@ -1,0 +1,1 @@
+# Notes: Simplifying the Farm
