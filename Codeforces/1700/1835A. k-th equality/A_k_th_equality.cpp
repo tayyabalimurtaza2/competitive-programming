@@ -1,0 +1,1 @@
+// Solution: k-th equality

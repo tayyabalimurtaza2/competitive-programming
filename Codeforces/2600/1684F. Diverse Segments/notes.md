@@ -1,0 +1,1 @@
+# Notes: Diverse Segments

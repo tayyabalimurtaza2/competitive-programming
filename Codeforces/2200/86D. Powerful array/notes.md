@@ -1,0 +1,1 @@
+# Notes: Powerful array

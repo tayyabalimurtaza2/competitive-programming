@@ -1,0 +1,1 @@
+# Notes: Relatively Prime Powers

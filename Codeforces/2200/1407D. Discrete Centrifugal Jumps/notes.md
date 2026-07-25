@@ -1,0 +1,1 @@
+# Notes: Discrete Centrifugal Jumps

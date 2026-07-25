@@ -1,0 +1,1 @@
+# Notes: Euclid's nightmare

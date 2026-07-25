@@ -1,0 +1,2 @@
+# Approach: Mike and Friends
+Problem: [Mike and Friends](https://codeforces.com/contest/547/problem/E)

@@ -1,0 +1,1 @@
+# Notes: Stack Exterminable Arrays

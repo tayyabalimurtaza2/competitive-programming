@@ -1,1 +1,0 @@
-# Approach: Duplicated Binary Strings

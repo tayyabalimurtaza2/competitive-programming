@@ -1,0 +1,1 @@
+// Solution: Mike and palindrome

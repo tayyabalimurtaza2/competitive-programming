@@ -1,0 +1,1 @@
+# Notes: Berserk And Fireball

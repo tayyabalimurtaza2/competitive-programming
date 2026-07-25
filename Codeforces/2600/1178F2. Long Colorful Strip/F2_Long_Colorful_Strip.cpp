@@ -1,0 +1,1 @@
+// Solution: Long Colorful Strip

@@ -1,0 +1,1 @@
+// Solution: Artem and Array

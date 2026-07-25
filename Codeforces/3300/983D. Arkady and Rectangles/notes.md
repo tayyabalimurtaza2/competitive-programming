@@ -1,0 +1,1 @@
+# Notes: Arkady and Rectangles

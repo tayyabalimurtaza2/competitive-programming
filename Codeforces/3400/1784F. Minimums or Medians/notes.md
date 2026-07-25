@@ -1,0 +1,1 @@
+# Notes: Minimums or Medians

@@ -1,1 +1,0 @@
-# Approach: Arranging Shoes

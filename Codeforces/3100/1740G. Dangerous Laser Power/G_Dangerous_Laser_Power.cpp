@@ -1,0 +1,1 @@
+// Solution: Dangerous Laser Power

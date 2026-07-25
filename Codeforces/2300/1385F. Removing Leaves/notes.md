@@ -1,0 +1,1 @@
+# Notes: Removing Leaves

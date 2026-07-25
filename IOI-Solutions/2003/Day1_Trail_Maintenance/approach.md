@@ -1,1 +1,0 @@
-# Approach: Trail Maintenance

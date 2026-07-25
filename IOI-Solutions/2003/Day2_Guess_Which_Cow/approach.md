@@ -1,1 +1,0 @@
-# Approach: Guess Which Cow

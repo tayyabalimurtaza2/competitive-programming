@@ -1,0 +1,1 @@
+// Solution: Michael and Hotel

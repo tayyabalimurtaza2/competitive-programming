@@ -1,1 +1,0 @@
-# Approach: Sphinx's Riddle

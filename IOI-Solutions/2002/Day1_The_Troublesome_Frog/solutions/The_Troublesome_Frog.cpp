@@ -1,1 +1,0 @@
-// Solution: The Troublesome Frog

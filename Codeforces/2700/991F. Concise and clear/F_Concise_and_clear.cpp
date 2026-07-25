@@ -1,0 +1,1 @@
+// Solution: Concise and clear

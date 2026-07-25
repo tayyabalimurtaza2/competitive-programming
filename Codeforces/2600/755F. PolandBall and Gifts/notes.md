@@ -1,0 +1,1 @@
+# Notes: PolandBall and Gifts

@@ -1,0 +1,1 @@
+# Notes: Product Oriented Recurrence

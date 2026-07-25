@@ -1,0 +1,1 @@
+// Solution: Hot and Cold

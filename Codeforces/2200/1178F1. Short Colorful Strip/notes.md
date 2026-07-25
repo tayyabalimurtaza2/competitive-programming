@@ -1,0 +1,1 @@
+# Notes: Short Colorful Strip

@@ -1,0 +1,1 @@
+# Notes: Minimal k-covering

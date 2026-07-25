@@ -1,0 +1,1 @@
+// Solution: Xor on Figures

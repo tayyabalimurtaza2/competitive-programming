@@ -1,0 +1,1 @@
+# Notes: Divide Powers

@@ -1,0 +1,1 @@
+// Solution: Euclid's nightmare

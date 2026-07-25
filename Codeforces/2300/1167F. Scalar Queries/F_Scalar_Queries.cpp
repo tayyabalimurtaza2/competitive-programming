@@ -1,0 +1,1 @@
+// Solution: Scalar Queries

@@ -1,0 +1,1 @@
+# Notes: Asterisk Substrings

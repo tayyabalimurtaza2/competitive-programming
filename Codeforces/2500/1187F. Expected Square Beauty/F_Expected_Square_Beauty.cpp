@@ -1,0 +1,1 @@
+// Solution: Expected Square Beauty

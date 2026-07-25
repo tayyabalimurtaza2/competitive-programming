@@ -1,0 +1,1 @@
+// Solution: Unequal Adjacent Elements

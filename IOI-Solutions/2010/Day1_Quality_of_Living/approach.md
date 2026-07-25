@@ -1,1 +1,0 @@
-# Approach: Quality of Living

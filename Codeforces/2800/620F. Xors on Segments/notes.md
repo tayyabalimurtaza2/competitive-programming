@@ -1,0 +1,1 @@
+# Notes: Xors on Segments

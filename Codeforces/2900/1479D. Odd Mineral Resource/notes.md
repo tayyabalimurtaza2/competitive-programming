@@ -1,0 +1,1 @@
+# Notes: Odd Mineral Resource

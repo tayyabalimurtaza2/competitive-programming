@@ -1,0 +1,1 @@
+// Solution: Madhouse (Easy version)

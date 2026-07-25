@@ -1,0 +1,1 @@
+# Notes: XOR and Distance

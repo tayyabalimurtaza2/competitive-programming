@@ -1,1 +1,0 @@
-# Approach: Ideal City

@@ -1,0 +1,1 @@
+# Notes: Minimize Inversions Number

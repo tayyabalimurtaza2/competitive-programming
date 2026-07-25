@@ -1,0 +1,1 @@
+# Notes: Petya and Strings

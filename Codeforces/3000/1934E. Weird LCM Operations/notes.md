@@ -1,0 +1,1 @@
+# Notes: Weird LCM Operations

@@ -1,0 +1,1 @@
+// Solution: Minimize Inversions Number

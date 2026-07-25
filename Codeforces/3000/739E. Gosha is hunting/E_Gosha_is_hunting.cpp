@@ -1,0 +1,1 @@
+// Solution: Gosha is hunting

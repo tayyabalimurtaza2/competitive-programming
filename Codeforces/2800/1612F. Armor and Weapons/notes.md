@@ -1,0 +1,1 @@
+# Notes: Armor and Weapons

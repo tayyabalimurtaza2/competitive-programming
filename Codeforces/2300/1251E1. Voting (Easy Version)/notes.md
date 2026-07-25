@@ -1,0 +1,1 @@
+# Notes: Voting (Easy Version)

@@ -1,0 +1,1 @@
+// Solution: Fancy Number

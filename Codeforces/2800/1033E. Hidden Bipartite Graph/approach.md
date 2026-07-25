@@ -1,0 +1,2 @@
+# Approach: Hidden Bipartite Graph
+Problem: [Hidden Bipartite Graph](https://codeforces.com/contest/1033/problem/E)

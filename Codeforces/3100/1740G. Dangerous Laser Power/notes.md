@@ -1,0 +1,1 @@
+# Notes: Dangerous Laser Power

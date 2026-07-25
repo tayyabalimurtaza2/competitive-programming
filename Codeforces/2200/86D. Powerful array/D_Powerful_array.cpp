@@ -1,0 +1,1 @@
+// Solution: Powerful array

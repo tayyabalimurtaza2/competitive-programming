@@ -1,0 +1,1 @@
+// Solution: Vasya and Chess

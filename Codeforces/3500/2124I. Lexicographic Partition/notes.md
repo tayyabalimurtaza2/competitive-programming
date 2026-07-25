@@ -1,0 +1,1 @@
+# Notes: Lexicographic Partition

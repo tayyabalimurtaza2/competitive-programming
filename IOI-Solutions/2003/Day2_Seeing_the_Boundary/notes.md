@@ -1,1 +1,0 @@
-# Notes: Seeing the Boundary

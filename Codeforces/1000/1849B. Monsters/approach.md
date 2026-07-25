@@ -1,0 +1,2 @@
+# Approach: Monsters
+Problem: [Monsters](https://codeforces.com/contest/1849/problem/B)

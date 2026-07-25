@@ -1,0 +1,2 @@
+# Approach: Centroids
+Problem: [Centroids](https://codeforces.com/contest/708/problem/C)

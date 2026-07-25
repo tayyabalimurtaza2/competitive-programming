@@ -1,0 +1,1 @@
+# Notes: Starry Night Camping

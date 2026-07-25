@@ -1,0 +1,1 @@
+// Solution: Covered Points

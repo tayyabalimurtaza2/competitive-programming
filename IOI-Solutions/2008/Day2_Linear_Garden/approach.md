@@ -1,1 +1,0 @@
-# Approach: Linear Garden

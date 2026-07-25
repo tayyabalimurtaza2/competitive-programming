@@ -1,0 +1,1 @@
+# Notes: Fancy Number

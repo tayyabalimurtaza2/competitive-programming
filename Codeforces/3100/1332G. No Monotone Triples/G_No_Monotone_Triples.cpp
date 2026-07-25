@@ -1,0 +1,1 @@
+// Solution: No Monotone Triples
