@@ -1,2 +1,0 @@
-# Approach: Food Division
-

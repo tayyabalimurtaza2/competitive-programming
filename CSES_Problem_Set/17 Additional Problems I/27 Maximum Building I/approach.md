@@ -1,2 +1,0 @@
-# Approach: Maximum Building I
-

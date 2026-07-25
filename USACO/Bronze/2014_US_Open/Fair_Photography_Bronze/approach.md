@@ -1,1 +1,0 @@
-# Approach: Fair Photography (Bronze)

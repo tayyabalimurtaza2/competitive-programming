@@ -1,2 +1,0 @@
-# Notes: Same Sum Subsets
-

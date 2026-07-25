@@ -1,0 +1,2 @@
+# Notes: G. Teleporting Takahashi
+

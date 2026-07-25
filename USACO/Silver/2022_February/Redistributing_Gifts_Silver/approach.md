@@ -1,1 +1,0 @@
-# Approach: Redistributing Gifts (Silver)

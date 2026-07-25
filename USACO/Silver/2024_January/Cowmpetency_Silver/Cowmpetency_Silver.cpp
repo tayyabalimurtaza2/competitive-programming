@@ -1,1 +1,0 @@
-// Solution: Cowmpetency (Silver)

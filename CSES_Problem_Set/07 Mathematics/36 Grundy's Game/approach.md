@@ -1,2 +1,0 @@
-# Approach: Grundy's Game
-

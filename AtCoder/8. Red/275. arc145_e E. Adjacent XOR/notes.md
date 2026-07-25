@@ -1,0 +1,2 @@
+# Notes: E. Adjacent XOR
+

@@ -1,1 +1,0 @@
-# Approach: Comfortable Cows (Bronze)

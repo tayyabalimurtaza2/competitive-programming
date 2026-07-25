@@ -1,0 +1,2 @@
+# Notes: B. Picking Up
+

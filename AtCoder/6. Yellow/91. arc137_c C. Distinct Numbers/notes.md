@@ -1,0 +1,2 @@
+# Notes: C. Distinct Numbers
+

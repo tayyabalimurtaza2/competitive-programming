@@ -1,2 +1,0 @@
-# Approach: Sliding Window Xor
-

@@ -1,0 +1,2 @@
+# Notes: B. Greedy Division
+

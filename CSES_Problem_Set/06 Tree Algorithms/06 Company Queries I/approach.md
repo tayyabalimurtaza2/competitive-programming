@@ -1,2 +1,0 @@
-# Approach: Company Queries I
-

@@ -1,2 +1,0 @@
-# Approach: Functional Graph Distribution
-

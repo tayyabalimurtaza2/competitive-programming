@@ -1,0 +1,2 @@
+# Notes: E. Middle Point
+

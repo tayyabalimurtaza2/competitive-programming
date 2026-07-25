@@ -1,1 +1,0 @@
-# Approach: Secret Code (Bronze)

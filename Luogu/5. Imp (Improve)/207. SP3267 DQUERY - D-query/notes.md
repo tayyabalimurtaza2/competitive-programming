@@ -1,0 +1,2 @@
+# Notes: DQUERY - D-query
+

@@ -1,1 +1,0 @@
-# Notes: Snow Boots (Silver)

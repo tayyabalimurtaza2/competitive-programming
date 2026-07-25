@@ -1,2 +1,0 @@
-# Notes: Nim Game I
-

@@ -1,0 +1,2 @@
+# Notes: B. Uniformly Distributed
+

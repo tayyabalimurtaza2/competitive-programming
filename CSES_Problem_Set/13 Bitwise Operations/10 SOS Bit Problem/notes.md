@@ -1,2 +1,0 @@
-# Notes: SOS Bit Problem
-

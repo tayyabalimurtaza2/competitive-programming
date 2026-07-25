@@ -1,2 +1,0 @@
-# Approach: Chessboard and Queens
-

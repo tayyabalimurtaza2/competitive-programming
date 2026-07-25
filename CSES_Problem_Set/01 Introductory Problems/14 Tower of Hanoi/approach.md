@@ -1,2 +1,0 @@
-# Approach: Tower of Hanoi
-

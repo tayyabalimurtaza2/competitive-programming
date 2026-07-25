@@ -1,2 +1,0 @@
-# Approach: Nim Game II
-

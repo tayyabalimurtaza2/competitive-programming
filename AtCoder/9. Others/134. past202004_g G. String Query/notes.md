@@ -1,0 +1,2 @@
+# Notes: G. String Query
+

@@ -1,0 +1,2 @@
+# Notes: A. Periodic Number
+

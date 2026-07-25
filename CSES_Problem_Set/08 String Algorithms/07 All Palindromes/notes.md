@@ -1,2 +1,0 @@
-# Notes: All Palindromes
-

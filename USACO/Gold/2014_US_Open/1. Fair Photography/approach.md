@@ -1,0 +1,1 @@
+# Approach: Fair Photography

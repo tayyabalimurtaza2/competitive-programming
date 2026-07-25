@@ -1,2 +1,0 @@
-# Approach: Square Subsets
-

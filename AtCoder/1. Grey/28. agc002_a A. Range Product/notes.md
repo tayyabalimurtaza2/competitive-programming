@@ -1,0 +1,2 @@
+# Notes: A. Range Product
+

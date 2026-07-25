@@ -1,2 +1,0 @@
-# Approach: One Bit Positions
-

@@ -1,1 +1,0 @@
-// Solution: Paired Up (Gold)

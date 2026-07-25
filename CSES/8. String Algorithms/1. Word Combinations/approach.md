@@ -1,0 +1,2 @@
+# Approach: Word Combinations
+Problem: [Word Combinations](https://cses.fi/problemset/task/1731)

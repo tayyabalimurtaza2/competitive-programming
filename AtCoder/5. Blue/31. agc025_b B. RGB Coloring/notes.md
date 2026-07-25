@@ -1,0 +1,2 @@
+# Notes: B. RGB Coloring
+

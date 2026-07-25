@@ -1,2 +1,0 @@
-# Approach: Distinct Sums Grid
-

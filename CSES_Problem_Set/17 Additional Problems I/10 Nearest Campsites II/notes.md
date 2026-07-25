@@ -1,2 +1,0 @@
-# Notes: Nearest Campsites II
-

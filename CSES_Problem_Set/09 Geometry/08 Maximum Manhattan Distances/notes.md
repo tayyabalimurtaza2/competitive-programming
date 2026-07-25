@@ -1,2 +1,0 @@
-# Notes: Maximum Manhattan Distances
-

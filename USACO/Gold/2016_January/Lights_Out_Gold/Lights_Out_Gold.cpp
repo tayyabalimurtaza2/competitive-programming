@@ -1,1 +1,0 @@
-// Solution: Lights Out (Gold)

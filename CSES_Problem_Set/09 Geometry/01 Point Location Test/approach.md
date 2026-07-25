@@ -1,2 +1,0 @@
-# Approach: Point Location Test
-

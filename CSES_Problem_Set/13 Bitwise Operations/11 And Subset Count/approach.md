@@ -1,2 +1,0 @@
-# Approach: And Subset Count
-

@@ -1,0 +1,2 @@
+# Notes: C. Divisibility Homomorphism
+

@@ -1,1 +1,0 @@
-# Notes: Help Yourself (Gold)

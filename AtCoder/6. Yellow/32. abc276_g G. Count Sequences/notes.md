@@ -1,0 +1,2 @@
+# Notes: G. Count Sequences
+

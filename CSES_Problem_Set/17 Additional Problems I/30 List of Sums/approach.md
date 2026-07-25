@@ -1,2 +1,0 @@
-# Approach: List of Sums
-

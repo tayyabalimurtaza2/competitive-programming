@@ -1,2 +1,0 @@
-# Notes: Sliding Window Minimum
-

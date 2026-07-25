@@ -1,2 +1,0 @@
-# Approach: Monster Game I
-

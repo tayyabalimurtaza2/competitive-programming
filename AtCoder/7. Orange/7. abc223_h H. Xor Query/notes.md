@@ -1,0 +1,2 @@
+# Notes: H. Xor Query
+

@@ -1,1 +1,0 @@
-# Notes: Diamond Collector (Bronze)

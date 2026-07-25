@@ -1,2 +1,0 @@
-# Approach: Two Array Average
-

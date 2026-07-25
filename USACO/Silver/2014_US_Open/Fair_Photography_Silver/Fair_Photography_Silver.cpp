@@ -1,1 +1,0 @@
-// Solution: Fair Photography (Silver)

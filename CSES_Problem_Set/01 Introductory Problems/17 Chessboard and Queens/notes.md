@@ -1,2 +1,0 @@
-# Notes: Chessboard and Queens
-

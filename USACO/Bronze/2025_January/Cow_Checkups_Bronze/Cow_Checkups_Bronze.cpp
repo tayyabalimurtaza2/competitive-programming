@@ -1,1 +1,0 @@
-// Solution: Cow Checkups (Bronze)

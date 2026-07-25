@@ -1,0 +1,2 @@
+# Notes: F. Removing Robots
+

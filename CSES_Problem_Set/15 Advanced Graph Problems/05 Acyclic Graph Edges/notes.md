@@ -1,2 +1,0 @@
-# Notes: Acyclic Graph Edges
-

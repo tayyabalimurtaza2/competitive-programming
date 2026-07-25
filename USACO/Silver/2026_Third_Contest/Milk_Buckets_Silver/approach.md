@@ -1,1 +1,0 @@
-# Approach: Milk Buckets (Silver)

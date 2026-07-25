@@ -1,2 +1,0 @@
-# Approach: Transfer Speeds Sum
-

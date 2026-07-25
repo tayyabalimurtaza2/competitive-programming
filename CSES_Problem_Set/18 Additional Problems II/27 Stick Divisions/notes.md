@@ -1,2 +1,0 @@
-# Notes: Stick Divisions
-

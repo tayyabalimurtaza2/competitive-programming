@@ -1,1 +1,0 @@
-# Notes: Field Reduction (Bronze)

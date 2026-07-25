@@ -1,0 +1,1 @@
+# Notes: Palindrome Queries

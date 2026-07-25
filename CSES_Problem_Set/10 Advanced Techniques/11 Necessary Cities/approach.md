@@ -1,2 +1,0 @@
-# Approach: Necessary Cities
-

@@ -1,2 +1,0 @@
-# Approach: Water Containers Queries
-

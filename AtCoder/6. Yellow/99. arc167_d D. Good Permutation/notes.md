@@ -1,0 +1,2 @@
+# Notes: D. Good Permutation
+

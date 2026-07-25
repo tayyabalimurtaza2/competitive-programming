@@ -1,2 +1,0 @@
-# Notes: Tournament Graph Distribution
-

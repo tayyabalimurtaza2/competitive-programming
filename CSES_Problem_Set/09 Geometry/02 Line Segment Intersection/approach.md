@@ -1,2 +1,0 @@
-# Approach: Line Segment Intersection
-

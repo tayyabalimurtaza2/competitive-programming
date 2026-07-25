@@ -1,1 +1,0 @@
-// Solution: Drought (Bronze)

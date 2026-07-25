@@ -1,1 +1,0 @@
-# Notes: Milk Pails (Bronze)

@@ -1,2 +1,0 @@
-# Approach: Grid Puzzle II
-

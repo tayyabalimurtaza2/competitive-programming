@@ -1,2 +1,0 @@
-# Approach: Inverse Suffix Array
-

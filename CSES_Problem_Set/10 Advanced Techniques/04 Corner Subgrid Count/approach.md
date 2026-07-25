@@ -1,2 +1,0 @@
-# Approach: Corner Subgrid Count
-

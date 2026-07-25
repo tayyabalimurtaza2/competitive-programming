@@ -1,2 +1,0 @@
-# Notes: Finding a Centroid
-

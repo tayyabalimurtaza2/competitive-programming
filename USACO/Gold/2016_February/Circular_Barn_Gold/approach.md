@@ -1,1 +1,0 @@
-# Approach: Circular Barn (Gold)

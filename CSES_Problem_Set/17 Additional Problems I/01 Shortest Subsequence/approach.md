@@ -1,2 +1,0 @@
-# Approach: Shortest Subsequence
-

@@ -1,1 +1,0 @@
-# Approach: Milk Exchange (Bronze)

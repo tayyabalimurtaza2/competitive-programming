@@ -1,0 +1,2 @@
+# Notes: E. Eternal Average
+

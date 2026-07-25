@@ -1,2 +1,0 @@
-# Approach: Maximum Manhattan Distances
-

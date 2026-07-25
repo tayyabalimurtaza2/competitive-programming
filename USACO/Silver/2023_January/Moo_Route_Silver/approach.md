@@ -1,1 +1,0 @@
-# Approach: Moo Route (Silver)

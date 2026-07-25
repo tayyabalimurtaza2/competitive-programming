@@ -1,0 +1,2 @@
+# Notes: F. Growth Rate
+

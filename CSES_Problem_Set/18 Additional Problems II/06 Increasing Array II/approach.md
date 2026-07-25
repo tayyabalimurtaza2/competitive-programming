@@ -1,2 +1,0 @@
-# Approach: Increasing Array II
-

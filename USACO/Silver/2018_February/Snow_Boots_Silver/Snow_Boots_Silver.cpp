@@ -1,1 +1,0 @@
-// Solution: Snow Boots (Silver)

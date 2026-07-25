@@ -1,1 +1,0 @@
-# Approach: Snow Boots (Silver)

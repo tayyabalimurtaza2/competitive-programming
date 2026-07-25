@@ -1,2 +1,0 @@
-# Approach: Beautiful Permutation II
-

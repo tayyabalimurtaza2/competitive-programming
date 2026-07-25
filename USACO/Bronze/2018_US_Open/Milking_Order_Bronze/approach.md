@@ -1,1 +1,0 @@
-# Approach: Milking Order (Bronze)

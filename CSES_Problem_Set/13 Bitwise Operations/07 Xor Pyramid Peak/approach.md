@@ -1,2 +1,0 @@
-# Approach: Xor Pyramid Peak
-

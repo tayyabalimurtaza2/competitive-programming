@@ -1,1 +1,0 @@
-# Approach: Fenced In (Gold)

@@ -1,1 +1,0 @@
-# Notes: Lights Out (Gold)

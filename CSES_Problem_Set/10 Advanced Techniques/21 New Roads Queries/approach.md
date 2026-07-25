@@ -1,2 +1,0 @@
-# Approach: New Roads Queries
-

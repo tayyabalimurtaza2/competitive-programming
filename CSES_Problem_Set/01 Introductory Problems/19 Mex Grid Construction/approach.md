@@ -1,2 +1,0 @@
-# Approach: Mex Grid Construction
-

@@ -1,0 +1,1 @@
+# Notes: Even Outdegree Edges

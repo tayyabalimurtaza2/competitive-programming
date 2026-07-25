@@ -1,0 +1,2 @@
+# Notes: A. Hitachi String
+

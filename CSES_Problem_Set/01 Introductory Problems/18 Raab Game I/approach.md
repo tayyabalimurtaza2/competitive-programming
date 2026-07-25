@@ -1,2 +1,0 @@
-# Approach: Raab Game I
-

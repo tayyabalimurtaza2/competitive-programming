@@ -1,2 +1,0 @@
-# Approach: Same Sum Subsets
-

@@ -1,2 +1,0 @@
-# Notes: Two Array Average
-

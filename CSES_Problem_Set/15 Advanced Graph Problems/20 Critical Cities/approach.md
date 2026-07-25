@@ -1,2 +1,0 @@
-# Approach: Critical Cities
-

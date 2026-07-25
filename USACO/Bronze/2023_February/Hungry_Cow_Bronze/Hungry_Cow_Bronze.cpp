@@ -1,1 +1,0 @@
-// Solution: Hungry Cow (Bronze)

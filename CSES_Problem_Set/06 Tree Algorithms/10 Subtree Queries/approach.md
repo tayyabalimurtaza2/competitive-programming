@@ -1,2 +1,0 @@
-# Approach: Subtree Queries
-

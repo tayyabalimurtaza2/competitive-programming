@@ -1,2 +1,0 @@
-# Notes: Grid Paths II
-

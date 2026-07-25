@@ -1,2 +1,0 @@
-# Approach: Point in Polygon
-

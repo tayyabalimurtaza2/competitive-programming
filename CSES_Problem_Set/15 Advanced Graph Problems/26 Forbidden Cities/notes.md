@@ -1,2 +1,0 @@
-# Notes: Forbidden Cities
-

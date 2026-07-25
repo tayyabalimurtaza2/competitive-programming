@@ -1,2 +1,0 @@
-# Approach: Minimum Cost Pairs
-

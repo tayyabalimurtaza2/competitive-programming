@@ -1,2 +1,0 @@
-# Approach: All Subarray Xors
-

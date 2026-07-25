@@ -1,2 +1,0 @@
-# Notes: Swap Round Sorting
-

@@ -1,0 +1,1 @@
+# Notes: Grid Completion

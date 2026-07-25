@@ -1,0 +1,2 @@
+# Notes: C. Palindromic Matrix
+

@@ -1,1 +1,0 @@
-# Approach: Bovine Genomics (Silver)

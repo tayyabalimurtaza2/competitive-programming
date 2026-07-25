@@ -1,0 +1,2 @@
+# Notes: A. atcoder < S
+

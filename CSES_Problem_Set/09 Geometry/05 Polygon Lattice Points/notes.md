@@ -1,2 +1,0 @@
-# Notes: Polygon Lattice Points
-

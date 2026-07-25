@@ -1,2 +1,0 @@
-# Notes: Xor Pyramid Row
-

@@ -1,2 +1,0 @@
-# Notes: Substring Order I
-

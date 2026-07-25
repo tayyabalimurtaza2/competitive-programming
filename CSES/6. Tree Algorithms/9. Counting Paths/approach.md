@@ -1,0 +1,2 @@
+# Approach: Counting Paths
+Problem: [Counting Paths](https://cses.fi/problemset/task/1136)

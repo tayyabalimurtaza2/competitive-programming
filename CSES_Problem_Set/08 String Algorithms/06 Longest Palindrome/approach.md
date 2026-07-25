@@ -1,2 +1,0 @@
-# Approach: Longest Palindrome
-

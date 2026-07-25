@@ -1,2 +1,0 @@
-# Notes: Increasing Array II
-

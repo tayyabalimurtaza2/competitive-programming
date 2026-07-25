@@ -1,1 +1,0 @@
-// Solution: Vacation Planning (Gold)

@@ -1,0 +1,2 @@
+# Notes: B. Colorful Hats
+

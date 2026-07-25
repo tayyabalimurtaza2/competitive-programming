@@ -1,1 +1,0 @@
-# Notes: Fenced In (Gold)

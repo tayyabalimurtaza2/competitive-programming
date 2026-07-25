@@ -1,0 +1,2 @@
+# Notes: A. God Sequence
+

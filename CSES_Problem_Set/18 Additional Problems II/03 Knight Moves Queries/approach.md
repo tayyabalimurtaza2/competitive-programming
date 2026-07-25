@@ -1,2 +1,0 @@
-# Approach: Knight Moves Queries
-

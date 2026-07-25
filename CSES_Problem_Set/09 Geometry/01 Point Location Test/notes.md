@@ -1,2 +1,0 @@
-# Notes: Point Location Test
-

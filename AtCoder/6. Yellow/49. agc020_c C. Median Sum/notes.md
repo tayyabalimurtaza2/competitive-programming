@@ -1,0 +1,2 @@
+# Notes: C. Median Sum
+

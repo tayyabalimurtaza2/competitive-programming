@@ -1,2 +1,0 @@
-# Approach: Moving Robots
-

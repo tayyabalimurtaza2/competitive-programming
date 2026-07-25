@@ -1,2 +1,0 @@
-# Approach: Graph Paths I
-

@@ -1,1 +1,0 @@
-// Solution: Crazy Fences (Bronze)

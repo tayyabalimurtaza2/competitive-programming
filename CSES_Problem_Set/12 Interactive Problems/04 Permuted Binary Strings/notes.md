@@ -1,2 +1,0 @@
-# Notes: Permuted Binary Strings
-

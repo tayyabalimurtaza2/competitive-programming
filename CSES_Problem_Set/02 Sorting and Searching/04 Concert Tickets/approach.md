@@ -1,2 +1,0 @@
-# Approach: Concert Tickets
-

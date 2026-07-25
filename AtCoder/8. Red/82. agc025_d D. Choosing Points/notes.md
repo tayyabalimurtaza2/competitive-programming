@@ -1,0 +1,2 @@
+# Notes: D. Choosing Points
+

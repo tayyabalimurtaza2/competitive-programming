@@ -1,0 +1,2 @@
+# Notes: [USACO16OPEN] 248 G
+

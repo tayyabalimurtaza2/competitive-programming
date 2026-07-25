@@ -1,1 +1,0 @@
-# Approach: Modern Art (Bronze)
