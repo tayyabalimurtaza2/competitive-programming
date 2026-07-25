@@ -1,9 +1,1 @@
 # Approach: 【模板】带修莫队 / [国家集训队] 数颜色 / 维护队列
-Problem: [【模板】带修莫队 / [国家集训队] 数颜色 / 维护队列](https://www.luogu.com.cn/problem/P1903)
-Section: Imp+/Prov- (Improve + / Provincial Election -)
-
-## Approach
-
-
-## Complexity
-

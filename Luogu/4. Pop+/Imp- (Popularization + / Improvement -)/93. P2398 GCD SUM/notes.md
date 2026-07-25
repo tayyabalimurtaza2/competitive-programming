@@ -1,2 +1,1 @@
 # Notes: GCD SUM
-

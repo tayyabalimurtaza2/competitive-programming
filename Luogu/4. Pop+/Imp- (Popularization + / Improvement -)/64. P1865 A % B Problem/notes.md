@@ -1,2 +1,1 @@
 # Notes: A % B Problem
-
