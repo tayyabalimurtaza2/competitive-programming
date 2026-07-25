@@ -1,0 +1,2 @@
+# Notes: Visible Buildings Queries
+

@@ -1,0 +1,2 @@
+# Notes: Hotel Queries
+

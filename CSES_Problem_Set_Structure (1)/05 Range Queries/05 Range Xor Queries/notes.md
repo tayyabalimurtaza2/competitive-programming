@@ -1,0 +1,2 @@
+# Notes: Range Xor Queries
+

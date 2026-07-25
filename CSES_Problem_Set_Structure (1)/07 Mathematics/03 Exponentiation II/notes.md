@@ -1,0 +1,2 @@
+# Notes: Exponentiation II
+

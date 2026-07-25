@@ -1,0 +1,2 @@
+# Notes: Weird Algorithm
+

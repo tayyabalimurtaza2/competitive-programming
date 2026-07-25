@@ -1,0 +1,2 @@
+# Notes: Bracket Sequences I
+

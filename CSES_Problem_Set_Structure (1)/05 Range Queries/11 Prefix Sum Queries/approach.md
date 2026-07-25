@@ -1,0 +1,2 @@
+# Approach: Prefix Sum Queries
+

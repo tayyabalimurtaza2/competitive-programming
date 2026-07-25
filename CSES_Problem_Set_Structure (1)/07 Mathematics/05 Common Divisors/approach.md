@@ -1,0 +1,2 @@
+# Approach: Common Divisors
+

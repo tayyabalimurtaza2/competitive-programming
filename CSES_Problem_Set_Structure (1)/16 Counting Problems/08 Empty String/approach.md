@@ -1,0 +1,2 @@
+# Approach: Empty String
+

@@ -1,0 +1,2 @@
+# Notes: Line Segment Intersection
+

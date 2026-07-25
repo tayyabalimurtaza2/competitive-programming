@@ -1,0 +1,2 @@
+# Notes: All Manhattan Distances
+

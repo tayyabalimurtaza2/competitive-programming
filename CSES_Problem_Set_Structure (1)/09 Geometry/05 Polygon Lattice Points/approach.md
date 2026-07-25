@@ -1,0 +1,2 @@
+# Approach: Polygon Lattice Points
+

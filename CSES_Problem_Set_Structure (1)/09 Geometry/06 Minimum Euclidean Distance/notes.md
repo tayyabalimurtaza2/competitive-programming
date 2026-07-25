@@ -1,0 +1,2 @@
+# Notes: Minimum Euclidean Distance
+
