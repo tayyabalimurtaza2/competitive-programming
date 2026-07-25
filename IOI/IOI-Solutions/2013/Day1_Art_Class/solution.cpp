@@ -1,0 +1,1 @@
+// Solution: Art Class
