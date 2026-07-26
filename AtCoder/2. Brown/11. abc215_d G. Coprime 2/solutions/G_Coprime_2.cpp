@@ -1,0 +1,1 @@
+// G. Coprime 2

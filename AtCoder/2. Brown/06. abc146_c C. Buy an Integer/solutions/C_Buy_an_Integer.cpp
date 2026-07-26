@@ -1,0 +1,1 @@
+// C. Buy an Integer

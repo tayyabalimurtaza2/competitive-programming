@@ -1,0 +1,1 @@
+// F. Adjacent Binomial Coefficients

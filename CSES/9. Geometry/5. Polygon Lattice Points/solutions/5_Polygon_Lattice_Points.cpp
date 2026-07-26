@@ -1,1 +1,0 @@
-// Solution: Polygon Lattice Points

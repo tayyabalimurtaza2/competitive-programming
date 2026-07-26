@@ -1,0 +1,1 @@
+// D. Deterministic Placing

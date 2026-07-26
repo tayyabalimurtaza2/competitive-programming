@@ -1,1 +1,0 @@
-// Solution: Bracket Sequences I

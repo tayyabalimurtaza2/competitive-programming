@@ -1,0 +1,1 @@
+// F. Leftmost Ball

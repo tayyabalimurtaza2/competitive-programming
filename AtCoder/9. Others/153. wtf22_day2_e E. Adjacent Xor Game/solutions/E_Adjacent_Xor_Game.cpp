@@ -1,0 +1,1 @@
+// E. Adjacent Xor Game

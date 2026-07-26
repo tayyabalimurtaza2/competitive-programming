@@ -1,0 +1,1 @@
+// F. Permutation and Minimum

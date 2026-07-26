@@ -1,1 +1,0 @@
-# Notes: Mean Sequence

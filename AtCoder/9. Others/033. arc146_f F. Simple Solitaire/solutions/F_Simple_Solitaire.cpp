@@ -1,0 +1,1 @@
+// F. Simple Solitaire

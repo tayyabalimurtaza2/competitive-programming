@@ -1,1 +1,0 @@
-# Notes: Quality Of Living

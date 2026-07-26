@@ -1,0 +1,2 @@
+# Notes: Magical stones
+

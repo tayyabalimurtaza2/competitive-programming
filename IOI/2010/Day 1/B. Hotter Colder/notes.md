@@ -1,1 +1,0 @@
-# Notes: Hotter Colder

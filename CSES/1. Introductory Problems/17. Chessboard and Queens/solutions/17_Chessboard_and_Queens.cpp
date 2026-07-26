@@ -1,1 +1,0 @@
-// Solution: Chessboard and Queens

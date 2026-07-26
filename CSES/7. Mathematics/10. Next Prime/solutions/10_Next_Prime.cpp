@@ -1,1 +1,0 @@
-// Solution: Next Prime

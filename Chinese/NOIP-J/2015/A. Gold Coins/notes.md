@@ -1,0 +1,2 @@
+# Notes: Gold Coins
+

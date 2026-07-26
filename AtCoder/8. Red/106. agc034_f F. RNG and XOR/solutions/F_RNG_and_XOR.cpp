@@ -1,0 +1,1 @@
+// F. RNG and XOR

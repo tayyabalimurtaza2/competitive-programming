@@ -1,0 +1,2 @@
+# Notes: Count Squares
+

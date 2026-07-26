@@ -1,1 +1,0 @@
-// Solution: Paint By Numbers

@@ -1,1 +1,0 @@
-// Solution: Exponentiation II

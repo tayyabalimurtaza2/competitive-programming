@@ -1,1 +1,0 @@
-// Solution: Triangle Number Sums

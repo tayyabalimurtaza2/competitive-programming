@@ -1,0 +1,1 @@
+// Obstacles for a Llama

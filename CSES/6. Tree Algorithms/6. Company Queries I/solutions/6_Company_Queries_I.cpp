@@ -1,1 +1,0 @@
-// Solution: Company Queries I

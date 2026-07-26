@@ -1,1 +1,0 @@
-// Solution: Planets and Kingdoms

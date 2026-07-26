@@ -1,0 +1,1 @@
+// F. Takahashi The Strongest

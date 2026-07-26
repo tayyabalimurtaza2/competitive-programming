@@ -1,0 +1,1 @@
+// Stamp Denomination Design

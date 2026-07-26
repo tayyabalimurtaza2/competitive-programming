@@ -1,1 +1,0 @@
-# Notes: Rice Hub

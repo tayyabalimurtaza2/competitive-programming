@@ -1,1 +1,0 @@
-// Solution: Visible Buildings Queries

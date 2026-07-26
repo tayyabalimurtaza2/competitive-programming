@@ -1,1 +1,0 @@
-// Solution: Sphinx's Riddle

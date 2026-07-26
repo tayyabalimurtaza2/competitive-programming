@@ -1,0 +1,1 @@
+// Jam's Counting Method

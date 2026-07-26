@@ -1,1 +1,0 @@
-// Solution: Xor Pyramid Peak

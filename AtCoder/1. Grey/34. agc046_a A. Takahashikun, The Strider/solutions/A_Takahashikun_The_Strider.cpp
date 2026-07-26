@@ -1,0 +1,1 @@
+// A. Takahashikun, The Strider

@@ -1,1 +1,0 @@
-// Solution: Corner Subgrid Count

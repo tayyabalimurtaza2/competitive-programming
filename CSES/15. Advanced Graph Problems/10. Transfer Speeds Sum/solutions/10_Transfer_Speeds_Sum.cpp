@@ -1,1 +1,0 @@
-// Solution: Transfer Speeds Sum

@@ -1,1 +1,0 @@
-// Solution: Collecting Numbers Distribution

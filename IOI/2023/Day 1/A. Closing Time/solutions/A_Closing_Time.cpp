@@ -1,1 +1,0 @@
-// Solution: Closing Time

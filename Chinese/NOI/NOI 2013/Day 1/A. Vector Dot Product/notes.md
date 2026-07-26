@@ -1,0 +1,2 @@
+# Notes: Vector Dot Product
+

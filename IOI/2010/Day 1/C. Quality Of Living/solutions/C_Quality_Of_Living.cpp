@@ -1,1 +1,0 @@
-// Solution: Quality Of Living

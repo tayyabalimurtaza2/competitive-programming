@@ -1,1 +1,0 @@
-// Solution: Hotter Colder

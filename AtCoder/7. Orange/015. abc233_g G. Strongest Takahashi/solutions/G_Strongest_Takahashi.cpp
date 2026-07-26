@@ -1,0 +1,1 @@
+// G. Strongest Takahashi

@@ -1,0 +1,1 @@
+// D. Arrays and Palindrome
