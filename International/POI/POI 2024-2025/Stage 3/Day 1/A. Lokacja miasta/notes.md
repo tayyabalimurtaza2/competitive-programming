@@ -1,0 +1,2 @@
+# Notes: Lokacja miasta
+

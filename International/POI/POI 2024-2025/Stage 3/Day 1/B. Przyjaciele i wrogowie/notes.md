@@ -1,0 +1,2 @@
+# Notes: Przyjaciele i wrogowie
+

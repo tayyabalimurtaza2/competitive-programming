@@ -1,0 +1,2 @@
+# Notes: Wakacje Bajtazara
+

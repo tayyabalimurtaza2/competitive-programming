@@ -1,0 +1,2 @@
+# Notes: Strange Machine
+

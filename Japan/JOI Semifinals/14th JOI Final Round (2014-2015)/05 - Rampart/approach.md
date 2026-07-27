@@ -1,0 +1,10 @@
+# Approach: Rampart
+Contest: JOI Semifinals
+Year: 14th JOI Final Round (2014-2015)
+Problem: Rampart
+
+## Approach
+
+
+## Complexity
+

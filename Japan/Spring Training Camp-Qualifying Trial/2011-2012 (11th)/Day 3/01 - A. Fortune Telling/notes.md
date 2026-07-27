@@ -1,0 +1,2 @@
+# Notes: Fortune Telling
+

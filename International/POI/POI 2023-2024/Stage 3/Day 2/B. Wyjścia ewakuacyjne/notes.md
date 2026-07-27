@@ -1,0 +1,2 @@
+# Notes: Wyjścia ewakuacyjne
+

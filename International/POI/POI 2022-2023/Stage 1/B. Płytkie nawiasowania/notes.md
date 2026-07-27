@@ -1,0 +1,2 @@
+# Notes: Płytkie nawiasowania
+

@@ -1,0 +1,2 @@
+# Notes: Solar lamps
+

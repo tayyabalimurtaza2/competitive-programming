@@ -1,0 +1,2 @@
+# Notes: Zdjęcia krasnali
+

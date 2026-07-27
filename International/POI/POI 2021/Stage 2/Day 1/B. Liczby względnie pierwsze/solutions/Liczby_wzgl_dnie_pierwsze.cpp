@@ -1,0 +1,1 @@
+// Liczby względnie pierwsze

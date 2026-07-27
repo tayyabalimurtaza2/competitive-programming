@@ -1,0 +1,2 @@
+# Notes: Least common multiple
+

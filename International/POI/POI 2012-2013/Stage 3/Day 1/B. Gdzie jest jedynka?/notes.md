@@ -1,0 +1,2 @@
+# Notes: Gdzie jest jedynka?
+

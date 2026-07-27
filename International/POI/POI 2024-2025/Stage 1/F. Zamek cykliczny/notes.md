@@ -1,0 +1,2 @@
+# Notes: Zamek cykliczny
+

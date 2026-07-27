@@ -1,0 +1,2 @@
+# Notes: Periods of Words
+

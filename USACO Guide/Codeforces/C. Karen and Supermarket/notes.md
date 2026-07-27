@@ -1,0 +1,2 @@
+# Notes: Karen and Supermarket
+

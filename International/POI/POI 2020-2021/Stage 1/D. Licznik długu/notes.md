@@ -1,0 +1,2 @@
+# Notes: Licznik długu
+

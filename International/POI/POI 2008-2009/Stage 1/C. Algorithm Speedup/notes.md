@@ -1,0 +1,2 @@
+# Notes: Algorithm Speedup
+

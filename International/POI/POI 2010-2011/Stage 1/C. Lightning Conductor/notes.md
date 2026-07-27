@@ -1,0 +1,2 @@
+# Notes: Lightning Conductor
+

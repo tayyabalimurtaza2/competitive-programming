@@ -1,0 +1,2 @@
+# Notes: Maximum of GCDs
+

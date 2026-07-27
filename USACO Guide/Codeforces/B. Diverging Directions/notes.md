@@ -1,0 +1,2 @@
+# Notes: Diverging Directions
+

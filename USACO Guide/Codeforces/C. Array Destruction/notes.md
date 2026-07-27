@@ -1,0 +1,2 @@
+# Notes: Array Destruction
+

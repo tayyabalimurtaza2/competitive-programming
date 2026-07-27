@@ -1,0 +1,2 @@
+# Notes: Diluc and Kaeya
+

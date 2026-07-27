@@ -1,0 +1,2 @@
+# Notes: Liczby względnie pierwsze
+

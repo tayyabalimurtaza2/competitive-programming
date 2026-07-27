@@ -1,0 +1,2 @@
+# Notes: Laser Strike
+

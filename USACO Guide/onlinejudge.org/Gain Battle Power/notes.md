@@ -1,0 +1,2 @@
+# Notes: Gain Battle Power
+

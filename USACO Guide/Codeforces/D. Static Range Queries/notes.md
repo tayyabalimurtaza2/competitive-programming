@@ -1,0 +1,2 @@
+# Notes: Static Range Queries
+

@@ -1,0 +1,2 @@
+# Notes: Covered Points Count
+

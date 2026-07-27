@@ -1,0 +1,2 @@
+# Notes: Hyper-minimum
+

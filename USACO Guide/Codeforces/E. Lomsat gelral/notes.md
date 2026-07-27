@@ -1,0 +1,2 @@
+# Notes: Lomsat gelral
+

@@ -1,0 +1,2 @@
+# Notes: Closest Pair
+

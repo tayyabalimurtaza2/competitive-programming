@@ -1,0 +1,2 @@
+# Notes: Gorgeous Sequence
+

@@ -1,0 +1,1 @@
+// Covered Points Count

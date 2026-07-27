@@ -1,0 +1,2 @@
+# Notes: Enumerate Quotients
+

@@ -1,0 +1,2 @@
+# Notes: Product on Segment
+

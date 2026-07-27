@@ -1,0 +1,1 @@
+// Ciąg binarny

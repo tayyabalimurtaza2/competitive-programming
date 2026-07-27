@@ -1,0 +1,2 @@
+# Notes: Miasta partnerskie
+

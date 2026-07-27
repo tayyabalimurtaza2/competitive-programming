@@ -1,0 +1,2 @@
+# Notes: K blocks
+

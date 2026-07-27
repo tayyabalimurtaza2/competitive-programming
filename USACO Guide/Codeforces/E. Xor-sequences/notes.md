@@ -1,0 +1,2 @@
+# Notes: Xor-sequences
+

@@ -1,0 +1,2 @@
+# Notes: Zapobiegliwy student
+

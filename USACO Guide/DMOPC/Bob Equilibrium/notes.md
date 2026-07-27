@@ -1,0 +1,2 @@
+# Notes: Bob Equilibrium
+

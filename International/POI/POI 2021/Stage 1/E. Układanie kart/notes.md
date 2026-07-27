@@ -1,0 +1,2 @@
+# Notes: Układanie kart
+

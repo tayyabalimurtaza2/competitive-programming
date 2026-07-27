@@ -1,0 +1,2 @@
+# Notes: MEX vs MED
+

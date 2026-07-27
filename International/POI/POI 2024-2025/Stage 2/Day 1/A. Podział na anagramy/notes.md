@@ -1,0 +1,2 @@
+# Notes: Podział na anagramy
+

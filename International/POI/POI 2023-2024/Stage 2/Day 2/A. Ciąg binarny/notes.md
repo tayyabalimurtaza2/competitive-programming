@@ -1,0 +1,2 @@
+# Notes: Ciąg binarny
+

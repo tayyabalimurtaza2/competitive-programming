@@ -1,0 +1,2 @@
+# Notes: Zera i jedynki
+

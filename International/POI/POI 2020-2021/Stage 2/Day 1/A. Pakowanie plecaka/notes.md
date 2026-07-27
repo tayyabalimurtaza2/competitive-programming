@@ -1,0 +1,2 @@
+# Notes: Pakowanie plecaka
+
