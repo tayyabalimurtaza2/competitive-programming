@@ -1,1 +1,0 @@
-# Notes: [USACO18JAN] Cow at Large P

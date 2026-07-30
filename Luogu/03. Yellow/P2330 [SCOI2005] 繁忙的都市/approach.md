@@ -1,1 +1,0 @@
-# Approach: [SCOI2005] 繁忙的都市

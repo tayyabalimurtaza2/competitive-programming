@@ -1,1 +1,0 @@
-# Approach: DQUERY - D-query
