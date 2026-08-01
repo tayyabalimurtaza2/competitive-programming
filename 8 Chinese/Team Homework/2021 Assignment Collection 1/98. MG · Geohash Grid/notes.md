@@ -1,0 +1,2 @@
+# Notes: MG · Geohash Grid
+

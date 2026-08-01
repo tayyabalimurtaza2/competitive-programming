@@ -1,0 +1,2 @@
+# Notes: LE · Embedding Enumeration
+

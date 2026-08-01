@@ -1,0 +1,2 @@
+# Notes: Sticker sequence
+

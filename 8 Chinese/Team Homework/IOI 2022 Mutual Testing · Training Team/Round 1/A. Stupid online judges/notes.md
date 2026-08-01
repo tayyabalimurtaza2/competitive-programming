@@ -1,0 +1,2 @@
+# Notes: Stupid online judges
+

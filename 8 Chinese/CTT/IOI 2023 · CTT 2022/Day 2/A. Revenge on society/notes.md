@@ -1,0 +1,2 @@
+# Notes: Revenge on society
+

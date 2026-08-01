@@ -1,0 +1,2 @@
+# Notes: Smart students
+

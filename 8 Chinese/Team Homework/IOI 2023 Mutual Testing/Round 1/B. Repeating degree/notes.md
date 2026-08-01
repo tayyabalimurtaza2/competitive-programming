@@ -1,0 +1,2 @@
+# Notes: Repeating degree
+

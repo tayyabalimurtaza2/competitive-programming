@@ -1,0 +1,2 @@
+# Notes: Manipulated segment tree
+

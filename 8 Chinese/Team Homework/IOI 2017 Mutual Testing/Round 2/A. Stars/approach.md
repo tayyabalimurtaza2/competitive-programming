@@ -1,0 +1,11 @@
+# Approach: Stars
+Contest: Team Homework (CN)
+Year: IOI 2017 Mutual Testing
+Day: Round 2
+Problem: A. Stars
+
+## Approach
+
+
+## Complexity
+

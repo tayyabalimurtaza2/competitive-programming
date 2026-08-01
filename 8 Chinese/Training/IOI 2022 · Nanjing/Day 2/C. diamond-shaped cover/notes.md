@@ -1,0 +1,2 @@
+# Notes: diamond-shaped cover
+

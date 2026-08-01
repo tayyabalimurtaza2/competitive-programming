@@ -1,0 +1,2 @@
+# Notes: Triangular teaching building
+

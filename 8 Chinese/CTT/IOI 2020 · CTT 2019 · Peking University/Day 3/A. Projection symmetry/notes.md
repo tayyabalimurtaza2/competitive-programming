@@ -1,0 +1,2 @@
+# Notes: Projection symmetry
+

@@ -1,0 +1,1 @@
+// Expectation of the product

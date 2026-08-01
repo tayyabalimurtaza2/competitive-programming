@@ -1,0 +1,2 @@
+# Notes: LC · Cumulative Code
+

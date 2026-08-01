@@ -1,0 +1,2 @@
+# Notes: Hieroglyphic sequence
+

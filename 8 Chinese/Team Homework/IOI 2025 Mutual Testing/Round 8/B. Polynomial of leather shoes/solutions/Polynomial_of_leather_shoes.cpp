@@ -1,0 +1,1 @@
+// Polynomial of leather shoes

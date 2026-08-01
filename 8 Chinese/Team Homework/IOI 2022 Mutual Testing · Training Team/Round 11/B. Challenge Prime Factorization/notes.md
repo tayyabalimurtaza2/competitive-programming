@@ -1,0 +1,2 @@
+# Notes: Challenge Prime Factorization
+

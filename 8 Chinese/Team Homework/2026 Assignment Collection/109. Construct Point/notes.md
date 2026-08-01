@@ -1,0 +1,2 @@
+# Notes: Construct Point
+

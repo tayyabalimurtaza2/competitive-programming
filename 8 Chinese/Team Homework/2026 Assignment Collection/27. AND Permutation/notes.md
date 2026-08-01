@@ -1,0 +1,2 @@
+# Notes: AND Permutation
+

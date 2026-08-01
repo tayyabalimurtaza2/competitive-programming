@@ -1,2 +1,0 @@
-# Notes: Summation of Series
-

@@ -1,0 +1,2 @@
+# Notes: mental power
+

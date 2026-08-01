@@ -1,0 +1,2 @@
+# Notes: Sub-permutation array
+

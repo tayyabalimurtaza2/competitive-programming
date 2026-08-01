@@ -1,0 +1,2 @@
+# Notes: TF · Fragmentation
+

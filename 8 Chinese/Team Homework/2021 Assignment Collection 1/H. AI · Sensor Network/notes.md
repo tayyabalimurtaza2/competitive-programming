@@ -1,0 +1,2 @@
+# Notes: AI · Sensor Network
+

@@ -1,0 +1,2 @@
+# Notes: KG · Green Energy
+

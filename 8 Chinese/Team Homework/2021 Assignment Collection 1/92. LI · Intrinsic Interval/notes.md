@@ -1,0 +1,2 @@
+# Notes: LI · Intrinsic Interval
+
