@@ -1,13 +1,11 @@
-// Title Statistics
 #include <iostream>
 using namespace std;
 int main(){
-    char c;
+    string s;
     int ans = 0 ;
-    while(cin>>c){
-        ++ans;
+    while(cin>>s){
+        ans += s.length();
     }
     cout << ans << endl;
-    return 0;
 
 }
