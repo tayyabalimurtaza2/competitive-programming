@@ -1,0 +1,2 @@
+# Notes: Logaritam
+

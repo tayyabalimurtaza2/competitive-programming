@@ -1,1 +1,0 @@
-# Notes: Equalize Prices Again

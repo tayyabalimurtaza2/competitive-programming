@@ -1,0 +1,11 @@
+# Approach: City building
+Contest: ZJOI
+Year: 2023 (Unified Provincial Selection)
+Day: Day 1
+Problem: B. City building
+
+## Approach
+
+
+## Complexity
+

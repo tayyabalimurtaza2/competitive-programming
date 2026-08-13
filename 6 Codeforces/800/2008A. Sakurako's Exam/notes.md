@@ -1,1 +1,0 @@
-# Notes: Sakurako's Exam

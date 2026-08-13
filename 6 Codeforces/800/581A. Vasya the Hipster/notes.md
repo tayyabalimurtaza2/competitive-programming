@@ -1,1 +1,0 @@
-# Notes: Vasya the Hipster

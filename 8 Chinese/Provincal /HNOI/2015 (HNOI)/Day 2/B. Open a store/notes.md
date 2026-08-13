@@ -1,0 +1,2 @@
+# Notes: Open a store
+

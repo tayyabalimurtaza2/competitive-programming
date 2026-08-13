@@ -1,1 +1,0 @@
-# Notes: Select Three Sticks

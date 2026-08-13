@@ -1,1 +1,0 @@
-// Solution: Ultra-Fast Mathematician

@@ -1,1 +1,0 @@
-# Notes: Nearly Lucky Number

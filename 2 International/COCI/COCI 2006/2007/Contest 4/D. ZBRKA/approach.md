@@ -1,0 +1,11 @@
+# Approach: ZBRKA
+Contest: COCI
+Year: COCI 2006/2007
+Day: Contest 4
+Problem: D. ZBRKA
+
+## Approach
+
+
+## Complexity
+

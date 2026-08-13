@@ -1,0 +1,2 @@
+# Notes: Mine construction
+

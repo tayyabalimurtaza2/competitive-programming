@@ -1,1 +1,0 @@
-// Solution: Soldier and Bananas

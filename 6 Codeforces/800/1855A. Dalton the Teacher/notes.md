@@ -1,1 +1,0 @@
-# Notes: Dalton the Teacher

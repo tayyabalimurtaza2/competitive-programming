@@ -1,0 +1,2 @@
+# Notes: XOR and path
+

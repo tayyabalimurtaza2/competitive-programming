@@ -1,1 +1,0 @@
-# Notes: Ultra-Fast Mathematician

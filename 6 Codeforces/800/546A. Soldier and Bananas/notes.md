@@ -1,1 +1,0 @@
-# Notes: Soldier and Bananas

@@ -1,0 +1,11 @@
+# Approach: VECI
+Contest: COCI
+Year: COCI 2007/2008
+Day: Contest 4
+Problem: B. VECI
+
+## Approach
+
+
+## Complexity
+

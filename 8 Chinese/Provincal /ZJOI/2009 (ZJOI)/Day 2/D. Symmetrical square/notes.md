@@ -1,0 +1,2 @@
+# Notes: Symmetrical square
+

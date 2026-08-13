@@ -1,1 +1,0 @@
-// Solution: Select Three Sticks

@@ -1,1 +1,0 @@
-// Solution: Vitaly and Night

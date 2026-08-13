@@ -1,1 +1,0 @@
-// Solution: Holiday Of Equality

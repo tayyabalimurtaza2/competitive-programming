@@ -1,1 +1,0 @@
-# Notes: Squares and Cubes

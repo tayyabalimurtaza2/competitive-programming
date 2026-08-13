@@ -1,0 +1,2 @@
+# Notes: Chessboard making
+

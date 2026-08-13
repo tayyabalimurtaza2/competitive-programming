@@ -1,1 +1,0 @@
-# Notes: To My Critics

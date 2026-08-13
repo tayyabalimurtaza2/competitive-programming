@@ -1,1 +1,0 @@
-// Solution: Vasya the Hipster

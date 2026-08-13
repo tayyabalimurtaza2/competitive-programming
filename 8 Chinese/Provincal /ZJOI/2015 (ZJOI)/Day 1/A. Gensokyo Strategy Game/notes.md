@@ -1,0 +1,2 @@
+# Notes: Gensokyo Strategy Game
+

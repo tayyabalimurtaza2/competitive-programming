@@ -1,1 +1,0 @@
-# Notes: Holiday Of Equality

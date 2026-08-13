@@ -1,1 +1,0 @@
-// Solution: Hit the Lottery

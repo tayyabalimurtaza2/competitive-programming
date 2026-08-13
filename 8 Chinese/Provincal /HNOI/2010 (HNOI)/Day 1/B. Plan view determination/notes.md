@@ -1,0 +1,2 @@
+# Notes: Plan view determination
+

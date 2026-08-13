@@ -1,1 +1,0 @@
-// Solution: GCD Sum

@@ -1,0 +1,2 @@
+# Notes: Pythagorean theorem
+

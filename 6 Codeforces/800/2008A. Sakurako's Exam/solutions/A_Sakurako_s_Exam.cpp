@@ -1,1 +1,0 @@
-// Solution: Sakurako's Exam

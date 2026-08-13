@@ -1,0 +1,2 @@
+# Notes: Clash of Clans
+

@@ -1,0 +1,2 @@
+# Notes: Konstrukcija
+

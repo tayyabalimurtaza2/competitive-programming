@@ -1,0 +1,2 @@
+# Notes: Eliminate chess pieces
+

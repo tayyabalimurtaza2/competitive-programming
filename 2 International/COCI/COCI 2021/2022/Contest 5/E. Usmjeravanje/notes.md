@@ -1,0 +1,2 @@
+# Notes: Usmjeravanje
+
