@@ -1,1 +1,0 @@
-// A. Sum and Product

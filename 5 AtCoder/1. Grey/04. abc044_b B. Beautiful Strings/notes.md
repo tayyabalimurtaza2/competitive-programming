@@ -1,2 +1,0 @@
-# Notes: B. Beautiful Strings
-

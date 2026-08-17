@@ -1,2 +1,0 @@
-# Notes: A. Duplex Printing
-

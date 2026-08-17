@@ -1,1 +1,0 @@
-// E. Neo-lexicographic Ordering

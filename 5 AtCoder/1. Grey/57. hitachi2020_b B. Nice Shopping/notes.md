@@ -1,2 +1,0 @@
-# Notes: B. Nice Shopping
-

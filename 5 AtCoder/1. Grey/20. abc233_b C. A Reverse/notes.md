@@ -1,2 +1,0 @@
-# Notes: C. A Reverse
-

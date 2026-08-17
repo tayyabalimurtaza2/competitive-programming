@@ -1,1 +1,0 @@
-// D. Takahashi's Failure
