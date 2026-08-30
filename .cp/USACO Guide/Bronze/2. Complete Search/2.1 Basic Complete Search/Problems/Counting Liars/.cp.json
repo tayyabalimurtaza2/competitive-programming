@@ -1,0 +1,19 @@
+{
+  "judge": "usaco",
+  "id": "1228",
+  "title": "Counting Liars",
+  "url": "http://usaco.org/index.php?page=viewproblem2&cpid=1228",
+  "category": "",
+  "contestName": "2022 US Open Contest",
+  "guide": {
+    "path": [
+      "Bronze",
+      "2. Complete Search",
+      "2.1 Basic Complete Search",
+      "Problems"
+    ],
+    "label": "Bronze · Complete Search · Basic Complete Search",
+    "uid": "usaco-1228"
+  },
+  "problemLetter": "1228"
+}

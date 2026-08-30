@@ -1,1 +1,0 @@
-# Extended Euclidean-Like Algorithm

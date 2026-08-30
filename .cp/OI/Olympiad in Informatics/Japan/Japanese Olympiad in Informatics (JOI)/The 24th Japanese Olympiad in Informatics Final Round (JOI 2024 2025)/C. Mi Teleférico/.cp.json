@@ -1,0 +1,19 @@
+{
+  "judge": "qoj",
+  "id": "1908-10051",
+  "title": "Mi Teleférico",
+  "url": "https://qoj.ac/contest/1908/problem/10051",
+  "category": "",
+  "contestName": "The 24th Japanese Olympiad in Informatics Final Round (JOI 2024/2025)",
+  "timeLimit": "2 s",
+  "memory": "1024 MB",
+  "subCategory": "The 24th Japanese Olympiad in Informatics Final Round (JOI 2024/2025)",
+  "categoryPath": [
+    "Olympiad in Informatics",
+    "Japan",
+    "Japanese Olympiad in Informatics (JOI)"
+  ],
+  "letter": "C",
+  "contestId": "1908",
+  "problemLetter": "10051"
+}

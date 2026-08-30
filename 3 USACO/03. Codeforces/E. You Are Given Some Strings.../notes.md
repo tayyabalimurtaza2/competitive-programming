@@ -1,3 +1,0 @@
-# 1202 E. You Are Given Some Strings...
-
-https://duckduckgo.com/?q=Codeforces+1202+E+You+Are+Given+Some+Strings+codeforces.com+usaco.guide&ia=web

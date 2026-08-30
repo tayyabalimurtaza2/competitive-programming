@@ -1,1 +1,0 @@
-# Polynomial Newton Iteration

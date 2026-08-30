@@ -1,1 +1,0 @@
-# Exponential Generating Function (EGF)

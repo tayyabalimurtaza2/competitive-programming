@@ -1,3 +1,0 @@
-# 901E.Cyclic Cipher
-
-https://codeforces.com/contest/901/problem/E

@@ -1,2 +1,0 @@
-# A. Sequence
-https://atcoder.jp/contests/arc072/tasks/arc072_a

@@ -1,2 +1,0 @@
-# H. We Love Forest
-https://atcoder.jp/contests/abc253/tasks/abc253_h

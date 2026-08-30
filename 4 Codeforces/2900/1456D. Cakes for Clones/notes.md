@@ -1,3 +1,0 @@
-# 1456D.Cakes for Clones
-
-https://codeforces.com/contest/1456/problem/D

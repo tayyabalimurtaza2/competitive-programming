@@ -1,1 +1,0 @@
-# Meissel–Lehmer Algorithm

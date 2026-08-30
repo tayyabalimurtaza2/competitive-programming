@@ -1,3 +1,0 @@
-# Dependent Events
-
-https://duckduckgo.com/?q=Google+Kickstart+Dependent+Events+luogu.com.cn+oj.uz+qoj.ac+uoj.ac+loj.ac+atcoder.jp+codeforces.com+usaco.guide&ia=web

@@ -1,0 +1,19 @@
+{
+  "judge": "usaco",
+  "id": "761",
+  "title": "Milk Measurement",
+  "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=761",
+  "category": "",
+  "contestName": "2017 December Contest",
+  "guide": {
+    "path": [
+      "Bronze",
+      "1. Getting Started",
+      "1.3 Simulation",
+      "Harder"
+    ],
+    "label": "Bronze · Getting Started · Simulation",
+    "uid": "usaco-761"
+  },
+  "problemLetter": "761"
+}

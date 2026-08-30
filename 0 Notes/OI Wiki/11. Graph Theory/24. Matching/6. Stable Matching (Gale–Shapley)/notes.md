@@ -1,1 +1,0 @@
-# Stable Matching (Gale–Shapley)

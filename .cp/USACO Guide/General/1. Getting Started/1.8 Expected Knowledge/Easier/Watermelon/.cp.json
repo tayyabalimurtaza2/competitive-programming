@@ -1,0 +1,21 @@
+{
+  "judge": "codeforces",
+  "id": "A",
+  "title": "Watermelon",
+  "url": "https://codeforces.com/problemset/problem/4/A",
+  "category": "",
+  "timeLimit": "1 second",
+  "memory": "64 megabytes",
+  "guide": {
+    "path": [
+      "General",
+      "1. Getting Started",
+      "1.8 Expected Knowledge",
+      "Easier"
+    ],
+    "label": "General · Getting Started · Expected Knowledge",
+    "uid": "cf-4A"
+  },
+  "contestId": "4",
+  "problemLetter": "A"
+}

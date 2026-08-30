@@ -1,3 +1,0 @@
-# P6292 区间本质不同子串个数
-
-https://duckduckgo.com/?q=P6292+%E5%8C%BA%E9%97%B4%E6%9C%AC%E8%B4%A8%E4%B8%8D%E5%90%8C%E5%AD%90%E4%B8%B2%E4%B8%AA%E6%95%B0+luogu.com.cn&ia=web

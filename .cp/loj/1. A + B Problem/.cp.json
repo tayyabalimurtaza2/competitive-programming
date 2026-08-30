@@ -1,0 +1,10 @@
+{
+  "judge": "loj",
+  "id": "1",
+  "title": "A + B Problem",
+  "url": "https://loj.ac/p/1",
+  "category": "",
+  "timeLimit": "2s",
+  "memory": "512 MB",
+  "problemLetter": "1"
+}

@@ -1,1 +1,0 @@
-# Monotone Queue/Stack Optimization

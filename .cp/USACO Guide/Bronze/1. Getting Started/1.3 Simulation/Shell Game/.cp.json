@@ -1,0 +1,18 @@
+{
+  "judge": "usaco",
+  "id": "891",
+  "title": "Shell Game",
+  "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=891",
+  "category": "",
+  "contestName": "2019 January Contest",
+  "guide": {
+    "path": [
+      "Bronze",
+      "1. Getting Started",
+      "1.3 Simulation"
+    ],
+    "label": "Bronze · Getting Started · Simulation",
+    "uid": "usaco-891"
+  },
+  "problemLetter": "891"
+}

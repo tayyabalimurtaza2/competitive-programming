@@ -1,1 +1,0 @@
-# Kahan Summation

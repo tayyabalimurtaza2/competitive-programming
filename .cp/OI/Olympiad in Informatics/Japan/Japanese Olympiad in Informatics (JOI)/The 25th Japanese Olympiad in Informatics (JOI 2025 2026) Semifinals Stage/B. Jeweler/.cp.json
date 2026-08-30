@@ -1,0 +1,19 @@
+{
+  "judge": "qoj",
+  "id": "3386-17241",
+  "title": "Jeweler",
+  "url": "https://qoj.ac/contest/3386/problem/17241",
+  "category": "",
+  "contestName": "The 25th Japanese Olympiad in Informatics (JOI 2025/2026) Semifinals Stage",
+  "timeLimit": "2 s",
+  "memory": "1024 MB",
+  "subCategory": "The 25th Japanese Olympiad in Informatics (JOI 2025/2026) Semifinals Stage",
+  "categoryPath": [
+    "Olympiad in Informatics",
+    "Japan",
+    "Japanese Olympiad in Informatics (JOI)"
+  ],
+  "letter": "B",
+  "contestId": "3386",
+  "problemLetter": "17241"
+}

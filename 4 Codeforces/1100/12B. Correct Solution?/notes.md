@@ -1,3 +1,0 @@
-# 12B.Correct Solution?
-
-https://codeforces.com/contest/12/problem/B

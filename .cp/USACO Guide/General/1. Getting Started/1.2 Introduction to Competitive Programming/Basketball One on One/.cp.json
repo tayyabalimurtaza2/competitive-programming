@@ -1,0 +1,19 @@
+{
+  "judge": "kattis",
+  "id": "basketballoneonone",
+  "title": "Basketball One on One",
+  "url": "https://open.kattis.com/problems/basketballoneonone",
+  "category": "",
+  "timeLimit": "1 second",
+  "memory": "1024 MB",
+  "guide": {
+    "path": [
+      "General",
+      "1. Getting Started",
+      "1.2 Introduction to Competitive Programming"
+    ],
+    "label": "General · Getting Started · Introduction to Competitive Programming",
+    "uid": "kattis-BasketballOneOnOne"
+  },
+  "problemLetter": "basketballoneonone"
+}

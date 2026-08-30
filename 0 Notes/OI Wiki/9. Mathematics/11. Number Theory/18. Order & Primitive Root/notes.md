@@ -1,1 +1,0 @@
-# Order & Primitive Root

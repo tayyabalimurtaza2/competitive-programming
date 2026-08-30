@@ -1,1 +1,0 @@
-# Eulerian Numbers

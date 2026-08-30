@@ -1,0 +1,19 @@
+{
+  "judge": "cses",
+  "id": "2189",
+  "title": "Point Location Test",
+  "url": "https://cses.fi/problemset/task/2189",
+  "category": "",
+  "timeLimit": "1.00 s",
+  "memory": "512 MB",
+  "guide": {
+    "path": [
+      "Platinum",
+      "3. Geometry",
+      "3.1 Geometry Primitives"
+    ],
+    "label": "Platinum · Geometry · Geometry Primitives",
+    "uid": "point"
+  },
+  "problemLetter": "2189"
+}

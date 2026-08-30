@@ -1,0 +1,18 @@
+{
+  "judge": "dmoj",
+  "id": "ioi05p6",
+  "title": "2005 - Rivers",
+  "url": "http://dmoj.ca/problem/ioi05p6",
+  "category": "",
+  "guide": {
+    "path": [
+      "Advanced",
+      "4. Dynamic Programming",
+      "4.1 DP on Trees - Combining Subtrees",
+      "Problems"
+    ],
+    "label": "Advanced · Dynamic Programming · DP on Trees - Combining Subtrees",
+    "uid": "ioi-05-rivers"
+  },
+  "problemLetter": "ioi05p6"
+}

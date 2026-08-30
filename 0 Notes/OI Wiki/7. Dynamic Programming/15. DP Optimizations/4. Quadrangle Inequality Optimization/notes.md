@@ -1,1 +1,0 @@
-# Quadrangle Inequality Optimization

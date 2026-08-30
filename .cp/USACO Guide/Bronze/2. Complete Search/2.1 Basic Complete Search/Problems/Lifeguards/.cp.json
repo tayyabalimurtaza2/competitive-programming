@@ -1,0 +1,19 @@
+{
+  "judge": "usaco",
+  "id": "784",
+  "title": "Lifeguards",
+  "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=784",
+  "category": "",
+  "contestName": "2018 January Contest",
+  "guide": {
+    "path": [
+      "Bronze",
+      "2. Complete Search",
+      "2.1 Basic Complete Search",
+      "Problems"
+    ],
+    "label": "Bronze · Complete Search · Basic Complete Search",
+    "uid": "usaco-784"
+  },
+  "problemLetter": "784"
+}

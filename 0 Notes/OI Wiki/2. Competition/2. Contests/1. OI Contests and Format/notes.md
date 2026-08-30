@@ -1,1 +1,0 @@
-# OI Contests and Format

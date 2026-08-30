@@ -1,2 +1,0 @@
-# F. LCS
-https://atcoder.jp/contests/dp/tasks/dp_f

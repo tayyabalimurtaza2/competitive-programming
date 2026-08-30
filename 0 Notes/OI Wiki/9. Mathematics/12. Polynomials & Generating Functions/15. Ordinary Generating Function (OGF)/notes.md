@@ -1,1 +1,0 @@
-# Ordinary Generating Function (OGF)

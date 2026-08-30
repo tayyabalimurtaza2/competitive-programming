@@ -1,0 +1,19 @@
+{
+  "judge": "usaco",
+  "id": "1060",
+  "title": "Daisy Chains",
+  "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1060",
+  "category": "",
+  "contestName": "2020 December Contest",
+  "guide": {
+    "path": [
+      "Bronze",
+      "2. Complete Search",
+      "2.1 Basic Complete Search",
+      "Easier"
+    ],
+    "label": "Bronze · Complete Search · Basic Complete Search",
+    "uid": "usaco-1060"
+  },
+  "problemLetter": "1060"
+}

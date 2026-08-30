@@ -1,0 +1,19 @@
+{
+  "judge": "atcoder",
+  "id": "abc207_f",
+  "title": "Tree Patrolling",
+  "url": "https://atcoder.jp/contests/abc207/tasks/abc207_f",
+  "category": "",
+  "guide": {
+    "path": [
+      "Advanced",
+      "4. Dynamic Programming",
+      "4.1 DP on Trees - Combining Subtrees",
+      "Problems"
+    ],
+    "label": "Advanced · Dynamic Programming · DP on Trees - Combining Subtrees",
+    "uid": "ac-treePatrolling"
+  },
+  "contestId": "abc207",
+  "problemLetter": "abc207_f"
+}

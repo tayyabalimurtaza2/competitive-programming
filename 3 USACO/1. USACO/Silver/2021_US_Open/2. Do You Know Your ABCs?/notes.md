@@ -1,3 +1,0 @@
-# Do You Know Your ABCs?
-
-https://duckduckgo.com/?q=USACO+2021+US+Open+Silver+Do+You+Know+Your+ABCs+usaco.org+usaco.guide+usaco.guide%2Fproblems+luogu.com.cn+oj.uz+qoj.ac+uoj.ac+loj.ac+atcoder.jp+codeforces.com&ia=web&utm

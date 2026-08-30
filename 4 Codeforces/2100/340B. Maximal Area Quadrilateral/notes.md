@@ -1,3 +1,0 @@
-# 340B.Maximal Area Quadrilateral
-
-https://codeforces.com/contest/340/problem/B

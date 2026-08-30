@@ -1,1 +1,0 @@
-# Standard Mo's Algorithm

@@ -1,0 +1,19 @@
+{
+  "judge": "cses",
+  "id": "2193",
+  "title": "Polygon Lattice Points",
+  "url": "https://cses.fi/problemset/task/2193",
+  "category": "",
+  "timeLimit": "1.00 s",
+  "memory": "512 MB",
+  "guide": {
+    "path": [
+      "Platinum",
+      "3. Geometry",
+      "3.1 Geometry Primitives"
+    ],
+    "label": "Platinum · Geometry · Geometry Primitives",
+    "uid": "lattice"
+  },
+  "problemLetter": "2193"
+}

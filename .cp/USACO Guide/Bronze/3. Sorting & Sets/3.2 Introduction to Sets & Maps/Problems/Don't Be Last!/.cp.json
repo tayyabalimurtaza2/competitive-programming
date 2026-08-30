@@ -1,0 +1,19 @@
+{
+  "judge": "usaco",
+  "id": "687",
+  "title": "Don't Be Last!",
+  "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=687",
+  "category": "",
+  "contestName": "2017 January Contest",
+  "guide": {
+    "path": [
+      "Bronze",
+      "3. Sorting & Sets",
+      "3.2 Introduction to Sets & Maps",
+      "Problems"
+    ],
+    "label": "Bronze · Sorting & Sets · Introduction to Sets & Maps",
+    "uid": "usaco-687"
+  },
+  "problemLetter": "687"
+}

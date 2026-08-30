@@ -1,2 +1,0 @@
-# S. Digit Sum
-https://atcoder.jp/contests/dp/tasks/dp_s

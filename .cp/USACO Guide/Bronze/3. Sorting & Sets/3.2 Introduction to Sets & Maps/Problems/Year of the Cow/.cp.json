@@ -1,0 +1,19 @@
+{
+  "judge": "usaco",
+  "id": "1107",
+  "title": "Year of the Cow",
+  "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1107",
+  "category": "",
+  "contestName": "2021 February Contest",
+  "guide": {
+    "path": [
+      "Bronze",
+      "3. Sorting & Sets",
+      "3.2 Introduction to Sets & Maps",
+      "Problems"
+    ],
+    "label": "Bronze · Sorting & Sets · Introduction to Sets & Maps",
+    "uid": "usaco-1107"
+  },
+  "problemLetter": "1107"
+}

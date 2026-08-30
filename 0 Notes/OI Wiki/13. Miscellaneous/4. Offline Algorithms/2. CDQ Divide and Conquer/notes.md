@@ -1,1 +1,0 @@
-# CDQ Divide and Conquer

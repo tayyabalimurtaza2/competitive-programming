@@ -1,3 +1,0 @@
-# 949E.Binary Cards
-
-https://codeforces.com/contest/949/problem/E

@@ -1,0 +1,19 @@
+{
+  "judge": "usaco",
+  "id": "667",
+  "title": "Cities & States",
+  "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=667",
+  "category": "",
+  "contestName": "2016 December Contest",
+  "guide": {
+    "path": [
+      "Bronze",
+      "3. Sorting & Sets",
+      "3.2 Introduction to Sets & Maps",
+      "Problems"
+    ],
+    "label": "Bronze · Sorting & Sets · Introduction to Sets & Maps",
+    "uid": "usaco-667"
+  },
+  "problemLetter": "667"
+}

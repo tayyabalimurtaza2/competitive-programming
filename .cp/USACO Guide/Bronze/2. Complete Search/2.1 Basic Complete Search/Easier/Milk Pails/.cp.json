@@ -1,0 +1,19 @@
+{
+  "judge": "usaco",
+  "id": "615",
+  "title": "Milk Pails",
+  "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=615",
+  "category": "",
+  "contestName": "2016 February Contest",
+  "guide": {
+    "path": [
+      "Bronze",
+      "2. Complete Search",
+      "2.1 Basic Complete Search",
+      "Easier"
+    ],
+    "label": "Bronze · Complete Search · Basic Complete Search",
+    "uid": "usaco-615"
+  },
+  "problemLetter": "615"
+}

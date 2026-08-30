@@ -1,1 +1,0 @@
-# Prefix Function & KMP Algorithm

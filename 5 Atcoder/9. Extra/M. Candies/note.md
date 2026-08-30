@@ -1,2 +1,0 @@
-# M. Candies
-https://atcoder.jp/contests/dp/tasks/dp_m

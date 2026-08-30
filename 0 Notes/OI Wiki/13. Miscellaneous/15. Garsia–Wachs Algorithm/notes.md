@@ -1,1 +1,0 @@
-# Garsia–Wachs Algorithm

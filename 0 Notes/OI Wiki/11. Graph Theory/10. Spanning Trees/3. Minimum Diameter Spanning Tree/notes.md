@@ -1,1 +1,0 @@
-# Minimum Diameter Spanning Tree

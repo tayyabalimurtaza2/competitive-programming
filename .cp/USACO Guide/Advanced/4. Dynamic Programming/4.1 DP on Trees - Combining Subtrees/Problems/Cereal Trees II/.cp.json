@@ -1,0 +1,19 @@
+{
+  "judge": "codeforces",
+  "id": "Q",
+  "title": "Cereal Trees II",
+  "url": "https://codeforces.com/gym/103886/problem/Q",
+  "category": "",
+  "guide": {
+    "path": [
+      "Advanced",
+      "4. Dynamic Programming",
+      "4.1 DP on Trees - Combining Subtrees",
+      "Problems"
+    ],
+    "label": "Advanced · Dynamic Programming · DP on Trees - Combining Subtrees",
+    "uid": "cfgym-103886Q"
+  },
+  "contestId": "103886",
+  "problemLetter": "Q"
+}

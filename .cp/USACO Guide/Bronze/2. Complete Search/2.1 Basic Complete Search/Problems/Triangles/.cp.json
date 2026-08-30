@@ -1,0 +1,19 @@
+{
+  "judge": "usaco",
+  "id": "1011",
+  "title": "Triangles",
+  "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1011",
+  "category": "",
+  "contestName": "2020 February Contest",
+  "guide": {
+    "path": [
+      "Bronze",
+      "2. Complete Search",
+      "2.1 Basic Complete Search",
+      "Problems"
+    ],
+    "label": "Bronze · Complete Search · Basic Complete Search",
+    "uid": "usaco-1011"
+  },
+  "problemLetter": "1011"
+}

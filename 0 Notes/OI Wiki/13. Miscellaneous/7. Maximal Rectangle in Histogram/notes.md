@@ -1,1 +1,0 @@
-# Maximal Rectangle in Histogram

@@ -1,0 +1,19 @@
+{
+  "judge": "usaco",
+  "id": "963",
+  "title": "Cow Gymnastics",
+  "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=963",
+  "category": "",
+  "contestName": "2019 December Contest",
+  "guide": {
+    "path": [
+      "Bronze",
+      "2. Complete Search",
+      "2.1 Basic Complete Search",
+      "Problems"
+    ],
+    "label": "Bronze · Complete Search · Basic Complete Search",
+    "uid": "usaco-963"
+  },
+  "problemLetter": "963"
+}

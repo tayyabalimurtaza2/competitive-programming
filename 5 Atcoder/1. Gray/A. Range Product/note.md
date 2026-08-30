@@ -1,2 +1,0 @@
-# A. Range Product
-https://atcoder.jp/contests/agc002/tasks/agc002_a

@@ -1,2 +1,0 @@
-# T. Permutation
-https://atcoder.jp/contests/dp/tasks/dp_t

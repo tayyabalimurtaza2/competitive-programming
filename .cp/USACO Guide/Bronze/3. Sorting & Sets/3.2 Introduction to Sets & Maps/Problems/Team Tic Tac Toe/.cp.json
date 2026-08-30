@@ -1,0 +1,19 @@
+{
+  "judge": "usaco",
+  "id": "831",
+  "title": "Team Tic Tac Toe",
+  "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=831",
+  "category": "",
+  "contestName": "2018 US Open Contest",
+  "guide": {
+    "path": [
+      "Bronze",
+      "3. Sorting & Sets",
+      "3.2 Introduction to Sets & Maps",
+      "Problems"
+    ],
+    "label": "Bronze · Sorting & Sets · Introduction to Sets & Maps",
+    "uid": "usaco-831"
+  },
+  "problemLetter": "831"
+}

@@ -1,3 +1,0 @@
-# P6242 【模板】线段树 3（区间最值操作、区间历史最值）
-
-https://duckduckgo.com/?q=P6242+%E3%80%90%E6%A8%A1%E6%9D%BF%E3%80%91%E7%BA%BF%E6%AE%B5%E6%A0%91+3%EF%BC%88%E5%8C%BA%E9%97%B4%E6%9C%80%E5%80%BC%E6%93%8D%E4%BD%9C%E3%80%81%E5%8C%BA%E9%97%B4%E5%8E%86%E5%8F%B2%E6%9C%80%E5%80%BC%EF%BC%89+luogu.com.cn&ia=web

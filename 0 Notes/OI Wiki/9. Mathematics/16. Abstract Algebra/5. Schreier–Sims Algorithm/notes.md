@@ -1,1 +1,0 @@
-# Schreier–Sims Algorithm

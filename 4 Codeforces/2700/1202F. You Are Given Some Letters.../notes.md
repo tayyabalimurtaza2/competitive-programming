@@ -1,3 +1,0 @@
-# 1202F.You Are Given Some Letters...
-
-https://codeforces.com/contest/1202/problem/F

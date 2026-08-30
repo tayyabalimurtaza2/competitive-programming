@@ -1,0 +1,21 @@
+{
+  "judge": "codeforces",
+  "id": "C",
+  "title": "Jury Marks",
+  "url": "https://codeforces.com/contest/831/problem/C",
+  "category": "",
+  "timeLimit": "2 seconds",
+  "memory": "256 megabytes",
+  "guide": {
+    "path": [
+      "Bronze",
+      "3. Sorting & Sets",
+      "3.2 Introduction to Sets & Maps",
+      "Problems"
+    ],
+    "label": "Bronze · Sorting & Sets · Introduction to Sets & Maps",
+    "uid": "cf-831C"
+  },
+  "contestId": "831",
+  "problemLetter": "C"
+}

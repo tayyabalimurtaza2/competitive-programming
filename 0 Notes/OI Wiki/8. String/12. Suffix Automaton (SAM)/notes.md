@@ -1,1 +1,0 @@
-# Suffix Automaton (SAM)

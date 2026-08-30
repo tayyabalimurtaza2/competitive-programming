@@ -1,3 +1,0 @@
-# 1828A.Divisible Array
-
-https://codeforces.com/contest/1828/problem/A

@@ -1,3 +1,0 @@
-# 696D.Legen...
-
-https://codeforces.com/contest/696/problem/D

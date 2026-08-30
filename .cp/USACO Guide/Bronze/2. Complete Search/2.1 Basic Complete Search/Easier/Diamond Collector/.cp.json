@@ -1,0 +1,19 @@
+{
+  "judge": "usaco",
+  "id": "639",
+  "title": "Diamond Collector",
+  "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=639",
+  "category": "",
+  "contestName": "2016 US Open Contest",
+  "guide": {
+    "path": [
+      "Bronze",
+      "2. Complete Search",
+      "2.1 Basic Complete Search",
+      "Easier"
+    ],
+    "label": "Bronze · Complete Search · Basic Complete Search",
+    "uid": "usaco-639"
+  },
+  "problemLetter": "639"
+}

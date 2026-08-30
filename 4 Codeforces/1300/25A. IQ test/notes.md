@@ -1,3 +1,0 @@
-# 25A
-
-https://codeforces.com/contest/25/problem/A

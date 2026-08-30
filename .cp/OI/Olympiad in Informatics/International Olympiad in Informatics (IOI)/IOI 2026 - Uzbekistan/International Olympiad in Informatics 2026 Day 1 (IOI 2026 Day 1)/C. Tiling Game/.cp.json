@@ -1,0 +1,19 @@
+{
+  "judge": "qoj",
+  "id": "3952-19103",
+  "title": "Tiling Game",
+  "url": "https://qoj.ac/contest/3952/problem/19103",
+  "category": "",
+  "contestName": "International Olympiad in Informatics 2026 Day 1 (IOI 2026 Day 1)",
+  "timeLimit": "1 s",
+  "memory": "2048 MB",
+  "subCategory": "International Olympiad in Informatics 2026 Day 1 (IOI 2026 Day 1)",
+  "categoryPath": [
+    "Olympiad in Informatics",
+    "International Olympiad in Informatics (IOI)",
+    "IOI 2026 - Uzbekistan"
+  ],
+  "letter": "C",
+  "contestId": "3952",
+  "problemLetter": "19103"
+}

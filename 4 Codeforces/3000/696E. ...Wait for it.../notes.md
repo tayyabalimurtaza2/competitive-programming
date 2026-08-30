@@ -1,3 +1,0 @@
-# 696E....Wait for it...
-
-https://codeforces.com/contest/696/problem/E
