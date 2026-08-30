@@ -1,1 +1,0 @@
-// Stupid online judges

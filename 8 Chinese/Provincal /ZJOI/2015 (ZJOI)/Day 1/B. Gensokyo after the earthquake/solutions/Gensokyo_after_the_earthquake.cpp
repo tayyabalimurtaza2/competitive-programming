@@ -1,1 +1,0 @@
-// Gensokyo after the earthquake

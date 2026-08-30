@@ -1,2 +1,0 @@
-# Notes: CK · String Theory
-

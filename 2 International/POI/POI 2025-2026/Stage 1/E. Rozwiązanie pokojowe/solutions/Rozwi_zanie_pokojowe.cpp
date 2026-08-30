@@ -1,1 +1,0 @@
-// Rozwiązanie pokojowe

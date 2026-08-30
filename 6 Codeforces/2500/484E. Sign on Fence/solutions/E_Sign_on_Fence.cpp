@@ -1,1 +1,0 @@
-// Solution: Sign on Fence

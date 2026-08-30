@@ -1,1 +1,0 @@
-// Solution: Kirill and Company

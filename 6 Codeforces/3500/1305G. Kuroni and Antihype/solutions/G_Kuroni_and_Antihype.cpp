@@ -1,1 +1,0 @@
-// Solution: Kuroni and Antihype

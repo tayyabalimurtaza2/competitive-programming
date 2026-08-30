@@ -1,1 +1,0 @@
-// Solution: Cute number

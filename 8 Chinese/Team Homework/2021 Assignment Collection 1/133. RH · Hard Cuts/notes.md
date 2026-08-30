@@ -1,2 +1,0 @@
-# Notes: RH · Hard Cuts
-

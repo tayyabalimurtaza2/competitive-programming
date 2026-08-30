@@ -1,1 +1,0 @@
-// Monotonic ascending path

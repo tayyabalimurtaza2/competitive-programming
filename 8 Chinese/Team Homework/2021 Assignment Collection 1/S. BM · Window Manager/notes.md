@@ -1,2 +1,0 @@
-# Notes: BM · Window Manager
-

@@ -1,2 +1,0 @@
-# Notes: E. Third Avenue
-

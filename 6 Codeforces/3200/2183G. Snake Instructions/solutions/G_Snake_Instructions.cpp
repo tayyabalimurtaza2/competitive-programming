@@ -1,1 +1,0 @@
-// Solution: Snake Instructions

@@ -1,2 +1,0 @@
-# Notes: Resistor network
-

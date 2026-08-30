@@ -1,2 +1,0 @@
-# Notes: Library 3
-

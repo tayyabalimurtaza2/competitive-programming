@@ -1,1 +1,0 @@
-// Spider climbing a tree

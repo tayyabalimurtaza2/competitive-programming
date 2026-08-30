@@ -1,1 +1,0 @@
-// Solution: Divide The Students

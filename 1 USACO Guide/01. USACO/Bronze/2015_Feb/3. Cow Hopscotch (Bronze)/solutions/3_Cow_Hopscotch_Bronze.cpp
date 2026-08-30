@@ -1,1 +1,0 @@
-// Solution: Cow Hopscotch (Bronze)

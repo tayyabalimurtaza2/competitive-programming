@@ -1,1 +1,0 @@
-// Solution: Equal Product

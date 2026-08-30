@@ -1,1 +1,0 @@
-// Super Paper Tape Machine

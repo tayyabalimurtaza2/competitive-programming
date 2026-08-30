@@ -1,2 +1,0 @@
-# Notes: A. Annual Tuition
-

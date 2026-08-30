@@ -1,2 +1,0 @@
-# Notes: Dividing Cards Equally
-

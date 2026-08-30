@@ -1,2 +1,0 @@
-# Notes: K-th path
-

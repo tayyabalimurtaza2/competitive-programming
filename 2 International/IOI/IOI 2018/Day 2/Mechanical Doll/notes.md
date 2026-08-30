@@ -1,2 +1,0 @@
-# Notes: Mechanical Doll
-

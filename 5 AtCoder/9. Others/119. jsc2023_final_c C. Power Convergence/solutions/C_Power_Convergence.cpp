@@ -1,1 +1,0 @@
-// C. Power Convergence

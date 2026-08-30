@@ -1,1 +1,0 @@
-// Solution: What Is It?

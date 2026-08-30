@@ -1,1 +1,0 @@
-// Solution: Maximums and Minimums

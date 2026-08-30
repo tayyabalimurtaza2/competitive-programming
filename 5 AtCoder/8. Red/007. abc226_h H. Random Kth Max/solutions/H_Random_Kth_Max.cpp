@@ -1,1 +1,0 @@
-// H. Random Kth Max

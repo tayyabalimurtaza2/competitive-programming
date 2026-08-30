@@ -1,1 +1,0 @@
-// Solution: Lieges of Legendre

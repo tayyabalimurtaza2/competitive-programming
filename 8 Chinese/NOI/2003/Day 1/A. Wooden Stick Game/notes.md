@@ -1,2 +1,0 @@
-# Notes: Wooden Stick Game
-

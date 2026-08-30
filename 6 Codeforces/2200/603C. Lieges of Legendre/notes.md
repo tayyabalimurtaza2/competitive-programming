@@ -1,1 +1,0 @@
-# Notes: Lieges of Legendre

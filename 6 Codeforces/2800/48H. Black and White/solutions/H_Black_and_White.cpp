@@ -1,1 +1,0 @@
-// Solution: Black and White

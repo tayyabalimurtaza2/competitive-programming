@@ -1,2 +1,0 @@
-# Notes: F. Programming Contest
-

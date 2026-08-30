@@ -1,1 +1,0 @@
-// KG · Green Energy

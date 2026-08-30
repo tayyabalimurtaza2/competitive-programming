@@ -1,1 +1,0 @@
-# Notes: Skyscrapers (hard version)

@@ -1,2 +1,0 @@
-# Notes: Pipeline Bead Removal
-

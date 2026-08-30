@@ -1,2 +1,0 @@
-# Notes: Job Scheduling Scheme
-

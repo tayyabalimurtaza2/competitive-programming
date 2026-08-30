@@ -1,1 +1,0 @@
-# Notes: Another Meme Problem

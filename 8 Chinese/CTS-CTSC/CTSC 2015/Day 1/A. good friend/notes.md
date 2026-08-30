@@ -1,2 +1,0 @@
-# Notes: good friend
-

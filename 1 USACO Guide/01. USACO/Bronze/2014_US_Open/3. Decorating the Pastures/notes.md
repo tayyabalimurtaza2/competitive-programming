@@ -1,1 +1,0 @@
-# Notes: Decorating the Pastures

@@ -1,2 +1,0 @@
-# Notes: Different Summands Counting
-

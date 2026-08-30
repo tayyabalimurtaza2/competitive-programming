@@ -1,1 +1,0 @@
-// F. Simple Subsequence Problem

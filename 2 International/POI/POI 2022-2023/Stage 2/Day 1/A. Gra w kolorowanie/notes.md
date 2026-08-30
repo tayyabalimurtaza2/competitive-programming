@@ -1,2 +1,0 @@
-# Notes: Gra w kolorowanie
-

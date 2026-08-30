@@ -1,1 +1,0 @@
-# Notes: Blueprint for Seating

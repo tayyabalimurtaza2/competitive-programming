@@ -1,1 +1,0 @@
-// G. Avoid Straight Line

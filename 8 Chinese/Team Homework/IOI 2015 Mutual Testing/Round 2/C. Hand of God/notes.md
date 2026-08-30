@@ -1,2 +1,0 @@
-# Notes: Hand of God
-

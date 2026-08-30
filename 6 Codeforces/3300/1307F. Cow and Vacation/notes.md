@@ -1,1 +1,0 @@
-# Notes: Cow and Vacation

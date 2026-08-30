@@ -1,1 +1,0 @@
-// Maximum Number of Visible Points

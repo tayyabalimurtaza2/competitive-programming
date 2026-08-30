@@ -1,1 +1,0 @@
-# Notes: Longest Divisors Interval

@@ -1,1 +1,0 @@
-// Solution: Summer Practice Report

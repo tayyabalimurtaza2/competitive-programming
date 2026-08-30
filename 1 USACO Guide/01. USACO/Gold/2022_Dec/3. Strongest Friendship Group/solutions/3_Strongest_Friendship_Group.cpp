@@ -1,1 +1,0 @@
-// Solution: Strongest Friendship Group

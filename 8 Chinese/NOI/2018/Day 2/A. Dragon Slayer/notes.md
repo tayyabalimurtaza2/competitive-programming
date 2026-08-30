@@ -1,2 +1,0 @@
-# Notes: Dragon Slayer
-

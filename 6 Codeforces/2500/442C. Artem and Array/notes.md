@@ -1,1 +1,0 @@
-# Notes: Artem and Array

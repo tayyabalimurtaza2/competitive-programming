@@ -1,2 +1,0 @@
-# Notes: Connect the dots
-

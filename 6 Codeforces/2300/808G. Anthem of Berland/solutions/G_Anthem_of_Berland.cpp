@@ -1,1 +1,0 @@
-// Solution: Anthem of Berland

@@ -1,1 +1,0 @@
-// Solution: Circle of Cows

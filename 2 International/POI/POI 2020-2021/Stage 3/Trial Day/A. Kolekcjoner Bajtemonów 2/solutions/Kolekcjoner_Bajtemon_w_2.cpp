@@ -1,1 +1,0 @@
-// Kolekcjoner Bajtemonów 2

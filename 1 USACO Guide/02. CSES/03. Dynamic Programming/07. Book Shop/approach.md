@@ -1,2 +1,0 @@
-# Approach: Book Shop
-Problem: [Book Shop](https://cses.fi/problemset/task/1158)

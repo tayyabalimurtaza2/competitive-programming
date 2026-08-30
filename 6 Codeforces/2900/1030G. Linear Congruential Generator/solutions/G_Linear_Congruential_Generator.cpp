@@ -1,1 +1,0 @@
-// Solution: Linear Congruential Generator

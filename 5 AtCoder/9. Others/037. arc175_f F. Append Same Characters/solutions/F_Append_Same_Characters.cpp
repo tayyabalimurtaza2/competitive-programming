@@ -1,1 +1,0 @@
-// F. Append Same Characters

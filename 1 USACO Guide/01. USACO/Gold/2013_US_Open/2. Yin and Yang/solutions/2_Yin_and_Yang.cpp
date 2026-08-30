@@ -1,1 +1,0 @@
-// Solution: Yin and Yang

@@ -1,1 +1,0 @@
-// Solution: Olympic Team Building

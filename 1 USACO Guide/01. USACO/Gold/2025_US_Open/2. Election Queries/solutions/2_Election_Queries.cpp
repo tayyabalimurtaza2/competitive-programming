@@ -1,1 +1,0 @@
-// Solution: Election Queries

@@ -1,1 +1,0 @@
-# Approach: Just Green Enough

@@ -1,2 +1,0 @@
-# Notes: Devil's Share
-

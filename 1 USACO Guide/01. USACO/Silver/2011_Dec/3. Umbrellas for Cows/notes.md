@@ -1,1 +1,0 @@
-# Notes: Umbrellas for Cows

@@ -1,2 +1,0 @@
-# Notes: Duplicated Binary Strings
-

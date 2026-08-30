@@ -1,1 +1,0 @@
-// GCDEX - GCD Extreme

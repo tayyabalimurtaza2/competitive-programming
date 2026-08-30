@@ -1,1 +1,0 @@
-# Notes: Blue-Red Permutation

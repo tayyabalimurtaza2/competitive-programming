@@ -1,1 +1,0 @@
-# Notes: Graph Subset Problem

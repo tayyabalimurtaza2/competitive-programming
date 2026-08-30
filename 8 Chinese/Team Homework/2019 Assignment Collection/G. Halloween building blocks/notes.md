@@ -1,2 +1,0 @@
-# Notes: Halloween building blocks
-

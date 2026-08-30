@@ -1,1 +1,0 @@
-# Approach: Counting Haybales

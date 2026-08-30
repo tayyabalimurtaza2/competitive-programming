@@ -1,1 +1,0 @@
-// HK · Kids Designing Kids

@@ -1,1 +1,0 @@
-// GK · Knapsack Cryptosystem

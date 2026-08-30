@@ -1,2 +1,0 @@
-# Notes: FF · Directing Rainfall
-

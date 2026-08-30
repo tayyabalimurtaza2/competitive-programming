@@ -1,1 +1,0 @@
-// Solution: Minimize The Integer

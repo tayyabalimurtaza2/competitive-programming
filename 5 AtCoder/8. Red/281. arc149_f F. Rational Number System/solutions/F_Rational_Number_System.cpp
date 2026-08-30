@@ -1,1 +1,0 @@
-// F. Rational Number System

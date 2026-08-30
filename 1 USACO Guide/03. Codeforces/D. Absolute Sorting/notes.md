@@ -1,2 +1,0 @@
-# Notes: Absolute Sorting
-

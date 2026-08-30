@@ -1,1 +1,0 @@
-// F. Subtree Reversi

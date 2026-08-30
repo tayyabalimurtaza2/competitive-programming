@@ -1,1 +1,0 @@
-// Solution: Yaroslav and Divisors

@@ -1,1 +1,0 @@
-// Solution: Red-Blue Matrix

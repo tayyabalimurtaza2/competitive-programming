@@ -1,1 +1,0 @@
-// Solution: Cycles in product

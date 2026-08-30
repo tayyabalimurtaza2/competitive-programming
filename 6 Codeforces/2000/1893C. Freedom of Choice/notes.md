@@ -1,1 +1,0 @@
-# Notes: Freedom of Choice

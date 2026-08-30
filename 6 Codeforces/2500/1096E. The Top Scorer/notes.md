@@ -1,1 +1,0 @@
-# Notes: The Top Scorer

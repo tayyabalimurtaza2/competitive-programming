@@ -1,1 +1,0 @@
-// Solution: A Colourful Prospect

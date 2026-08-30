@@ -1,1 +1,0 @@
-// Solution: Sereja and Intervals

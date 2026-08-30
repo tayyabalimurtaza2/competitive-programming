@@ -1,2 +1,0 @@
-# Notes: J. Neue Spiel
-

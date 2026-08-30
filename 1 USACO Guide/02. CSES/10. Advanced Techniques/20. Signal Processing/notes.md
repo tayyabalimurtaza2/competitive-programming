@@ -1,1 +1,0 @@
-# Notes: Signal Processing

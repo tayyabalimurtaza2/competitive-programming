@@ -1,1 +1,0 @@
-// Solution: Half Queen Cover

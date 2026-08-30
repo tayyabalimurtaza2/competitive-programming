@@ -1,1 +1,0 @@
-# Approach: Maximize Minimum Difference

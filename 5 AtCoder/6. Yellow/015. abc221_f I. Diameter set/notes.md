@@ -1,2 +1,0 @@
-# Notes: I. Diameter set
-

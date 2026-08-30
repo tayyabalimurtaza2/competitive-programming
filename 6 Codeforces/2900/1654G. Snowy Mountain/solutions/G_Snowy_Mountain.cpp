@@ -1,1 +1,0 @@
-// Solution: Snowy Mountain

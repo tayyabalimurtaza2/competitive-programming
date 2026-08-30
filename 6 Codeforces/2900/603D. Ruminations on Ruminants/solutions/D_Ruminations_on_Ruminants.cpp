@@ -1,1 +1,0 @@
-// Solution: Ruminations on Ruminants

@@ -1,2 +1,0 @@
-# Notes: Longest Trip
-

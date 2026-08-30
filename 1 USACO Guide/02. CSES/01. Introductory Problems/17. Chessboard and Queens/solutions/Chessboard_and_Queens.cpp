@@ -1,1 +1,0 @@
-// Chessboard and Queens

@@ -1,2 +1,0 @@
-# Notes: Milano C.le
-

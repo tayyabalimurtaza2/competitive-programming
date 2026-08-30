@@ -1,1 +1,0 @@
-// Soldier and Number Game

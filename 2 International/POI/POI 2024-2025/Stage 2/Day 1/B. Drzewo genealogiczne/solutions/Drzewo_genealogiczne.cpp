@@ -1,1 +1,0 @@
-// Drzewo genealogiczne

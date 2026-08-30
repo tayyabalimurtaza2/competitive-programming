@@ -1,2 +1,0 @@
-# Notes: Rectangle and
-

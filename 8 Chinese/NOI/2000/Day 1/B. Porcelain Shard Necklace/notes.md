@@ -1,2 +1,0 @@
-# Notes: Porcelain Shard Necklace
-

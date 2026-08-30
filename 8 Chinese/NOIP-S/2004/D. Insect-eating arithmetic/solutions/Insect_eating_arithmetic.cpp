@@ -1,1 +1,0 @@
-// Insect-eating arithmetic

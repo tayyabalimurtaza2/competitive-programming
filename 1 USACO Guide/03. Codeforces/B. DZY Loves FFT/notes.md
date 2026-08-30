@@ -1,2 +1,0 @@
-# Notes: DZY Loves FFT
-

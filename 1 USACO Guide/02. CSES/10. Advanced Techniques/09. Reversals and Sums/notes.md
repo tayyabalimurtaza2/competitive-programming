@@ -1,1 +1,0 @@
-# Notes: Reversals and Sums

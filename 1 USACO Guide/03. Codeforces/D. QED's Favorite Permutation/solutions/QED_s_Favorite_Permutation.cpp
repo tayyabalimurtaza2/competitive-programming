@@ -1,1 +1,0 @@
-// QED's Favorite Permutation

@@ -1,1 +1,0 @@
-// Lokacja miasta

@@ -1,1 +1,0 @@
-# Notes: Subtree Minimum Query

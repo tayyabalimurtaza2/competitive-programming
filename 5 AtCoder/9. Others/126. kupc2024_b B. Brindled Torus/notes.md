@@ -1,2 +1,0 @@
-# Notes: B. Brindled Torus
-

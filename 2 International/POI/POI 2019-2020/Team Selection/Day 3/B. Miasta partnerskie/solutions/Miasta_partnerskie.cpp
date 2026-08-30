@@ -1,1 +1,0 @@
-// Miasta partnerskie

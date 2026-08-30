@@ -1,1 +1,0 @@
-# Approach: Multiple Choice Test

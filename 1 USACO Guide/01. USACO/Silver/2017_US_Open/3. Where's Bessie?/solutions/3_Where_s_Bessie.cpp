@@ -1,1 +1,0 @@
-// Solution: Where's Bessie?

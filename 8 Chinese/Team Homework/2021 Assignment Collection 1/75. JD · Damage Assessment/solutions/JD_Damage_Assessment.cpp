@@ -1,1 +1,0 @@
-// JD · Damage Assessment

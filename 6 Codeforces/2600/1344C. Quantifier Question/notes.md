@@ -1,1 +1,0 @@
-# Notes: Quantifier Question

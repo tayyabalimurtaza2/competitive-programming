@@ -1,2 +1,0 @@
-# Notes: Teleporter 2
-

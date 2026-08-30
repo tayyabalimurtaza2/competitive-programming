@@ -1,2 +1,0 @@
-# Notes: Madness and Courage
-

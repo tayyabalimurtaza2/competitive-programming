@@ -1,2 +1,0 @@
-# Notes: Thanks to MikeMirzayanov
-

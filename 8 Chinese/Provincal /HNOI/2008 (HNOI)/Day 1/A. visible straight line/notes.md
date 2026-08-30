@@ -1,2 +1,0 @@
-# Notes: visible straight line
-

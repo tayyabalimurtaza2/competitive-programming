@@ -1,1 +1,0 @@
-# Notes: Trial for Chief

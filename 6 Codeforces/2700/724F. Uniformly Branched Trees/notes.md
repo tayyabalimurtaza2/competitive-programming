@@ -1,1 +1,0 @@
-# Notes: Uniformly Branched Trees

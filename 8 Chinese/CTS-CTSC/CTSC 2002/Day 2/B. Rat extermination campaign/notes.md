@@ -1,2 +1,0 @@
-# Notes: Rat extermination campaign
-

@@ -1,2 +1,0 @@
-# Notes: Komunikacja międzyplanetarna
-

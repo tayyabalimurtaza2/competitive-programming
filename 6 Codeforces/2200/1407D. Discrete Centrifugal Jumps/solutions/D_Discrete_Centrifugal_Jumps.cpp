@@ -1,1 +1,0 @@
-// Solution: Discrete Centrifugal Jumps

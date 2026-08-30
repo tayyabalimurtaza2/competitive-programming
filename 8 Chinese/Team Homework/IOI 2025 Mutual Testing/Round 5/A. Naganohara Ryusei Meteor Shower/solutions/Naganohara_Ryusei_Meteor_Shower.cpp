@@ -1,1 +1,0 @@
-// Naganohara Ryusei Meteor Shower

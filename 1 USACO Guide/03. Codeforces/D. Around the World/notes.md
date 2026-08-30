@@ -1,2 +1,0 @@
-# Notes: Around the World
-

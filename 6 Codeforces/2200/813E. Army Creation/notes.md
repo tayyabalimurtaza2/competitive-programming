@@ -1,1 +1,0 @@
-# Notes: Army Creation

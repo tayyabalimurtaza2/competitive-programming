@@ -1,2 +1,0 @@
-# Notes: Honeycomb problem
-

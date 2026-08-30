@@ -1,2 +1,0 @@
-# Notes: Academic Community
-

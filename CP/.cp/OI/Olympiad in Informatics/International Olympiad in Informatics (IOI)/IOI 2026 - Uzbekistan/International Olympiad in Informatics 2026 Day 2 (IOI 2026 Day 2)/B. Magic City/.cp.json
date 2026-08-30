@@ -1,0 +1,19 @@
+{
+  "judge": "qoj",
+  "id": "3953-19105",
+  "title": "Magic City",
+  "url": "https://qoj.ac/contest/3953/problem/19105",
+  "category": "",
+  "contestName": "International Olympiad in Informatics 2026 Day 2 (IOI 2026 Day 2)",
+  "timeLimit": "0.5 s",
+  "memory": "2048 MB",
+  "subCategory": "International Olympiad in Informatics 2026 Day 2 (IOI 2026 Day 2)",
+  "categoryPath": [
+    "Olympiad in Informatics",
+    "International Olympiad in Informatics (IOI)",
+    "IOI 2026 - Uzbekistan"
+  ],
+  "letter": "B",
+  "contestId": "3953",
+  "problemLetter": "19105"
+}

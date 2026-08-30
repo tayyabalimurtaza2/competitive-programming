@@ -1,2 +1,0 @@
-# Notes: Travel around China
-

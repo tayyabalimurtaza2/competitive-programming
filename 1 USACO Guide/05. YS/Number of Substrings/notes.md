@@ -1,2 +1,0 @@
-# Notes: Number of Substrings
-

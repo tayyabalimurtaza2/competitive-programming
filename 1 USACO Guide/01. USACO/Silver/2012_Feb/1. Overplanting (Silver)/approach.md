@@ -1,1 +1,0 @@
-# Approach: Overplanting (Silver)

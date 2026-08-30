@@ -1,2 +1,0 @@
-# Notes: Mortal Kombat Tower
-

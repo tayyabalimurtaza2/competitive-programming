@@ -1,1 +1,0 @@
-# Approach: [HNOI2004] L 语言

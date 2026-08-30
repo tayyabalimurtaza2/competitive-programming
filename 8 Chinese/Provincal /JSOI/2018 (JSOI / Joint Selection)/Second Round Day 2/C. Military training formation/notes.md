@@ -1,2 +1,0 @@
-# Notes: Military training formation
-

@@ -1,2 +1,0 @@
-# Notes: Saplings and Collection
-

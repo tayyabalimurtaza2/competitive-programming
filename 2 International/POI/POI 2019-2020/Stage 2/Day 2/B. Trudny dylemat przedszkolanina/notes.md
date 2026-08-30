@@ -1,2 +1,0 @@
-# Notes: Trudny dylemat przedszkolanina
-

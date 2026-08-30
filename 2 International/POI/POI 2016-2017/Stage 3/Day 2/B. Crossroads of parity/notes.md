@@ -1,2 +1,0 @@
-# Notes: Crossroads of parity
-

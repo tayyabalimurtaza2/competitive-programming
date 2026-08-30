@@ -1,1 +1,0 @@
-// D. Yet Another Sorting Problem

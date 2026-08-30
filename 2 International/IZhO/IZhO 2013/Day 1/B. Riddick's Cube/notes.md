@@ -1,2 +1,0 @@
-# Notes: Riddick's Cube
-

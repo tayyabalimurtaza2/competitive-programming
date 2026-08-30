@@ -1,2 +1,0 @@
-# Notes: Paint By Numbers
-

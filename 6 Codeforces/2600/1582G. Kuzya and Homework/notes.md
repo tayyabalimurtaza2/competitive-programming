@@ -1,1 +1,0 @@
-# Notes: Kuzya and Homework

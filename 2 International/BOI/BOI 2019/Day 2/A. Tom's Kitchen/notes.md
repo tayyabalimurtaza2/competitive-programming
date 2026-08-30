@@ -1,2 +1,0 @@
-# Notes: Tom's Kitchen
-

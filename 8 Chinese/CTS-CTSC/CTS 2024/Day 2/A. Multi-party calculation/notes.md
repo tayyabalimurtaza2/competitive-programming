@@ -1,2 +1,0 @@
-# Notes: Multi-party calculation
-

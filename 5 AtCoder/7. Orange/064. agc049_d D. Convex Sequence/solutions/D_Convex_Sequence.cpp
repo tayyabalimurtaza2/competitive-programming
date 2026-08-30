@@ -1,1 +1,0 @@
-// D. Convex Sequence

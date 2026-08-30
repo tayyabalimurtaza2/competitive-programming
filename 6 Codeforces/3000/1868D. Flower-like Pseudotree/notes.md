@@ -1,1 +1,0 @@
-# Notes: Flower-like Pseudotree

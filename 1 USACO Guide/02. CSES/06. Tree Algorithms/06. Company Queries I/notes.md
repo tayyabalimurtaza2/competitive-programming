@@ -1,1 +1,0 @@
-# Notes: Company Queries I

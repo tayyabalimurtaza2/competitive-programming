@@ -1,1 +1,0 @@
-// Solution: Difficult Mountain

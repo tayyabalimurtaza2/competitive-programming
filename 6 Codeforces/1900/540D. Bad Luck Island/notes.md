@@ -1,1 +1,0 @@
-# Notes: Bad Luck Island

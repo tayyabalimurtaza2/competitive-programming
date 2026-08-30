@@ -1,1 +1,0 @@
-# Approach: Paint by Letters

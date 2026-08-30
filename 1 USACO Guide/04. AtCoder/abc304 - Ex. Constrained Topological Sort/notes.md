@@ -1,2 +1,0 @@
-# Notes: Constrained Topological Sort
-

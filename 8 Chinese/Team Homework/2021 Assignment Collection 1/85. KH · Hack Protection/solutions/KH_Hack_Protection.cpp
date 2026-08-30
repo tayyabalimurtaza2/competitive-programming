@@ -1,1 +1,0 @@
-// KH · Hack Protection

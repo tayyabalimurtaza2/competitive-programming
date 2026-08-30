@@ -1,1 +1,0 @@
-// Protecting historical sites

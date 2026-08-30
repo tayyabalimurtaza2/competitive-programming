@@ -1,1 +1,0 @@
-# Notes: Ciel and Flipboard

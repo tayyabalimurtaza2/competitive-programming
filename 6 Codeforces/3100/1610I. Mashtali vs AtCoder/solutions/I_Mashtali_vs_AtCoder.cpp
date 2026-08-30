@@ -1,1 +1,0 @@
-// Solution: Mashtali vs AtCoder

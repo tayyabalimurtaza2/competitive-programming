@@ -1,1 +1,0 @@
-# Approach: Greedy Gift Takers

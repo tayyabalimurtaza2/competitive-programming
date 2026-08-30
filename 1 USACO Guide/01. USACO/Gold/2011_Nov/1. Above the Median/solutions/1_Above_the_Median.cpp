@@ -1,1 +1,0 @@
-// Solution: Above the Median

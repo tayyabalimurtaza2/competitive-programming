@@ -1,1 +1,0 @@
-# Notes: Almost All Multiples

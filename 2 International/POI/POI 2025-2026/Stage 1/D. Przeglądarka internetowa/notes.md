@@ -1,2 +1,0 @@
-# Notes: Przeglądarka internetowa
-

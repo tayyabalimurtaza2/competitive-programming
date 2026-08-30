@@ -1,2 +1,0 @@
-# Notes: JH · Hidden Maze
-

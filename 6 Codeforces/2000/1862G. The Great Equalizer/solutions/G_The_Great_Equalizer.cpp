@@ -1,1 +1,0 @@
-// Solution: The Great Equalizer

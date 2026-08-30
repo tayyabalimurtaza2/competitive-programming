@@ -1,2 +1,0 @@
-# Notes: B. Splatter Painting
-

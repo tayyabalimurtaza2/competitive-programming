@@ -1,1 +1,0 @@
-// Solution: Masha and Cactus

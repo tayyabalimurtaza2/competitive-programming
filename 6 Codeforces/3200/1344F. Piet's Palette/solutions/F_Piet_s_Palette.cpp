@@ -1,1 +1,0 @@
-// Solution: Piet's Palette

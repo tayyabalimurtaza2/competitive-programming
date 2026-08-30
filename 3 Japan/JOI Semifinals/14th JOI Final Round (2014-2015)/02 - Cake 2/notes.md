@@ -1,2 +1,0 @@
-# Notes: Cake 2
-

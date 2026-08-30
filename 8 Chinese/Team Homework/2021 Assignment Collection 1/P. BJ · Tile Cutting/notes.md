@@ -1,2 +1,0 @@
-# Notes: BJ · Tile Cutting
-

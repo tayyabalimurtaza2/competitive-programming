@@ -1,2 +1,0 @@
-# Notes: EG · Panda Preserve
-

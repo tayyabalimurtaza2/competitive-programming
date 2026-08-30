@@ -1,1 +1,0 @@
-# Approach: Bessie's Interview

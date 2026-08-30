@@ -1,2 +1,0 @@
-# Notes: Product 1 Modulo N
-

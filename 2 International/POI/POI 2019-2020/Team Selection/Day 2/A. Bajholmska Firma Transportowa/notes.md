@@ -1,2 +1,0 @@
-# Notes: Bajholmska Firma Transportowa
-

@@ -1,2 +1,0 @@
-# Notes: Special Forces Manoeuvres
-

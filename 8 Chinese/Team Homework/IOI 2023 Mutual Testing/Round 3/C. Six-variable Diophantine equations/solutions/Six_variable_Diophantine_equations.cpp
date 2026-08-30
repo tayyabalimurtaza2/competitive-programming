@@ -1,1 +1,0 @@
-// Six-variable Diophantine equations

@@ -1,1 +1,0 @@
-# Notes: Circle of Students

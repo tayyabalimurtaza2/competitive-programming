@@ -1,1 +1,0 @@
-# Notes: Qingshan and Daniel

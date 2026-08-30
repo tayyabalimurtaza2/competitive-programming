@@ -1,2 +1,0 @@
-# Notes: Second Base
-

@@ -1,2 +1,0 @@
-# Notes: MIN-MEX Cut
-

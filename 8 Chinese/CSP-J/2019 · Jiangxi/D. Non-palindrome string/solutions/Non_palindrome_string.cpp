@@ -1,1 +1,0 @@
-// Non-palindrome string

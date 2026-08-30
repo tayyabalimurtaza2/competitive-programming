@@ -1,1 +1,0 @@
-// C. Iroha's Obsession

@@ -1,2 +1,0 @@
-# Notes: Conquer the World
-

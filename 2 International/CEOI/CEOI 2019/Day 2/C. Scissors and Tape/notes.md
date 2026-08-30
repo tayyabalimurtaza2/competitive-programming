@@ -1,2 +1,0 @@
-# Notes: Scissors and Tape
-

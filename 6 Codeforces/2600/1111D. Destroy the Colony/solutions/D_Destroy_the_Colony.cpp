@@ -1,1 +1,0 @@
-// Solution: Destroy the Colony

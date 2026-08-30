@@ -1,1 +1,0 @@
-// Drugs, fake drugs, strong

@@ -1,1 +1,0 @@
-// B. YYMM or MMYY

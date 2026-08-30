@@ -1,2 +1,0 @@
-# Notes: Rhythm Game
-

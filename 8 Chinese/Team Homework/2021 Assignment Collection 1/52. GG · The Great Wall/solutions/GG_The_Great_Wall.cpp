@@ -1,1 +1,0 @@
-// GG · The Great Wall

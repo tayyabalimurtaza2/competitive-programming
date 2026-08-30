@@ -1,2 +1,0 @@
-# Notes: KH · Hack Protection
-

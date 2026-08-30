@@ -1,2 +1,0 @@
-# Notes: Min Max Sort
-

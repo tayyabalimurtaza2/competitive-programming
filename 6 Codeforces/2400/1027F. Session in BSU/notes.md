@@ -1,1 +1,0 @@
-# Notes: Session in BSU

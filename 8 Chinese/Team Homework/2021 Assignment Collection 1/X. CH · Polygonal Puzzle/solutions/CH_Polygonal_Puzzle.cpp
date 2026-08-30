@@ -1,1 +1,0 @@
-// CH · Polygonal Puzzle

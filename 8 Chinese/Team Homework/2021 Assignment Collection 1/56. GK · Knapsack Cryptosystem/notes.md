@@ -1,2 +1,0 @@
-# Notes: GK · Knapsack Cryptosystem
-

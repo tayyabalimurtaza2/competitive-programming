@@ -1,2 +1,0 @@
-# Notes: Axes of Symmetry
-

@@ -1,1 +1,0 @@
-// Solution: Triples of Cows

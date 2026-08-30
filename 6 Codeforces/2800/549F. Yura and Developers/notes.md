@@ -1,1 +1,0 @@
-# Notes: Yura and Developers

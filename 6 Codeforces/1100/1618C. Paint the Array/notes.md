@@ -1,1 +1,0 @@
-# Notes: Paint the Array

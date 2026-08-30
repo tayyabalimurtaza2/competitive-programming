@@ -1,1 +1,0 @@
-// D. Snuke Numbers

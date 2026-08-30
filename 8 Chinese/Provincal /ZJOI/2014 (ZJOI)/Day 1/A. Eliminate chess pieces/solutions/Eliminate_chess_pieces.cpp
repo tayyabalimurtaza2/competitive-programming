@@ -1,1 +1,0 @@
-// Eliminate chess pieces

@@ -1,2 +1,0 @@
-# Approach: Tasks and Deadlines
-Problem: [Tasks and Deadlines](https://cses.fi/problemset/task/1630)

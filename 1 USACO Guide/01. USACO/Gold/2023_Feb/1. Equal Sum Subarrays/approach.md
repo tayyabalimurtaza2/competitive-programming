@@ -1,1 +1,0 @@
-# Approach: Equal Sum Subarrays

@@ -1,1 +1,0 @@
-// Solution: Carrots for Rabbits

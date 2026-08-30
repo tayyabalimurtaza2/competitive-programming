@@ -1,1 +1,0 @@
-// Solution: Optimal Polygon Perimeter

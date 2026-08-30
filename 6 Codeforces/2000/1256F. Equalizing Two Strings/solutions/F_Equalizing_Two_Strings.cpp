@@ -1,1 +1,0 @@
-// Solution: Equalizing Two Strings

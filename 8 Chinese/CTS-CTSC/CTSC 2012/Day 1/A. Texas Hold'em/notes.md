@@ -1,2 +1,0 @@
-# Notes: Texas Hold'em
-

@@ -1,2 +1,0 @@
-# Notes: Find successor words
-

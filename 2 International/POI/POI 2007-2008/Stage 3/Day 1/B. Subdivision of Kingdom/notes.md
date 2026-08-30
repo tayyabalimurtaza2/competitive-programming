@@ -1,2 +1,0 @@
-# Notes: Subdivision of Kingdom
-

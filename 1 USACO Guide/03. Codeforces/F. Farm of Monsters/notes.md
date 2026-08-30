@@ -1,2 +1,0 @@
-# Notes: Farm of Monsters
-

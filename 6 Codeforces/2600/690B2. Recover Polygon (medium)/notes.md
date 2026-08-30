@@ -1,1 +1,0 @@
-# Notes: Recover Polygon (medium)

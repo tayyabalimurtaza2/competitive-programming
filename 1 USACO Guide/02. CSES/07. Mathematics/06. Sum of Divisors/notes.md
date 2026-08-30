@@ -1,1 +1,0 @@
-# Notes: Sum of Divisors

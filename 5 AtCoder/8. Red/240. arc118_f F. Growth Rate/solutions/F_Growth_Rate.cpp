@@ -1,1 +1,0 @@
-// F. Growth Rate

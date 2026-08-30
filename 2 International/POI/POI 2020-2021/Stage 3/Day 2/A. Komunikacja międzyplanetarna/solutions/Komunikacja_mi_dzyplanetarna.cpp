@@ -1,1 +1,0 @@
-// Komunikacja międzyplanetarna

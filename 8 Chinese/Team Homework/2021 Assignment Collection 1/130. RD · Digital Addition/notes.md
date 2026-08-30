@@ -1,2 +1,0 @@
-# Notes: RD · Digital Addition
-

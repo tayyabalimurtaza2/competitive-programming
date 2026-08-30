@@ -1,2 +1,0 @@
-# Notes: The Frustrated Cashier
-

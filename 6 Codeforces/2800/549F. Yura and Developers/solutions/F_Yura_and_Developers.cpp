@@ -1,1 +1,0 @@
-// Solution: Yura and Developers

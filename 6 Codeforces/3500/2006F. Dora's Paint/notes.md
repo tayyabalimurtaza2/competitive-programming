@@ -1,1 +1,0 @@
-# Notes: Dora's Paint

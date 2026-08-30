@@ -1,2 +1,0 @@
-# Notes: Homer's Epics
-

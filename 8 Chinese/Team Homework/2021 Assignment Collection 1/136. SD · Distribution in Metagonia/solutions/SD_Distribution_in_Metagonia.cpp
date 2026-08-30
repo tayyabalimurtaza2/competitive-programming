@@ -1,1 +1,0 @@
-// SD · Distribution in Metagonia

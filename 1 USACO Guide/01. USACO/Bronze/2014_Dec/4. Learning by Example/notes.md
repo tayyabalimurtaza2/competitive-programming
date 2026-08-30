@@ -1,1 +1,0 @@
-# Notes: Learning by Example

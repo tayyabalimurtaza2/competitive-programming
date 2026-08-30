@@ -1,1 +1,0 @@
-// A. Adjacent Difference

@@ -1,1 +1,0 @@
-// Solution: Koala and Notebook

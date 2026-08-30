@@ -1,2 +1,0 @@
-# Notes: Bald Chief
-

@@ -1,1 +1,0 @@
-# Approach: Hoof and Brain

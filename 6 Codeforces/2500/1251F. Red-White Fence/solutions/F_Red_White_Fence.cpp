@@ -1,1 +1,0 @@
-// Solution: Red-White Fence

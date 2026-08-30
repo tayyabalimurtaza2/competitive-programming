@@ -1,2 +1,0 @@
-# Notes: Evacuation plan
-

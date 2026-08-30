@@ -1,1 +1,0 @@
-// Solution: Skyscrapers (hard version)

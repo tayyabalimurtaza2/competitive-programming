@@ -1,1 +1,0 @@
-# Notes: Paint by Rectangles

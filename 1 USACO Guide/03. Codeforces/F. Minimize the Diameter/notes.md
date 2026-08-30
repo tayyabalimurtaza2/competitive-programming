@@ -1,2 +1,0 @@
-# Notes: Minimize the Diameter
-

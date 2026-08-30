@@ -1,2 +1,0 @@
-# Notes: Cutting a Rectangle
-

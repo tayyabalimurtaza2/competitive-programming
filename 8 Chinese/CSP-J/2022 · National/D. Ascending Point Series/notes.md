@@ -1,2 +1,0 @@
-# Notes: Ascending Point Series
-

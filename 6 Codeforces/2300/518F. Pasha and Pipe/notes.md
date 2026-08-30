@@ -1,1 +1,0 @@
-# Notes: Pasha and Pipe

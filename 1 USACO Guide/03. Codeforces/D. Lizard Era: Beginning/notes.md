@@ -1,2 +1,0 @@
-# Notes: Lizard Era: Beginning
-

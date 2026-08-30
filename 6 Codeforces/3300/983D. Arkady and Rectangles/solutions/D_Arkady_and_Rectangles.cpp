@@ -1,1 +1,0 @@
-// Solution: Arkady and Rectangles

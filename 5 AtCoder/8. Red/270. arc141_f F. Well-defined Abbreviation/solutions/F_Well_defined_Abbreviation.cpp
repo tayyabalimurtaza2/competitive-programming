@@ -1,1 +1,0 @@
-// F. Well-defined Abbreviation

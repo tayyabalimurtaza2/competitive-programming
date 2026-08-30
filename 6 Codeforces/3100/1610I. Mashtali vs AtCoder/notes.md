@@ -1,1 +1,0 @@
-# Notes: Mashtali vs AtCoder

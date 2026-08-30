@@ -1,1 +1,0 @@
-// Solution: Rooks and Rectangles

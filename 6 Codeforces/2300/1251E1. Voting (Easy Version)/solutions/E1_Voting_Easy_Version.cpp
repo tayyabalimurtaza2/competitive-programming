@@ -1,1 +1,0 @@
-// Solution: Voting (Easy Version)

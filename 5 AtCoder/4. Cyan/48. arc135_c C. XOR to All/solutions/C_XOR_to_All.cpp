@@ -1,1 +1,0 @@
-// C. XOR to All

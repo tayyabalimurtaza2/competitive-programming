@@ -1,1 +1,0 @@
-// Sheikh (Easy version)

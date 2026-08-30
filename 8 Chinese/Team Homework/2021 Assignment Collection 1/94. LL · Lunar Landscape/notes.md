@@ -1,2 +1,0 @@
-# Notes: LL · Lunar Landscape
-

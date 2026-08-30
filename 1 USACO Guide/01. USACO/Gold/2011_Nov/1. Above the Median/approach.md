@@ -1,1 +1,0 @@
-# Approach: Above the Median

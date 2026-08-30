@@ -1,1 +1,0 @@
-// Solution: Speckled Band

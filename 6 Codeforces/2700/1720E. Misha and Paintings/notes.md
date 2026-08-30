@@ -1,1 +1,0 @@
-# Notes: Misha and Paintings

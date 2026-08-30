@@ -1,1 +1,0 @@
-// UC · Correcting Curiosity

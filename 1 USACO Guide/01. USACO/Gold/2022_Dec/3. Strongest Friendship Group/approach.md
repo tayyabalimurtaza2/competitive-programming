@@ -1,1 +1,0 @@
-# Approach: Strongest Friendship Group

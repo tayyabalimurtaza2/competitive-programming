@@ -1,1 +1,0 @@
-// Solution: Olha and Igor

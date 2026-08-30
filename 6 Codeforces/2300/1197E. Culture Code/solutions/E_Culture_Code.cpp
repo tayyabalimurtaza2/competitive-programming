@@ -1,1 +1,0 @@
-// Solution: Culture Code

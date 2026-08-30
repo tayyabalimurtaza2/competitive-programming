@@ -1,1 +1,0 @@
-// Ex. Range Harvest Query

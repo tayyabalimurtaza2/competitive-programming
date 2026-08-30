@@ -1,2 +1,0 @@
-# Notes: Logistics and Transportation
-

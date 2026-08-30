@@ -1,1 +1,0 @@
-// Ex. Trespassing Takahashi

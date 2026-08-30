@@ -1,2 +1,0 @@
-# Notes: Ex. Linear Maximization
-

@@ -1,2 +1,0 @@
-# Notes: Tug of War
-

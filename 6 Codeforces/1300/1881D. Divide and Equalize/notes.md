@@ -1,1 +1,0 @@
-# Notes: Divide and Equalize

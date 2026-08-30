@@ -1,1 +1,0 @@
-# Notes: Periodic RMQ Problem

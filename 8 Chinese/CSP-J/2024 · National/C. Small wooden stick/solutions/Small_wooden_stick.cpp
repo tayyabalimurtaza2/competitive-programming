@@ -1,1 +1,0 @@
-// Small wooden stick

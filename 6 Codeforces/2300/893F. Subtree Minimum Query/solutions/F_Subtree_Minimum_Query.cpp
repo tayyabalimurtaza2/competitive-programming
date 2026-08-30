@@ -1,1 +1,0 @@
-// Solution: Subtree Minimum Query

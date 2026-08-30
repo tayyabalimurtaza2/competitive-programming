@@ -1,1 +1,0 @@
-// Solution: Animals and Puzzle

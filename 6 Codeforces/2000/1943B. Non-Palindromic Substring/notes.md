@@ -1,1 +1,0 @@
-# Notes: Non-Palindromic Substring

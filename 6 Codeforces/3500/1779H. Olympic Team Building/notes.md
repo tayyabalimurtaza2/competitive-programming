@@ -1,1 +1,0 @@
-# Notes: Olympic Team Building

@@ -1,1 +1,0 @@
-// Solution: Painting Square

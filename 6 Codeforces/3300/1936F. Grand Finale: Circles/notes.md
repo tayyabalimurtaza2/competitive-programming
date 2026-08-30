@@ -1,1 +1,0 @@
-# Notes: Grand Finale: Circles

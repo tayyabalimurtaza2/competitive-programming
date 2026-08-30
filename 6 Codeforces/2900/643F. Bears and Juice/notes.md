@@ -1,1 +1,0 @@
-# Notes: Bears and Juice

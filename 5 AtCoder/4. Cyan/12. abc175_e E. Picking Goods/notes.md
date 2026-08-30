@@ -1,2 +1,0 @@
-# Notes: E. Picking Goods
-

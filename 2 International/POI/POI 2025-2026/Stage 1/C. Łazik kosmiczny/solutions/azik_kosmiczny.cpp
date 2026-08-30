@@ -1,1 +1,0 @@
-// Łazik kosmiczny

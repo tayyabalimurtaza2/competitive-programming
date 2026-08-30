@@ -1,1 +1,0 @@
-// D. Non-divisible Set

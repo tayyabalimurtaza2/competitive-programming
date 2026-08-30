@@ -1,1 +1,0 @@
-# Notes: Guess Divisors Count

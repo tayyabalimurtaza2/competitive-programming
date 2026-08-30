@@ -1,2 +1,0 @@
-# Notes: Ostap and Tree
-

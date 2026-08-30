@@ -1,1 +1,0 @@
-// Solution: Rock, Paper, Scissors

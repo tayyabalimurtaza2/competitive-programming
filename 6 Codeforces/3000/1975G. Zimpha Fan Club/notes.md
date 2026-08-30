@@ -1,1 +1,0 @@
-# Notes: Zimpha Fan Club

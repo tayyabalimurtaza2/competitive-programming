@@ -1,2 +1,0 @@
-# Notes: Greatest Common Divisor
-

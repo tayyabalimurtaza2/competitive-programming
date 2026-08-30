@@ -1,2 +1,0 @@
-# Notes: ED · Gem Island
-

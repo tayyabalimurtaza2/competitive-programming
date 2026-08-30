@@ -1,2 +1,0 @@
-# Approach: Sum Over Subsets
-Problem: [Sum Over Subsets](https://codeforces.com/contest/1436/problem/F)

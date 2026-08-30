@@ -1,1 +1,0 @@
-# Approach: Cross Country Skiing

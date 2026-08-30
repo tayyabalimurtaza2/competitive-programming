@@ -1,2 +1,0 @@
-# Notes: Random Number Generator
-

@@ -1,1 +1,0 @@
-# Notes: Arpa’s letter-marked tree and Mehrdad’s Dokhtar-kosh paths

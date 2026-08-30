@@ -1,1 +1,0 @@
-// Solution: Arthur and Questions

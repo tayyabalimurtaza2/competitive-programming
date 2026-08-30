@@ -1,2 +1,0 @@
-# Approach: Cycles in product
-Problem: [Cycles in product](https://codeforces.com/contest/997/problem/D)

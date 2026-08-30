@@ -1,2 +1,0 @@
-# Notes: Potato Evaluation Machine
-

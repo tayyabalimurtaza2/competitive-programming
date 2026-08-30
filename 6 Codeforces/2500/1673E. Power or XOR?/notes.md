@@ -1,1 +1,0 @@
-# Notes: Power or XOR?

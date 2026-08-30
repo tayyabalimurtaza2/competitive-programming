@@ -1,2 +1,0 @@
-# Notes: Hyperregular Bracket Strings
-

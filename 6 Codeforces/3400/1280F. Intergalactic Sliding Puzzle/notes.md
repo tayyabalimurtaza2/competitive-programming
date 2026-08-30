@@ -1,1 +1,0 @@
-# Notes: Intergalactic Sliding Puzzle

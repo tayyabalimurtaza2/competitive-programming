@@ -1,2 +1,0 @@
-# Notes: Inverse prime sequence
-

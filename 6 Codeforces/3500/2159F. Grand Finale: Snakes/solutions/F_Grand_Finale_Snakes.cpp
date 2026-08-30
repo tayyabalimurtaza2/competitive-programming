@@ -1,1 +1,0 @@
-// Solution: Grand Finale: Snakes

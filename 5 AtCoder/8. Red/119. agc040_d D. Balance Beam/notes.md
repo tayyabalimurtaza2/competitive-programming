@@ -1,2 +1,0 @@
-# Notes: D. Balance Beam
-

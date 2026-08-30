@@ -1,1 +1,0 @@
-// Bizarre text processing

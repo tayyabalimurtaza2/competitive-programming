@@ -1,1 +1,0 @@
-// Solution: Bag of mice

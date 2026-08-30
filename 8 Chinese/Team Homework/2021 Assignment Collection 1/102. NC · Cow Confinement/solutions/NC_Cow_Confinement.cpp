@@ -1,1 +1,0 @@
-// NC · Cow Confinement

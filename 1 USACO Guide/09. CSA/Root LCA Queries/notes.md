@@ -1,2 +1,0 @@
-# Notes: Root LCA Queries
-

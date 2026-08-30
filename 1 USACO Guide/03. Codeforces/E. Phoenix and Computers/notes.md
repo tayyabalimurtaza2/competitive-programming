@@ -1,2 +1,0 @@
-# Notes: Phoenix and Computers
-

@@ -1,1 +1,0 @@
-# Notes: Programmers and Artists

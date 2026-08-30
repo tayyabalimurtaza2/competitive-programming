@@ -1,1 +1,0 @@
-// First generation Turing machine

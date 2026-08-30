@@ -1,1 +1,0 @@
-# Notes: Nauuo and Bug

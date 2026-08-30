@@ -1,1 +1,0 @@
-// E. Modern Painting

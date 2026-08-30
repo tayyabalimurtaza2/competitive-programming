@@ -1,1 +1,0 @@
-# Notes: Photoshoot 2

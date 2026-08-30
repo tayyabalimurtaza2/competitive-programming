@@ -1,2 +1,0 @@
-# Notes: Modular Arithmetic
-

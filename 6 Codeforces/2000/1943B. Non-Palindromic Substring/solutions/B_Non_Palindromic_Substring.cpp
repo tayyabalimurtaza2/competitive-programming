@@ -1,1 +1,0 @@
-// Solution: Non-Palindromic Substring

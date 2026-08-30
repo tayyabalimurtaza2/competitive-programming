@@ -1,1 +1,0 @@
-// F. Division into Multiples

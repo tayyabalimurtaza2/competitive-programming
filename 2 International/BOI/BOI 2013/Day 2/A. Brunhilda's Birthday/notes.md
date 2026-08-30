@@ -1,2 +1,0 @@
-# Notes: Brunhilda's Birthday
-

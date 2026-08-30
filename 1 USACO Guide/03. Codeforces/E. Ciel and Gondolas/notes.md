@@ -1,2 +1,0 @@
-# Notes: Ciel and Gondolas
-

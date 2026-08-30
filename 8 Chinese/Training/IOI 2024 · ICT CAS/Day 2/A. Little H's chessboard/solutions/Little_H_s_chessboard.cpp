@@ -1,1 +1,0 @@
-// Little H's chessboard

@@ -1,2 +1,0 @@
-# Notes: Numerals of Przesmyks
-

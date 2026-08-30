@@ -1,2 +1,0 @@
-# Notes: Symmetric Binary Tree
-

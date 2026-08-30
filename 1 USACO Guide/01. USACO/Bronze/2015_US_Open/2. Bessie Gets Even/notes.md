@@ -1,1 +1,0 @@
-# Notes: Bessie Gets Even

@@ -1,2 +1,0 @@
-# Notes: Potemkin cycle
-

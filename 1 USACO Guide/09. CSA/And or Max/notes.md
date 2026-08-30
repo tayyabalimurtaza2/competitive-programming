@@ -1,2 +1,0 @@
-# Notes: And or Max
-

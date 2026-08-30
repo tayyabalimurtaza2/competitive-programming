@@ -1,1 +1,0 @@
-# Notes: Greg and Friends

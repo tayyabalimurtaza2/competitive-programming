@@ -1,2 +1,0 @@
-# Notes: Lazy Judge
-

@@ -1,1 +1,0 @@
-// E. Sugigma: The Showdown

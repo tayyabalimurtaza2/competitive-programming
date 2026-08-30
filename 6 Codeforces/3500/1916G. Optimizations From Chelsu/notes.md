@@ -1,1 +1,0 @@
-# Notes: Optimizations From Chelsu

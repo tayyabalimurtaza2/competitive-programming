@@ -1,1 +1,0 @@
-# Notes: New York Hotel

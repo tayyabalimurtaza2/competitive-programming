@@ -1,2 +1,0 @@
-# Notes: Haybale Stacking
-

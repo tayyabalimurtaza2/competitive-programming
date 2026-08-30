@@ -1,1 +1,0 @@
-# Notes: Pursuit For Artifacts

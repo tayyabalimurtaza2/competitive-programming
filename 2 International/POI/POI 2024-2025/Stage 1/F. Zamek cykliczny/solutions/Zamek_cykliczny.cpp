@@ -1,1 +1,0 @@
-// Zamek cykliczny

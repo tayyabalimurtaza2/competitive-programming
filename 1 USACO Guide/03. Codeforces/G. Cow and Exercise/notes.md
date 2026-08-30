@@ -1,2 +1,0 @@
-# Notes: Cow and Exercise
-

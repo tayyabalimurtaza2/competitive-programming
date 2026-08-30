@@ -1,1 +1,0 @@
-// D. Subset Sum Game

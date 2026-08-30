@@ -1,1 +1,0 @@
-# Approach: Stone Game

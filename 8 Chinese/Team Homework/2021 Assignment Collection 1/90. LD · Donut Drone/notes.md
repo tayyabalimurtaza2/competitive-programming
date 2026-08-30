@@ -1,2 +1,0 @@
-# Notes: LD · Donut Drone
-

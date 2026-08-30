@@ -1,1 +1,0 @@
-# Notes: Bessie and Cards

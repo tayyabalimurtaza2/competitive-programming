@@ -1,1 +1,0 @@
-// E. Chmin XOR Game

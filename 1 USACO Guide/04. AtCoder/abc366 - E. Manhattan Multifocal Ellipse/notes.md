@@ -1,2 +1,0 @@
-# Notes: Manhattan Multifocal Ellipse
-

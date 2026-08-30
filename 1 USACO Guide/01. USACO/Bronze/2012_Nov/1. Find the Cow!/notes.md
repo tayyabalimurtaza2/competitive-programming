@@ -1,1 +1,0 @@
-# Notes: Find the Cow!

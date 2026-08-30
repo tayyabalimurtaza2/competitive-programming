@@ -1,2 +1,0 @@
-# Notes: Visiting the park
-

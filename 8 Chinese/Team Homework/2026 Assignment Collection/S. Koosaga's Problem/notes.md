@@ -1,2 +1,0 @@
-# Notes: Koosaga's Problem
-

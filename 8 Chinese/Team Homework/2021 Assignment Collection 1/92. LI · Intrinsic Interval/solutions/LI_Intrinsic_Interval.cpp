@@ -1,1 +1,0 @@
-// LI · Intrinsic Interval

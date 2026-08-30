@@ -1,2 +1,0 @@
-# Notes: B. Three Coins
-

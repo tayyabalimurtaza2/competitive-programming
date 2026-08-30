@@ -1,1 +1,0 @@
-# Notes: Variance Challenge

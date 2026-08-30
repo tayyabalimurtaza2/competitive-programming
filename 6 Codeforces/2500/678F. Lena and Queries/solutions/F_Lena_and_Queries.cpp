@@ -1,1 +1,0 @@
-// Solution: Lena and Queries

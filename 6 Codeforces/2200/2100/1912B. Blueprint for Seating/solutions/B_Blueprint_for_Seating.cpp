@@ -1,1 +1,0 @@
-// Solution: Blueprint for Seating

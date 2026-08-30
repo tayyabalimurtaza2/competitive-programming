@@ -1,2 +1,0 @@
-# Notes: Garden 3
-

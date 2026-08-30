@@ -1,2 +1,0 @@
-# Notes: Infected Tree
-

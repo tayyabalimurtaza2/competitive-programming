@@ -1,1 +1,0 @@
-# Notes: Destroy the Colony

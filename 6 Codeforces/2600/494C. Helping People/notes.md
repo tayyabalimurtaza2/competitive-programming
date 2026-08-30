@@ -1,1 +1,0 @@
-# Notes: Helping People

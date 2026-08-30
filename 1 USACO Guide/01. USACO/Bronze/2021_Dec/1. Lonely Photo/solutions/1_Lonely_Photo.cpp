@@ -1,1 +1,0 @@
-// Solution: Lonely Photo

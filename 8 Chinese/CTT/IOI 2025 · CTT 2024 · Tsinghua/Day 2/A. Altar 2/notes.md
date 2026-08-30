@@ -1,2 +1,0 @@
-# Notes: Altar 2
-

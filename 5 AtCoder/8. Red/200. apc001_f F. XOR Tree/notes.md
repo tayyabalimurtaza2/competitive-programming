@@ -1,2 +1,0 @@
-# Notes: F. XOR Tree
-

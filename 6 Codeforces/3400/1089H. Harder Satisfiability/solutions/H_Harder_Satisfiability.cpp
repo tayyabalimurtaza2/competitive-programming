@@ -1,1 +1,0 @@
-// Solution: Harder Satisfiability

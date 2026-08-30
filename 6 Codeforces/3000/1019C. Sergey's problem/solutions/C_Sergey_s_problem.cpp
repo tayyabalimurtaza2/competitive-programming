@@ -1,1 +1,0 @@
-// Solution: Sergey's problem

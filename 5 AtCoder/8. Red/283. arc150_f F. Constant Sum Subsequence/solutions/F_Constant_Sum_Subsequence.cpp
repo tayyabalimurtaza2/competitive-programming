@@ -1,1 +1,0 @@
-// F. Constant Sum Subsequence

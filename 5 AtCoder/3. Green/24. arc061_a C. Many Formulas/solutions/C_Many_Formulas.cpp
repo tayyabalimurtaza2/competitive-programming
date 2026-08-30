@@ -1,1 +1,0 @@
-// C. Many Formulas

@@ -1,1 +1,0 @@
-// Kingdom and its Cities

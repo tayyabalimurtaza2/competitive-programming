@@ -1,1 +1,0 @@
-# Notes: Pave the Parallelepiped

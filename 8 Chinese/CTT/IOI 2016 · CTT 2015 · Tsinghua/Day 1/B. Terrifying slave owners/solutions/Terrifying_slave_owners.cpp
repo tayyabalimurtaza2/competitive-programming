@@ -1,1 +1,0 @@
-// Terrifying slave owners

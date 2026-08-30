@@ -1,2 +1,0 @@
-# Notes: Greg and Array
-

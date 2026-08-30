@@ -1,1 +1,0 @@
-// Solution: Stone Age Problem

@@ -1,1 +1,0 @@
-// Podział na anagramy

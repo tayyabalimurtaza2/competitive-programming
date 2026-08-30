@@ -1,1 +1,0 @@
-# Notes: Above the Median

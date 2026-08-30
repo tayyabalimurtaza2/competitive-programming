@@ -1,1 +1,0 @@
-// Solution: Bipartite Segments

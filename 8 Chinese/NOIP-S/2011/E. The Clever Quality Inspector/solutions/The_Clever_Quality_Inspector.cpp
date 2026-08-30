@@ -1,1 +1,0 @@
-// The Clever Quality Inspector

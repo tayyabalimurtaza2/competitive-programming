@@ -1,1 +1,0 @@
-# Notes: Game of Stacks

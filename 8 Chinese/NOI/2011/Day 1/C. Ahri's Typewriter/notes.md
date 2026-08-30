@@ -1,2 +1,0 @@
-# Notes: Ahri's Typewriter
-

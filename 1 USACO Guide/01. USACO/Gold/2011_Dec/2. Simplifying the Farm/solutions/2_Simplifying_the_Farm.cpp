@@ -1,1 +1,0 @@
-// Solution: Simplifying the Farm

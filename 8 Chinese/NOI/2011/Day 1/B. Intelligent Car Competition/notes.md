@@ -1,2 +1,0 @@
-# Notes: Intelligent Car Competition
-

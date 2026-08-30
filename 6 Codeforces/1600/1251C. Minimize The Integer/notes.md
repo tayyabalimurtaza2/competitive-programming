@@ -1,1 +1,0 @@
-# Notes: Minimize The Integer

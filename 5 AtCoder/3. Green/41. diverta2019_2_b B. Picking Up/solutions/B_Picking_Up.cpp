@@ -1,1 +1,0 @@
-// B. Picking Up

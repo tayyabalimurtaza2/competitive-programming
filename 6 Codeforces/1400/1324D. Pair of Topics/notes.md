@@ -1,1 +1,0 @@
-# Notes: Pair of Topics

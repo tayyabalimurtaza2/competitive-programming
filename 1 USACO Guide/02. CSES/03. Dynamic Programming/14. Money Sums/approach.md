@@ -1,2 +1,0 @@
-# Approach: Money Sums
-Problem: [Money Sums](https://cses.fi/problemset/task/1745)

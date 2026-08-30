@@ -1,1 +1,0 @@
-# Notes: Fools and Roads

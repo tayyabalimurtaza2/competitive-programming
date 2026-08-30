@@ -1,1 +1,0 @@
-# Notes: Apollo versus Pan

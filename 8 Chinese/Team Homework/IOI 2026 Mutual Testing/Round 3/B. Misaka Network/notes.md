@@ -1,2 +1,0 @@
-# Notes: Misaka Network
-

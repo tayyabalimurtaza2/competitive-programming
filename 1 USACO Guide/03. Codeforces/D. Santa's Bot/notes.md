@@ -1,2 +1,0 @@
-# Notes: Santa's Bot
-

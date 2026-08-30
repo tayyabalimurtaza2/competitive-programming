@@ -1,1 +1,0 @@
-// Triangular teaching building

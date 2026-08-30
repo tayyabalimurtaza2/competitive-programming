@@ -1,1 +1,0 @@
-// Solution: Kuzya and Homework

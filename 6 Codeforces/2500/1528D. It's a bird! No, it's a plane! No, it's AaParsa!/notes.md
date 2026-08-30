@@ -1,1 +1,0 @@
-# Notes: It's a bird! No, it's a plane! No, it's AaParsa!

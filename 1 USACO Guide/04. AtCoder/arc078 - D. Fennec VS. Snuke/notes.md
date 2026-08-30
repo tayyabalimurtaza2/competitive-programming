@@ -1,2 +1,0 @@
-# Notes: Fennec VS. Snuke
-

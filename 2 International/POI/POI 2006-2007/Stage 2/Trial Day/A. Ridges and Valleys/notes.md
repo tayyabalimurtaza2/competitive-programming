@@ -1,2 +1,0 @@
-# Notes: Ridges and Valleys
-

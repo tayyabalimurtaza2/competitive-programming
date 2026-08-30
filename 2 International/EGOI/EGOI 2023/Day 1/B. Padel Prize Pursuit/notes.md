@@ -1,2 +1,0 @@
-# Notes: Padel Prize Pursuit
-

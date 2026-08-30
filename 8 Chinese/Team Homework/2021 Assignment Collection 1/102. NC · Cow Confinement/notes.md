@@ -1,2 +1,0 @@
-# Notes: NC · Cow Confinement
-

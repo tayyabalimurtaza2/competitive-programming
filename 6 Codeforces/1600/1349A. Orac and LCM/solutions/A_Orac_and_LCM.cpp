@@ -1,1 +1,0 @@
-// Solution: Orac and LCM

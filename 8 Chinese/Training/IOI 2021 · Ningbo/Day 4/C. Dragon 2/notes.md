@@ -1,2 +1,0 @@
-# Notes: Dragon 2
-

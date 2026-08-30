@@ -1,1 +1,0 @@
-# Notes: Xor on Figures

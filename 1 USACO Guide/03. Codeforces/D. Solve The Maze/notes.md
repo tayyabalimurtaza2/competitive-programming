@@ -1,2 +1,0 @@
-# Notes: Solve The Maze
-

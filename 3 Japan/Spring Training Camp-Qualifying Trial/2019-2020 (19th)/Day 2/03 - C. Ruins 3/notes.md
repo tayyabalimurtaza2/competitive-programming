@@ -1,2 +1,0 @@
-# Notes: Ruins 3
-

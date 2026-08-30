@@ -1,2 +1,0 @@
-# Notes: OJ · Pork barrel
-

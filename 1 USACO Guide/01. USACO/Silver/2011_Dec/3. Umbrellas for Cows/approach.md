@@ -1,1 +1,0 @@
-# Approach: Umbrellas for Cows

@@ -1,1 +1,0 @@
-// Hedgehog Daniyar and Algorithms

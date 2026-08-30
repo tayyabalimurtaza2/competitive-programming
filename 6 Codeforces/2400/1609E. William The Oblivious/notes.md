@@ -1,1 +1,0 @@
-# Notes: William The Oblivious

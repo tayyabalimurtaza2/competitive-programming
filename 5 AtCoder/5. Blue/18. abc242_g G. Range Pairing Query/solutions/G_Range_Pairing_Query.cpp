@@ -1,1 +1,0 @@
-// G. Range Pairing Query

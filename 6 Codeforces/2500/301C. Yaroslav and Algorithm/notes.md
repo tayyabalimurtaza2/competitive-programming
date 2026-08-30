@@ -1,1 +1,0 @@
-# Notes: Yaroslav and Algorithm

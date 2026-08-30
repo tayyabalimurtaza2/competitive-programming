@@ -1,2 +1,0 @@
-# Notes: Concatenation with intersection
-

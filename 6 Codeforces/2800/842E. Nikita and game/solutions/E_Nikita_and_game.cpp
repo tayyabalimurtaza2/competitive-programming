@@ -1,1 +1,0 @@
-// Solution: Nikita and game

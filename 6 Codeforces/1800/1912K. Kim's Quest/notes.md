@@ -1,1 +1,0 @@
-# Notes: Kim's Quest

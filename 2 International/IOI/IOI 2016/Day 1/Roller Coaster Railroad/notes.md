@@ -1,2 +1,0 @@
-# Notes: Roller Coaster Railroad
-

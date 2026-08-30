@@ -1,2 +1,0 @@
-# Notes: Indie Album
-

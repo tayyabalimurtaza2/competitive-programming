@@ -1,1 +1,0 @@
-# Notes: Olha and Igor

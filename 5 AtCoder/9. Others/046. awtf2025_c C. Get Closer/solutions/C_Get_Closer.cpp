@@ -1,1 +1,0 @@
-// C. Get Closer

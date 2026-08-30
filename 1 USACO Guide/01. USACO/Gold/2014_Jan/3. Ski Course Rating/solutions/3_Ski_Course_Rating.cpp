@@ -1,1 +1,0 @@
-// Solution: Ski Course Rating

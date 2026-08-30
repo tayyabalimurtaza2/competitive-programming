@@ -1,1 +1,0 @@
-// D. Four Coloring

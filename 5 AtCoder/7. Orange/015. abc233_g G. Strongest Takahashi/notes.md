@@ -1,2 +1,0 @@
-# Notes: G. Strongest Takahashi
-

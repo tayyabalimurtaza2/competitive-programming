@@ -1,1 +1,0 @@
-# Notes: Common Divisor Graph

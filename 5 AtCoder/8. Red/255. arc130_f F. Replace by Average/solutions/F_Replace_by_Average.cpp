@@ -1,1 +1,0 @@
-// F. Replace by Average

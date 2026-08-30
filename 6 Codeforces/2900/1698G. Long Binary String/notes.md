@@ -1,1 +1,0 @@
-# Notes: Long Binary String

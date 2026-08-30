@@ -1,2 +1,0 @@
-# Notes: KI · Interactive Interception
-

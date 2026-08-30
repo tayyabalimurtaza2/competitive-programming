@@ -1,2 +1,0 @@
-# Notes: Weighing with Weights
-

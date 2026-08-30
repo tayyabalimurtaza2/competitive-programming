@@ -1,1 +1,0 @@
-# Notes: Induced Subgraph Queries

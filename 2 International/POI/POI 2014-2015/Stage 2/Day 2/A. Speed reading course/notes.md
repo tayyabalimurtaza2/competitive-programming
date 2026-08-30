@@ -1,2 +1,0 @@
-# Notes: Speed reading course
-

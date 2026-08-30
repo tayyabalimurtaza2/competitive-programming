@@ -1,2 +1,0 @@
-# Notes: Searching For Strings
-

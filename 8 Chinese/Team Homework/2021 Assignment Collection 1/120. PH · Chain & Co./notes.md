@@ -1,2 +1,0 @@
-# Notes: PH · Chain & Co.
-

@@ -1,2 +1,0 @@
-# Notes: Sum Zero
-

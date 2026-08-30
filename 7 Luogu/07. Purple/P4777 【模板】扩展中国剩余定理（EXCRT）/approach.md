@@ -1,1 +1,0 @@
-# Approach: 【模板】扩展中国剩余定理（EXCRT）

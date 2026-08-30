@@ -1,2 +1,0 @@
-# Notes: Training on ChinaForces
-

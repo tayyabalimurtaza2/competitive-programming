@@ -1,2 +1,0 @@
-# Notes: White Rabbit Maze
-

@@ -1,1 +1,0 @@
-// Solution: Almost Arithmetic Progression

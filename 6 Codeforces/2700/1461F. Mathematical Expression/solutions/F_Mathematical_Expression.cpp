@@ -1,1 +1,0 @@
-// Solution: Mathematical Expression

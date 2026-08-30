@@ -1,2 +1,0 @@
-# Notes: Mountain Rescue Team
-

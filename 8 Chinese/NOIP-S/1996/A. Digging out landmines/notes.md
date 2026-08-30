@@ -1,2 +1,0 @@
-# Notes: Digging out landmines
-

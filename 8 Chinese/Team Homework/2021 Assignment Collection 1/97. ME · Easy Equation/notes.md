@@ -1,2 +1,0 @@
-# Notes: ME · Easy Equation
-

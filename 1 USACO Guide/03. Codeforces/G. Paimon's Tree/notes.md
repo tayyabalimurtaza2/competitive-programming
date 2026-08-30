@@ -1,2 +1,0 @@
-# Notes: Paimon's Tree
-

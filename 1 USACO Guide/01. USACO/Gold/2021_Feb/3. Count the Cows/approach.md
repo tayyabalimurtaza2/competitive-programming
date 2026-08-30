@@ -1,1 +1,0 @@
-# Approach: Count the Cows

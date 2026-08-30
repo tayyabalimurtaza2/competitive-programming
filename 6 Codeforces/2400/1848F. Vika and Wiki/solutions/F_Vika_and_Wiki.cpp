@@ -1,1 +1,0 @@
-// Solution: Vika and Wiki

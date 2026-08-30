@@ -1,2 +1,0 @@
-# Notes: F. Black Radius
-

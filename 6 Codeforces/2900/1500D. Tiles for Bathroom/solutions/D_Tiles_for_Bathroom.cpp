@@ -1,1 +1,0 @@
-// Solution: Tiles for Bathroom

@@ -1,1 +1,0 @@
-// Solution: Lots of Triangles

@@ -1,2 +1,0 @@
-# Notes: Beat the mole
-

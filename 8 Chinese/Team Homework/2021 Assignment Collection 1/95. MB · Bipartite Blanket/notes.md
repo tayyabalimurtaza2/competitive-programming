@@ -1,2 +1,0 @@
-# Notes: MB · Bipartite Blanket
-

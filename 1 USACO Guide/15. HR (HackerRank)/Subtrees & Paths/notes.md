@@ -1,2 +1,0 @@
-# Notes: Subtrees & Paths
-

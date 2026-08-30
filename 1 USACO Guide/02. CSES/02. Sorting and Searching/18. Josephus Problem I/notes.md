@@ -1,1 +1,0 @@
-# Notes: Josephus Problem I

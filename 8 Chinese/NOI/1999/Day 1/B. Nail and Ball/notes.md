@@ -1,2 +1,0 @@
-# Notes: Nail and Ball
-

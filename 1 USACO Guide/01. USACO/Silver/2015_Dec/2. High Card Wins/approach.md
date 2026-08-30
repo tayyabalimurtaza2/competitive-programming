@@ -1,1 +1,0 @@
-# Approach: High Card Wins

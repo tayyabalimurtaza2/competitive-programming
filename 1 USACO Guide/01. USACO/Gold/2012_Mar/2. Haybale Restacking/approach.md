@@ -1,1 +1,0 @@
-# Approach: Haybale Restacking

@@ -1,2 +1,0 @@
-# Notes: Kompresja drzew binarnych
-

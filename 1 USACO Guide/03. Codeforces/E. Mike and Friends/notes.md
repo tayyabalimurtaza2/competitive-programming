@@ -1,2 +1,0 @@
-# Notes: Mike and Friends
-

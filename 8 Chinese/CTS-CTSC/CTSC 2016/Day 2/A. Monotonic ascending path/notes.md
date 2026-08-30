@@ -1,2 +1,0 @@
-# Notes: Monotonic ascending path
-

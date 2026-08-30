@@ -1,2 +1,0 @@
-# Notes: Poet Little G
-

@@ -1,2 +1,0 @@
-# Notes: Bizarre text processing
-

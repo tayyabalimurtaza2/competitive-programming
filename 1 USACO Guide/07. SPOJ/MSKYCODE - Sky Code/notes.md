@@ -1,2 +1,0 @@
-# Notes: MSKYCODE - Sky Code
-

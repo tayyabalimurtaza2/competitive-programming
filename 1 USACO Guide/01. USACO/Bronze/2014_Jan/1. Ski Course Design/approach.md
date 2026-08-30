@@ -1,1 +1,0 @@
-# Approach: Ski Course Design

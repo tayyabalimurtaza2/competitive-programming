@@ -1,1 +1,0 @@
-// D. Same Descent Set

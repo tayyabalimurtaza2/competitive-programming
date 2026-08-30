@@ -1,1 +1,0 @@
-// Solution: Ivan and Burgers

@@ -1,0 +1,3 @@
+# 526G.Spiders Evil Plan
+
+https://codeforces.com/contest/526/problem/G

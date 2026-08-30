@@ -1,1 +1,0 @@
-# Notes: Tavas and Pashmaks

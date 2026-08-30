@@ -1,1 +1,0 @@
-// Solution: Binary String Copying

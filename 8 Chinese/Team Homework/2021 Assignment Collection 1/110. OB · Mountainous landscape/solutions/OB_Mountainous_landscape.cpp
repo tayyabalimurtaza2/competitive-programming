@@ -1,1 +1,0 @@
-// OB · Mountainous landscape

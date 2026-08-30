@@ -1,1 +1,0 @@
-# Notes: Prince's Problem

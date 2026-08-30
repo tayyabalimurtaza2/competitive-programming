@@ -1,2 +1,0 @@
-# Approach: One Billion Shades of Grey
-Problem: [One Billion Shades of Grey](https://codeforces.com/contest/1427/problem/G)

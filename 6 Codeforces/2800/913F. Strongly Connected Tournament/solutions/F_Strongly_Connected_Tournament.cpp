@@ -1,1 +1,0 @@
-// Solution: Strongly Connected Tournament

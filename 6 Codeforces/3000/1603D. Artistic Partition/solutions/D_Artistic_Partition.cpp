@@ -1,1 +1,0 @@
-// Solution: Artistic Partition

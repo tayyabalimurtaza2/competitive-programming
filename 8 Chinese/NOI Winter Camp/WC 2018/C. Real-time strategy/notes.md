@@ -1,2 +1,0 @@
-# Notes: Real-time strategy
-

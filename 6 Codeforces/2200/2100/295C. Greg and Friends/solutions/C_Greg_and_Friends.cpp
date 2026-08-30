@@ -1,1 +1,0 @@
-// Solution: Greg and Friends

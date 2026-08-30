@@ -1,1 +1,0 @@
-# Notes: Strongly Connected Edges

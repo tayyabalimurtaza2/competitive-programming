@@ -1,1 +1,0 @@
-// F. CatCoder Triple Contest

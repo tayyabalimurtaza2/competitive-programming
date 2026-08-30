@@ -1,1 +1,0 @@
-// Lomsat gelral

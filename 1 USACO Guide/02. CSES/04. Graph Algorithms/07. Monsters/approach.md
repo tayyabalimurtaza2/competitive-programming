@@ -1,2 +1,0 @@
-# Approach: Monsters
-Problem: [Monsters](https://cses.fi/problemset/task/1194)

@@ -1,2 +1,0 @@
-# Notes: C. Catastrophic Roulette
-

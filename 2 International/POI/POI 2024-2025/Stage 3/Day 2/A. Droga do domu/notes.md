@@ -1,2 +1,0 @@
-# Notes: Droga do domu
-

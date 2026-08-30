@@ -1,1 +1,0 @@
-// Siłownia dla początkujących

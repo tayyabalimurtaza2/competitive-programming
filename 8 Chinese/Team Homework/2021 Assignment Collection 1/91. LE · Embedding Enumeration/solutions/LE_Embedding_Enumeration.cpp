@@ -1,1 +1,0 @@
-// LE · Embedding Enumeration

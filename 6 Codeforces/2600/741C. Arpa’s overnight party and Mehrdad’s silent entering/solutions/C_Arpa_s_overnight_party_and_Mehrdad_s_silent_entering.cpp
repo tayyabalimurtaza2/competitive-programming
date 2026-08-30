@@ -1,1 +1,0 @@
-// Solution: Arpa’s overnight party and Mehrdad’s silent entering

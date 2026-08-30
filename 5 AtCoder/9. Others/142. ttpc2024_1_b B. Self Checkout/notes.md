@@ -1,2 +1,0 @@
-# Notes: B. Self Checkout
-

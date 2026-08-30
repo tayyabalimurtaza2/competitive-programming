@@ -1,2 +1,0 @@
-# Notes: Time Travelling Squirrels
-

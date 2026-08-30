@@ -1,1 +1,0 @@
-# Notes: Clear the String

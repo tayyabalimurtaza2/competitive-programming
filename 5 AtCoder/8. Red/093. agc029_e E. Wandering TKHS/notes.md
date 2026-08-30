@@ -1,2 +1,0 @@
-# Notes: E. Wandering TKHS
-

@@ -1,2 +1,0 @@
-# Notes: G. Power Pair
-

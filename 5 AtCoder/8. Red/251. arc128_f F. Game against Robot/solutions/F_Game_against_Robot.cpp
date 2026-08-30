@@ -1,1 +1,0 @@
-// F. Game against Robot

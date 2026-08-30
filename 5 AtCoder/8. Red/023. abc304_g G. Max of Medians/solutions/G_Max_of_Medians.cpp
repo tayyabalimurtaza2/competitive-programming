@@ -1,1 +1,0 @@
-// G. Max of Medians

@@ -1,1 +1,0 @@
-// A. Chords and Checkered

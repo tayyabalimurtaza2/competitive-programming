@@ -1,2 +1,0 @@
-# Notes: F. Distance Sums
-

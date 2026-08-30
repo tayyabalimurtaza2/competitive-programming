@@ -1,1 +1,0 @@
-// Solution: Lenient Vertex Cover

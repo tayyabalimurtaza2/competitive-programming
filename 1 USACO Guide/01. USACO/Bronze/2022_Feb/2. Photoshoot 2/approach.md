@@ -1,1 +1,0 @@
-# Approach: Photoshoot 2

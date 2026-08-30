@@ -1,2 +1,0 @@
-# Notes: Joy of Sushi
-

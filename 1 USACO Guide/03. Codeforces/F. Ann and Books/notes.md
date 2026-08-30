@@ -1,2 +1,0 @@
-# Notes: Ann and Books
-

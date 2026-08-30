@@ -1,1 +1,0 @@
-// G. Construct Good Path

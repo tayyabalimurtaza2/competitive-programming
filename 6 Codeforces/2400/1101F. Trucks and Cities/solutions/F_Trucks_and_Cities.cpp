@@ -1,1 +1,0 @@
-// Solution: Trucks and Cities

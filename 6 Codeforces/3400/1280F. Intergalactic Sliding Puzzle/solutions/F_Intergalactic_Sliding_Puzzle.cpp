@@ -1,1 +1,0 @@
-// Solution: Intergalactic Sliding Puzzle

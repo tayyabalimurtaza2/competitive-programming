@@ -1,1 +1,0 @@
-// Solution: Hamming Triples

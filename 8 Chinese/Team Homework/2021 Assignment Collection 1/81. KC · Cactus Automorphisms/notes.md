@@ -1,2 +1,0 @@
-# Notes: KC · Cactus Automorphisms
-

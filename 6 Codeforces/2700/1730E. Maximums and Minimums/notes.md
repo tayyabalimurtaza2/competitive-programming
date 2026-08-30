@@ -1,1 +1,0 @@
-# Notes: Maximums and Minimums

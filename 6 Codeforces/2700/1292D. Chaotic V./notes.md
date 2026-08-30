@@ -1,1 +1,0 @@
-# Notes: Chaotic V.

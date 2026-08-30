@@ -1,2 +1,0 @@
-# Notes: Neural Networks
-

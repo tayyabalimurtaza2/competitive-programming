@@ -1,2 +1,0 @@
-# Notes: [Template] Segment Tree
-

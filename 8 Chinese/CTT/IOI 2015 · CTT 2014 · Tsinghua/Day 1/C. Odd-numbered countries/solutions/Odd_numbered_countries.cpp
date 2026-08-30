@@ -1,1 +1,0 @@
-// Odd-numbered countries

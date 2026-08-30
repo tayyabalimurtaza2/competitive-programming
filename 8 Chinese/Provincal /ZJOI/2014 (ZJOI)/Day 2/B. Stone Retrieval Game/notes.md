@@ -1,2 +1,0 @@
-# Notes: Stone Retrieval Game
-

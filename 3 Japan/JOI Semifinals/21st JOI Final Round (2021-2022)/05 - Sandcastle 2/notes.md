@@ -1,2 +1,0 @@
-# Notes: Sandcastle 2
-

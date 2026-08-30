@@ -1,1 +1,0 @@
-# Notes: Dynamic Rankings

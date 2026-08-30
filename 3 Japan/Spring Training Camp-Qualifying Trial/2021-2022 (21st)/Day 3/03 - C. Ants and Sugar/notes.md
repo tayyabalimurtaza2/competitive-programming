@@ -1,2 +1,0 @@
-# Notes: Ants and Sugar
-

@@ -1,1 +1,0 @@
-# Notes: Complex Market Analysis

@@ -1,1 +1,0 @@
-# Notes: Excitation of Atoms

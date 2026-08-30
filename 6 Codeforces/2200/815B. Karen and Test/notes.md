@@ -1,1 +1,0 @@
-# Notes: Karen and Test

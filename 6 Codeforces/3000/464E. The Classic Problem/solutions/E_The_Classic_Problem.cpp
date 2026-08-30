@@ -1,1 +1,0 @@
-// Solution: The Classic Problem

@@ -1,1 +1,0 @@
-# Notes: Beautiful Fibonacci Problem

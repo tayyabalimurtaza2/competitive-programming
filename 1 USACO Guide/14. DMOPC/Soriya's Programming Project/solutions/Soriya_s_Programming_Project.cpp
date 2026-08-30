@@ -1,1 +1,0 @@
-// Soriya's Programming Project

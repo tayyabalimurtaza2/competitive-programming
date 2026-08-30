@@ -1,1 +1,0 @@
-// Solution: Ж-function

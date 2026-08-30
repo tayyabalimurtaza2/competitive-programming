@@ -1,1 +1,0 @@
-// D. Median Pyramid Hard

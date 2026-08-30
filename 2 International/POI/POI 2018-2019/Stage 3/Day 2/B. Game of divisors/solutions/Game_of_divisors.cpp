@@ -1,1 +1,0 @@
-// Game of divisors

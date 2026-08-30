@@ -1,1 +1,0 @@
-# Notes: E and PI

@@ -1,1 +1,0 @@
-// E. Odd Sum Rectangles

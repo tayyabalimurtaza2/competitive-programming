@@ -1,1 +1,0 @@
-// Solution: Multidimensional Queries

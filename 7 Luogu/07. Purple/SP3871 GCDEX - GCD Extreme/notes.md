@@ -1,1 +1,0 @@
-# Notes: GCDEX - GCD Extreme

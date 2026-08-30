@@ -1,2 +1,0 @@
-# Notes: Awards Ceremony
-

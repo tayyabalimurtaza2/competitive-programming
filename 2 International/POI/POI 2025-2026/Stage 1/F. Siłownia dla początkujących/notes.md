@@ -1,2 +1,0 @@
-# Notes: Siłownia dla początkujących
-

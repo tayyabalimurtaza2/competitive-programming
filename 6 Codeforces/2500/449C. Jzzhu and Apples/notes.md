@@ -1,1 +1,0 @@
-# Notes: Jzzhu and Apples

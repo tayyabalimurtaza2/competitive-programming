@@ -1,1 +1,0 @@
-// B. Summation By Construction

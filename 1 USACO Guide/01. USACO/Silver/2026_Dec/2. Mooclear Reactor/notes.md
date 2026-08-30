@@ -1,1 +1,0 @@
-# Notes: Mooclear Reactor

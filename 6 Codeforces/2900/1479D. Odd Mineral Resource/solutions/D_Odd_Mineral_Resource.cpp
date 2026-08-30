@@ -1,1 +1,0 @@
-// Solution: Odd Mineral Resource

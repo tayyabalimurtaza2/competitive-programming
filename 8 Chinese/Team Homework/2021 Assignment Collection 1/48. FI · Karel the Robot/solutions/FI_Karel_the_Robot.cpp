@@ -1,1 +1,0 @@
-// FI · Karel the Robot

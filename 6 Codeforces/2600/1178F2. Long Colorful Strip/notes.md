@@ -1,1 +1,0 @@
-# Notes: Long Colorful Strip

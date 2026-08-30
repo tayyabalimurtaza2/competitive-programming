@@ -1,2 +1,0 @@
-# Notes: CH · Polygonal Puzzle
-

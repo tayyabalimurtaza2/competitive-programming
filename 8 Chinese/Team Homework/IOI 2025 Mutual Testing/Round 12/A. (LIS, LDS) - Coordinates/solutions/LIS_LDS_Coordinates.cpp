@@ -1,1 +1,0 @@
-// (LIS, LDS) - Coordinates

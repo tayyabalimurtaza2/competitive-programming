@@ -1,1 +1,0 @@
-# Notes: Black and White

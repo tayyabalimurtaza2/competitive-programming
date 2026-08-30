@@ -1,1 +1,0 @@
-// Solution: Oranges and Apples

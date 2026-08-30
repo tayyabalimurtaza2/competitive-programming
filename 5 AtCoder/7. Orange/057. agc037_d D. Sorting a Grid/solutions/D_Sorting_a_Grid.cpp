@@ -1,1 +1,0 @@
-// D. Sorting a Grid

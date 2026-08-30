@@ -1,1 +1,0 @@
-// Solution: Balanced Domino Placements

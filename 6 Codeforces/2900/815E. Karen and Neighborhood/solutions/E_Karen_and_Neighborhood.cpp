@@ -1,1 +1,0 @@
-// Solution: Karen and Neighborhood

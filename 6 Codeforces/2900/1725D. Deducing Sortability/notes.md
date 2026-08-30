@@ -1,1 +1,0 @@
-# Notes: Deducing Sortability

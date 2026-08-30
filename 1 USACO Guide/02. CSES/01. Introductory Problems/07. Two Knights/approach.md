@@ -1,2 +1,0 @@
-# Approach: Two Knights
-Problem: [Two Knights](https://cses.fi/problemset/task/1072)

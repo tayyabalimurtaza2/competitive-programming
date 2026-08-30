@@ -1,2 +1,0 @@
-# Notes: Ammar-utiful Array
-

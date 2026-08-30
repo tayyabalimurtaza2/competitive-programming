@@ -1,1 +1,0 @@
-// Solution: Spanning Tree Queries

@@ -1,2 +1,0 @@
-# Notes: Jeopardized Projects
-

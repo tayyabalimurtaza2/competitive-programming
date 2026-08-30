@@ -1,1 +1,0 @@
-// Widely known question

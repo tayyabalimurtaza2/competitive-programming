@@ -1,2 +1,0 @@
-# Notes: Dormitory during holidays
-

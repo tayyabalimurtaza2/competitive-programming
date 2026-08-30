@@ -1,1 +1,0 @@
-# Notes: Equal Sum Subarrays

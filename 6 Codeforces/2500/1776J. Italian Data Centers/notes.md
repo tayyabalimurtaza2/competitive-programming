@@ -1,1 +1,0 @@
-# Notes: Italian Data Centers

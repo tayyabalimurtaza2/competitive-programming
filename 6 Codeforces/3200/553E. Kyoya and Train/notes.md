@@ -1,1 +1,0 @@
-# Notes: Kyoya and Train

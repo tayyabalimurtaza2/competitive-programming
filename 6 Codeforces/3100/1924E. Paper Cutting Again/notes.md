@@ -1,1 +1,0 @@
-# Notes: Paper Cutting Again

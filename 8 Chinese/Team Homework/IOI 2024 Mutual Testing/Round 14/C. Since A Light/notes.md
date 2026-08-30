@@ -1,2 +1,0 @@
-# Notes: Since A Light
-

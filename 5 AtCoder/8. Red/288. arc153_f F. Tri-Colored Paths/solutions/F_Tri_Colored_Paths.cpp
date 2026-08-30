@@ -1,1 +1,0 @@
-// F. Tri-Colored Paths

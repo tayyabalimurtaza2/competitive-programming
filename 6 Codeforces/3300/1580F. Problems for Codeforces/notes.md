@@ -1,1 +1,0 @@
-# Notes: Problems for Codeforces

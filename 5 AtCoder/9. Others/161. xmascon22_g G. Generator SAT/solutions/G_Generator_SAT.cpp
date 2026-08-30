@@ -1,1 +1,0 @@
-// G. Generator SAT

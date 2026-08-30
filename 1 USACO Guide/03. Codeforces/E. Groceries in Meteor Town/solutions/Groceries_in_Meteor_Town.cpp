@@ -1,1 +1,0 @@
-// Groceries in Meteor Town

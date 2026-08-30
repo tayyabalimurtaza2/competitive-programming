@@ -1,2 +1,0 @@
-# Notes: Wisdom Bead Game
-

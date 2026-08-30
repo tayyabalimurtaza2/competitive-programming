@@ -1,1 +1,0 @@
-// Solution: Rope Folding

@@ -1,1 +1,0 @@
-// Spotkanie na Bajhattanie

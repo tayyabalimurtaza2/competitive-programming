@@ -1,1 +1,0 @@
-// Solution: Professor's task

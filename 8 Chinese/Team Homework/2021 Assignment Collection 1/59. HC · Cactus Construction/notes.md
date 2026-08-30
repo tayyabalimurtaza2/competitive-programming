@@ -1,2 +1,0 @@
-# Notes: HC · Cactus Construction
-

@@ -1,2 +1,0 @@
-# Notes: Path to Happiness
-

@@ -1,1 +1,0 @@
-// Solution: Serega and Fun

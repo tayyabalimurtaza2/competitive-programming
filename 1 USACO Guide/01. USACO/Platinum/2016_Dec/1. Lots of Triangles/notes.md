@@ -1,1 +1,0 @@
-# Notes: Lots of Triangles

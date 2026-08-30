@@ -1,2 +1,0 @@
-# Notes: China's supercomputing
-

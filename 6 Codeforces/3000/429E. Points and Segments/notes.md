@@ -1,1 +1,0 @@
-# Notes: Points and Segments

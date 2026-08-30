@@ -1,1 +1,0 @@
-# Notes: Maximum Adjacent Pairs

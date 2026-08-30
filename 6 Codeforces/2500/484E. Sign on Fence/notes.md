@@ -1,1 +1,0 @@
-# Notes: Sign on Fence

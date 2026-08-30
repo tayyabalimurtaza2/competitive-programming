@@ -1,1 +1,0 @@
-# Approach: Lights Off

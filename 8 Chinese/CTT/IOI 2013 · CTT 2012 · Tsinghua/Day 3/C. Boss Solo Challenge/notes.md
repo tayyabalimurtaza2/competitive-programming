@@ -1,2 +1,0 @@
-# Notes: Boss Solo Challenge
-

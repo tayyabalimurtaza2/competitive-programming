@@ -1,1 +1,0 @@
-# Approach: Contest Timing

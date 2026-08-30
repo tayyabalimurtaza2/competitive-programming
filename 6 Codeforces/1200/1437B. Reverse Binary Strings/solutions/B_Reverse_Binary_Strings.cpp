@@ -1,1 +1,0 @@
-// Solution: Reverse Binary Strings

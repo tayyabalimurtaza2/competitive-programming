@@ -1,1 +1,0 @@
-// Triumphal arch

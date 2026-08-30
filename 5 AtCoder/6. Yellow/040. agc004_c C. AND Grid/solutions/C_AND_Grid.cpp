@@ -1,1 +1,0 @@
-// C. AND Grid

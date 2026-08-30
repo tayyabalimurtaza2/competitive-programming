@@ -1,1 +1,0 @@
-# Notes: Unequal Adjacent Elements

@@ -1,1 +1,0 @@
-// H. Minimum Coloring

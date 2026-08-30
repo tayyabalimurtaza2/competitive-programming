@@ -1,2 +1,0 @@
-# Notes: Xiaoming's Tree
-

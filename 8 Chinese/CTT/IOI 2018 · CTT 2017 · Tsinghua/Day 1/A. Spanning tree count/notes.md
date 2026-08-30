@@ -1,2 +1,0 @@
-# Notes: Spanning tree count
-

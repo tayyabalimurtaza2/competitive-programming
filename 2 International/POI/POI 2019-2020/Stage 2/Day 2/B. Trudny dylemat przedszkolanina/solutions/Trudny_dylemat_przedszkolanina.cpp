@@ -1,1 +1,0 @@
-// Trudny dylemat przedszkolanina

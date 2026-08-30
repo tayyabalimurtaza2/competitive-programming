@@ -1,2 +1,0 @@
-# Notes: Sasha and Array
-

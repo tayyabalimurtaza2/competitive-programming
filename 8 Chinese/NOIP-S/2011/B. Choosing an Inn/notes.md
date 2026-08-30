@@ -1,2 +1,0 @@
-# Notes: Choosing an Inn
-

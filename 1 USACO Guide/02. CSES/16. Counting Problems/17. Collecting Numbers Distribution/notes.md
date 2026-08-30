@@ -1,1 +1,0 @@
-# Notes: Collecting Numbers Distribution

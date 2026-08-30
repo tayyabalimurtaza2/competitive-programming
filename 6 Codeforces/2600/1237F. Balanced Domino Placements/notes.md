@@ -1,1 +1,0 @@
-# Notes: Balanced Domino Placements

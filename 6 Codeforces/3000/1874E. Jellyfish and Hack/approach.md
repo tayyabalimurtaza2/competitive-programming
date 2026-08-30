@@ -1,2 +1,0 @@
-# Approach: Jellyfish and Hack
-Problem: [Jellyfish and Hack](https://codeforces.com/contest/1874/problem/E)

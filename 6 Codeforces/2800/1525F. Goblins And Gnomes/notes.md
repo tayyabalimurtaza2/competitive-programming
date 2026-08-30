@@ -1,1 +1,0 @@
-# Notes: Goblins And Gnomes

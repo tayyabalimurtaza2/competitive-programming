@@ -1,1 +1,0 @@
-# Notes: Painting the Fence

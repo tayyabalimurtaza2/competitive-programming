@@ -1,1 +1,0 @@
-// Solution: Phoenix and Earthquake

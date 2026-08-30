@@ -1,1 +1,0 @@
-// B. Exactly N points

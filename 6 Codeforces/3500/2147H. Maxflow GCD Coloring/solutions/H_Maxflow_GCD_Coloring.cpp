@@ -1,1 +1,0 @@
-// Solution: Maxflow GCD Coloring

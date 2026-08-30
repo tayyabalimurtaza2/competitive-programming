@@ -1,2 +1,0 @@
-# Notes: For the Emperor!
-

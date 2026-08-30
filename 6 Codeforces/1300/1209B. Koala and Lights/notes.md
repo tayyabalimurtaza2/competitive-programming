@@ -1,1 +1,0 @@
-# Notes: Koala and Lights

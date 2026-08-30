@@ -1,1 +1,0 @@
-# Notes: Kuroni and Antihype

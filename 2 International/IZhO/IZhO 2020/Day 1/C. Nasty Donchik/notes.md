@@ -1,2 +1,0 @@
-# Notes: Nasty Donchik
-

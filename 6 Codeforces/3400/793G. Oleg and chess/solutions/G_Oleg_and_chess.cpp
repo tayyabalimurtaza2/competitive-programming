@@ -1,1 +1,0 @@
-// Solution: Oleg and chess

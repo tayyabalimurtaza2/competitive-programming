@@ -1,2 +1,0 @@
-# Notes: Make them Meet
-

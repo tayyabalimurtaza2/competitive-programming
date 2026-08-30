@@ -1,1 +1,0 @@
-# Notes: Anti-Proxy Attendance

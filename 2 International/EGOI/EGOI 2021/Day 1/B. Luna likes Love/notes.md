@@ -1,2 +1,0 @@
-# Notes: Luna likes Love
-

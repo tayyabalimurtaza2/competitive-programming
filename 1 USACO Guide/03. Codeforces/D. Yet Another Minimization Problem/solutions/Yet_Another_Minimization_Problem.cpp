@@ -1,1 +1,0 @@
-// Yet Another Minimization Problem

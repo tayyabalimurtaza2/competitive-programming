@@ -1,2 +1,0 @@
-# Notes: GL · Laminar Family
-

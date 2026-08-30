@@ -1,1 +1,0 @@
-# Approach: Line of Sight

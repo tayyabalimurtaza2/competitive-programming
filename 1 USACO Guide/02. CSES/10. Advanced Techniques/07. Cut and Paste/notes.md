@@ -1,1 +1,0 @@
-# Notes: Cut and Paste

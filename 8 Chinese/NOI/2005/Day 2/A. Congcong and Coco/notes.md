@@ -1,2 +1,0 @@
-# Notes: Congcong and Coco
-

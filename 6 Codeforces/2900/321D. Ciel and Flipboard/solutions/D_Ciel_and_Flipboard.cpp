@@ -1,1 +1,0 @@
-// Solution: Ciel and Flipboard

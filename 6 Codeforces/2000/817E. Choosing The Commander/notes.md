@@ -1,1 +1,0 @@
-# Notes: Choosing The Commander

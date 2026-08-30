@@ -1,1 +1,0 @@
-// Solution: Last Man Standing

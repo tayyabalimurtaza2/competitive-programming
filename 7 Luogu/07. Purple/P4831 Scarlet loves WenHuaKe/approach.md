@@ -1,1 +1,0 @@
-# Approach: Scarlet loves WenHuaKe

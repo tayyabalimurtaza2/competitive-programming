@@ -1,1 +1,0 @@
-// G. Intersection of Polygons

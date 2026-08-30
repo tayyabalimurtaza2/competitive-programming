@@ -1,1 +1,0 @@
-# Notes: Piet's Palette

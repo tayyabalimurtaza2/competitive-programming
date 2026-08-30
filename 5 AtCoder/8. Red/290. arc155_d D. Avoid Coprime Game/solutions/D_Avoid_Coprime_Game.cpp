@@ -1,1 +1,0 @@
-// D. Avoid Coprime Game

@@ -1,1 +1,0 @@
-# Notes: Anthem of Berland

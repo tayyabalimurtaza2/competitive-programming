@@ -1,1 +1,0 @@
-// C. Skolem XOR Tree

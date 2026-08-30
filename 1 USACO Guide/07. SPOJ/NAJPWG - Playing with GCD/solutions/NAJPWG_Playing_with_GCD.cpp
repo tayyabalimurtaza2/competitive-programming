@@ -1,1 +1,0 @@
-// NAJPWG - Playing with GCD

@@ -1,1 +1,0 @@
-// isomorphism determination chicken

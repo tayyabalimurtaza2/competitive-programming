@@ -1,1 +1,0 @@
-// Painting the perfect art

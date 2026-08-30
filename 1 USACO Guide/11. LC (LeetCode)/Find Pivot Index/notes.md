@@ -1,2 +1,0 @@
-# Notes: Find Pivot Index
-

@@ -1,2 +1,0 @@
-# Notes: Szablon Bajtogrodu
-

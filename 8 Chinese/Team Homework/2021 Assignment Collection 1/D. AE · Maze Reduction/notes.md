@@ -1,2 +1,0 @@
-# Notes: AE · Maze Reduction
-

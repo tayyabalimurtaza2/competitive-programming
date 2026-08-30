@@ -1,2 +1,0 @@
-# Notes: Individual Income Tax
-

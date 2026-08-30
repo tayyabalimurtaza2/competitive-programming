@@ -1,2 +1,0 @@
-# Notes: Mycraft Sand Sort
-

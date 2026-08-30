@@ -1,1 +1,0 @@
-// Solution: Tokitsukaze and Duel

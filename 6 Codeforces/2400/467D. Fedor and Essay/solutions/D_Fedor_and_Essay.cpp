@@ -1,1 +1,0 @@
-// Solution: Fedor and Essay

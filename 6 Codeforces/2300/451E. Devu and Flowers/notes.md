@@ -1,1 +1,0 @@
-# Notes: Devu and Flowers

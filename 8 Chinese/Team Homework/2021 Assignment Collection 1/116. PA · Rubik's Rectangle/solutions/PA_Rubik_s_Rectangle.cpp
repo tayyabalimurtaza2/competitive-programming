@@ -1,1 +1,0 @@
-// PA · Rubik's Rectangle

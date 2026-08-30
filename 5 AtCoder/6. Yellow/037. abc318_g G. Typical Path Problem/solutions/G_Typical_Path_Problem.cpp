@@ -1,1 +1,0 @@
-// G. Typical Path Problem

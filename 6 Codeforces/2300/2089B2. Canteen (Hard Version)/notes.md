@@ -1,1 +1,0 @@
-# Notes: Canteen (Hard Version)

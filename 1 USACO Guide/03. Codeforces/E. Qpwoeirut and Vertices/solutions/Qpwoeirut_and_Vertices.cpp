@@ -1,1 +1,0 @@
-// Qpwoeirut and Vertices

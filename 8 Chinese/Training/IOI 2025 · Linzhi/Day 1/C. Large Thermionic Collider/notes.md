@@ -1,2 +1,0 @@
-# Notes: Large Thermionic Collider
-

@@ -1,2 +1,0 @@
-# Notes: Tourist's Journey
-

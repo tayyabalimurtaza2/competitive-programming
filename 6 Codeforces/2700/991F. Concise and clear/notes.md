@@ -1,1 +1,0 @@
-# Notes: Concise and clear

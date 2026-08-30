@@ -1,1 +1,0 @@
-// F. Count Sorted Arrays

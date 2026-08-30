@@ -1,1 +1,0 @@
-// Solution: Induced Subgraph Queries

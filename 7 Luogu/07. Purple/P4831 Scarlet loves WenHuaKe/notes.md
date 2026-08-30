@@ -1,1 +1,0 @@
-# Notes: Scarlet loves WenHuaKe

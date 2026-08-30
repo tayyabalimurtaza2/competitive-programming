@@ -1,0 +1,2611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>The IOI Contest Machine — Complete Field Manual</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<script>
+/* This document contains no mathematics; its "$" characters are shell prompts.
+   Stub out KaTeX auto-render so the PDF pipeline never mistakes prompts for formulas. */
+window.renderMathInElement = function () {};
+</script>
+<style>
+@page { size: 794px 1123px; margin: 0; }
+
+:root {
+  /* Crystal Blue — cover (dark) */
+  --cov-bg: #0a1628;
+  --cov-accent: #4da8da;
+  --cov-title: #e8f0f8;
+  --cov-muted: #7a9bb8;
+  --cov-glow: #2d7ab3;
+  /* Body (light, same hue family) */
+  --bg: #f5f8fc;
+  --section-bg: #edf2f9;
+  --card: #e4ecf5;
+  --stripe: #eef3fa;
+  --thead: #1a4a7a;
+  --border: #c0d0e2;
+  --accent: #2d7ab3;
+  --text: #142840;
+  --muted: #5a7a96;
+  /* Code block (terminal) */
+  --code-bg: #0a1628;
+  --code-head: #10233c;
+  --code-text: #dbe7f3;
+  --code-cmd: #e8f0f8;
+  --code-out: #8ea9c7;
+  --code-com: #56789b;
+  --ok: #58b380;
+  --bad: #d08585;
+}
+
+html, body {
+  margin: 0; padding: 0;
+  width: 794px;
+  background: #0a1628; /* darkest page color — prevents edge artifacts on light pages */
+  color: #142840;
+  font-family: 'Inter', 'Liberation Sans', sans-serif;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+@media screen {
+  html { height: auto; display: flex; justify-content: center; background: #0a1628; }
+  body { transform-origin: top center; margin: 24px auto; box-shadow: 0 0 60px rgba(0,0,0,.45); }
+}
+
+* { box-sizing: border-box; }
+p, li, td { overflow-wrap: break-word; }
+
+/* ===================== COVER ===================== */
+.cover {
+  width: 794px; height: 1123px;
+  position: relative;
+  background: var(--cov-bg);
+  break-after: page;
+  overflow: hidden; /* cover only — clips glow decoration */
+  color: var(--cov-title);
+}
+.cov-glow-a {
+  position: absolute; inset: 0; z-index: 0;
+  background: radial-gradient(circle 480px at 12% 8%, rgba(77,168,218,0.10), transparent 70%);
+}
+.cov-glow-b {
+  position: absolute; inset: 0; z-index: 0;
+  background: radial-gradient(circle 560px at 92% 96%, rgba(45,122,179,0.12), transparent 70%);
+}
+.cov-frame {
+  position: absolute; top: 80px; bottom: 80px; left: 60px; right: 60px;
+  border: 2px solid var(--cov-accent);
+  z-index: 1;
+}
+.cov-kicker {
+  position: absolute; top: 138px; left: 112px; z-index: 3;
+  font-family: 'JetBrains Mono', 'Liberation Mono', monospace;
+  font-size: 12px; font-weight: 500; letter-spacing: 5px;
+  color: var(--cov-accent); text-transform: uppercase;
+}
+.cov-title {
+  position: absolute; top: 224px; left: 112px; z-index: 3;
+  max-width: 560px;
+  font-size: 52px; line-height: 1.14; font-weight: 800;
+  color: var(--cov-title);
+  letter-spacing: -0.5px;
+}
+.cov-sum {
+  position: absolute; top: 452px; left: 112px; z-index: 3;
+  max-width: 520px;
+  font-size: 15px; line-height: 1.72; color: var(--cov-muted);
+}
+.cov-term {
+  position: absolute; top: 596px; left: 112px; width: 520px; z-index: 3;
+  background: rgba(16,35,60,0.88);
+  border: 1px solid rgba(77,168,218,0.35);
+  border-radius: 10px;
+}
+.cov-term-bar {
+  display: flex; align-items: center; gap: 7px;
+  padding: 9px 14px;
+  border-bottom: 1px solid rgba(77,168,218,0.22);
+}
+.cov-dot { width: 9px; height: 9px; border-radius: 50%; opacity: .85; }
+.d1 { background: #c96a6a; } .d2 { background: #c9a45a; } .d3 { background: #58b380; }
+.cov-term-title {
+  margin-left: 8px;
+  font-family: 'JetBrains Mono', 'Liberation Mono', monospace;
+  font-size: 10px; letter-spacing: 1.5px; color: var(--cov-muted);
+}
+.cov-term pre {
+  margin: 0; padding: 13px 16px 15px 16px;
+  font-family: 'JetBrains Mono', 'Liberation Mono', monospace;
+  font-size: 12px; line-height: 1.75;
+  color: var(--code-text); white-space: pre-wrap;
+}
+.cov-meta {
+  position: absolute; top: 846px; left: 112px; z-index: 3;
+  font-size: 17px; font-weight: 600; color: var(--cov-title);
+}
+.cov-meta-sub {
+  position: absolute; top: 878px; left: 112px; z-index: 3;
+  font-size: 13px; color: var(--cov-muted);
+}
+.cov-date {
+  position: absolute; bottom: 104px; left: 112px; z-index: 3;
+  font-family: 'JetBrains Mono', 'Liberation Mono', monospace;
+  font-size: 10.5px; letter-spacing: 3px; color: var(--cov-muted);
+  text-transform: uppercase;
+}
+
+/* ===================== TOC (front matter, fixed page) ===================== */
+.toc-page {
+  width: 794px; height: 1123px;
+  background: var(--bg);
+  break-after: page;
+  padding: 88px 84px 70px 84px;
+}
+.toc-kicker {
+  font-family: 'JetBrains Mono', 'Liberation Mono', monospace;
+  font-size: 11px; letter-spacing: 3px; color: var(--accent);
+  text-transform: uppercase; margin-bottom: 10px;
+}
+.toc-title { font-size: 32px; font-weight: 800; color: var(--text); margin-bottom: 8px; }
+.toc-lead { font-size: 13.5px; color: var(--muted); line-height: 1.6; margin-bottom: 30px; max-width: 560px; }
+.toc-row {
+  display: flex; align-items: baseline; gap: 16px;
+  padding: 10.5px 2px 9px 2px;
+  border-bottom: 1px solid var(--border);
+}
+.toc-num {
+  font-family: 'JetBrains Mono', 'Liberation Mono', monospace;
+  font-size: 13px; font-weight: 700; color: var(--accent);
+  width: 42px; flex-shrink: 0;
+}
+.toc-name { font-size: 15px; font-weight: 600; color: var(--text); white-space: nowrap; }
+.toc-desc { font-size: 12px; color: var(--muted); text-align: right; flex: 1; }
+
+/* ===================== BODY FLOW ===================== */
+.main-content {
+  background: var(--bg);
+  padding: 56px 64px 48px 64px;
+  /* no fixed height, no overflow — content flows */
+}
+.chapter-header { break-after: avoid; break-inside: avoid; margin-top: 26px; }
+.chapter-header.first { margin-top: 0; }
+.part-tag {
+  font-family: 'JetBrains Mono', 'Liberation Mono', monospace;
+  font-size: 10.5px; font-weight: 500; letter-spacing: 2.5px;
+  color: var(--accent); text-transform: uppercase; margin-bottom: 7px;
+}
+.part-title { font-size: 25px; font-weight: 800; color: var(--text); line-height: 1.22; margin-bottom: 10px; }
+.part-bar { height: 3px; width: 56px; background: var(--accent); margin-bottom: 18px; }
+
+.h {
+  font-size: 16.5px; font-weight: 700; color: var(--text);
+  margin: 22px 0 8px 0; break-after: avoid;
+}
+.h .hn {
+  font-family: 'JetBrains Mono', 'Liberation Mono', monospace;
+  font-size: 12.5px; color: var(--accent); margin-right: 8px;
+}
+p.body { font-size: 14.8px; line-height: 1.64; margin: 0 0 11px 0; color: var(--text); }
+p.body b { font-weight: 700; }
+.m, code.inline {
+  font-family: 'JetBrains Mono', 'Liberation Mono', monospace;
+  font-size: 12.3px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.5px 5px;
+  color: #17405e;
+  white-space: nowrap;
+}
+.kbd {
+  font-family: 'JetBrains Mono', 'Liberation Mono', monospace;
+  font-size: 11.3px; font-weight: 600;
+  background: var(--card); border: 1px solid var(--border);
+  border-bottom-width: 2px; border-radius: 5px;
+  padding: 1px 7px; color: #17405e; white-space: nowrap;
+}
+
+/* Code / terminal blocks */
+.code { margin: 13px 0 15px 0; break-inside: avoid; border-radius: 9px; }
+.code.split { break-inside: auto; }
+.code-head {
+  display: flex; align-items: center; gap: 7px;
+  background: var(--code-head);
+  padding: 7px 14px;
+  border: 1px solid rgba(77,168,218,0.18); border-bottom: none;
+  border-radius: 9px 9px 0 0;
+}
+.code-head .dot { width: 8px; height: 8px; border-radius: 50%; opacity: .8; }
+.code-title {
+  margin-left: 6px;
+  font-family: 'JetBrains Mono', 'Liberation Mono', monospace;
+  font-size: 10px; letter-spacing: 1.6px; color: var(--cov-muted);
+  text-transform: uppercase;
+}
+.code pre {
+  margin: 0; background: var(--code-bg);
+  border: 1px solid rgba(77,168,218,0.18); border-top: none;
+  border-radius: 0 0 9px 9px;
+  padding: 13px 17px 14px 17px;
+  font-family: 'JetBrains Mono', 'Liberation Mono', monospace;
+  font-size: 12.2px; line-height: 1.6;
+  color: var(--code-text);
+  white-space: pre-wrap; overflow-wrap: break-word;
+}
+.code.no-head pre { border-radius: 9px; border-top: 1px solid rgba(77,168,218,0.18); }
+.cp { color: var(--cov-accent); }              /* $ prompt */
+.cc { color: var(--code-cmd); font-weight: 500; } /* command */
+.co { color: var(--code-out); }                 /* output */
+.ck { color: var(--code-com); font-style: italic; } /* comment */
+.cg { color: var(--ok); font-weight: 500; }     /* pass */
+.cr { color: var(--bad); font-weight: 500; }    /* fail */
+.cy { color: #c9a45a; font-weight: 500; }       /* warning-ish */
+
+/* Callouts */
+.callout {
+  break-inside: avoid;
+  border-radius: 8px;
+  padding: 12px 16px 11px 16px;
+  margin: 13px 0 15px 0;
+  font-size: 13.4px; line-height: 1.58;
+}
+.callout .ct {
+  font-family: 'JetBrains Mono', 'Liberation Mono', monospace;
+  font-size: 10.5px; font-weight: 700; letter-spacing: 1.8px;
+  text-transform: uppercase; margin-bottom: 5px;
+}
+.callout p { margin: 0 0 6px 0; } .callout p:last-child { margin: 0; }
+.info  { background: var(--card); border-left: 4px solid var(--accent); }
+.info .ct { color: var(--accent); }
+.warn  { background: #f6f0e2; border-left: 4px solid #b08544; }
+.warn .ct { color: #8f6a33; }
+.danger{ background: #f7e9e9; border-left: 4px solid #b56565; }
+.danger .ct { color: #9c4f4f; }
+
+/* Numbered steps */
+.step { display: flex; gap: 14px; margin-bottom: 13px; break-inside: avoid; }
+.step-n {
+  width: 29px; height: 29px; flex-shrink: 0;
+  border: 2px solid var(--accent); border-radius: 50%;
+  font-family: 'JetBrains Mono', 'Liberation Mono', monospace;
+  font-size: 13px; font-weight: 700; color: var(--accent);
+  display: flex; align-items: center; justify-content: center;
+  margin-top: 1px;
+}
+.step-t { font-size: 15px; font-weight: 700; color: var(--text); margin-bottom: 3px; }
+.step-d { font-size: 13.6px; line-height: 1.58; color: #2c4660; }
+.step-d .m { white-space: nowrap; }
+
+/* Tables */
+table.tbl { width: 100%; border-collapse: collapse; margin: 13px 0 16px 0; font-size: 13px; }
+table.tbl thead { display: table-header-group; }
+table.tbl th {
+  background: var(--thead); color: #ffffff; text-align: left;
+  font-size: 12.3px; font-weight: 600; padding: 8px 12px;
+}
+table.tbl th:first-child { border-radius: 7px 0 0 0; }
+table.tbl th:last-child { border-radius: 0 7px 0 0; }
+table.tbl td {
+  padding: 8px 12px; border-bottom: 1px solid var(--border);
+  vertical-align: top; line-height: 1.5; color: var(--text);
+}
+table.tbl tr { break-inside: avoid; }
+table.tbl.keep { break-inside: avoid; }
+table.tbl tbody tr:nth-child(even) td { background: var(--stripe); }
+table.tbl td .m { white-space: nowrap; }
+
+/* File tree */
+.tree {
+  background: var(--section-bg); border: 1px solid var(--border);
+  border-radius: 8px; padding: 13px 18px;
+  font-family: 'JetBrains Mono', 'Liberation Mono', monospace;
+  font-size: 12.2px; line-height: 1.68; color: #1d3a58;
+  margin: 13px 0 15px 0; break-inside: avoid;
+}
+.tree .hl { color: var(--accent); font-weight: 700; }
+.tree .dim { color: var(--muted); }
+
+/* Flow diagram (vertical) */
+.flow { margin: 15px 0 16px 0; }
+.flow-step {
+  border: 1.5px solid var(--accent); background: #eef5fb;
+  border-radius: 8px; padding: 9px 14px;
+  font-size: 13.2px; line-height: 1.5; color: var(--text);
+  break-inside: avoid;
+}
+.flow-step b { font-size: 13.4px; }
+.flow-step .fm { font-family: 'JetBrains Mono', 'Liberation Mono', monospace; font-size: 11.8px; color: var(--accent); font-weight: 600; }
+.flow-arrow {
+  width: 0; height: 0; margin: 4px auto;
+  border-left: 7px solid transparent; border-right: 7px solid transparent;
+  border-top: 9px solid var(--accent);
+}
+
+/* Checklist */
+.check { display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px; break-inside: avoid; font-size: 13.5px; line-height: 1.55; }
+.check .box {
+  width: 14px; height: 14px; flex-shrink: 0; margin-top: 2.5px;
+  border: 2px solid var(--accent); border-radius: 3.5px;
+}
+
+/* Cheat sheet grid: rows are atomic (a row never splits across pages) */
+.cheat-grid { margin: 14px 0; max-width: 100%; }
+.cheat-row { display: flex; gap: 12px; max-width: 100%; break-inside: avoid; margin-bottom: 12px; }
+.cheat-card {
+  flex: 1 1 316px; min-width: 300px; max-width: 100%;
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 9px; padding: 12px 15px;
+  margin-bottom: 0;
+}
+.cheat-card h5 {
+  margin: 0 0 8px 0; font-size: 12px; letter-spacing: 1.6px;
+  font-family: 'JetBrains Mono', 'Liberation Mono', monospace;
+  color: var(--thead); text-transform: uppercase;
+}
+.cheat-card pre {
+  margin: 0; font-family: 'JetBrains Mono', 'Liberation Mono', monospace;
+  font-size: 11.3px; line-height: 1.62; color: #1d3a58;
+  white-space: pre-wrap; overflow-wrap: break-word;
+}
+.cheat-card .cl { font-size: 12.3px; line-height: 1.55; color: #1d3a58; }
+
+/* Status chips (feedback meanings) */
+.chip {
+  font-family: 'JetBrains Mono', 'Liberation Mono', monospace;
+  font-size: 10.8px; font-weight: 600; padding: 1px 8px;
+  border-radius: 10px; white-space: nowrap;
+}
+.chip-ok { background: #e2f0e8; color: #2c6e4b; border: 1px solid #9fc8b2; }
+.chip-bad { background: #f7e5e5; color: #9c4f4f; border: 1px solid #d5a8a8; }
+.chip-mid { background: #f4ecdd; color: #8f6a33; border: 1px solid #d8c193; }
+
+ul.dash { margin: 4px 0 12px 0; padding-left: 20px; }
+ul.dash li { font-size: 14.2px; line-height: 1.6; margin-bottom: 5px; color: var(--text); }
+ul.dash li b { font-weight: 700; }
+
+/* ===================== ENDING ===================== */
+.ending {
+  width: 794px; height: 1123px;
+  background: var(--cov-bg);
+  break-before: page;
+  overflow: hidden;
+  position: relative;
+  color: var(--cov-title);
+}
+.end-glow { position: absolute; inset: 0; background: radial-gradient(circle 520px at 50% 42%, rgba(45,122,179,0.14), transparent 70%); }
+.end-inner {
+  position: absolute; top: 0; bottom: 0; left: 90px; right: 90px;
+  display: flex; flex-direction: column; justify-content: center;
+}
+.end-kicker {
+  font-family: 'JetBrains Mono', 'Liberation Mono', monospace;
+  font-size: 11.5px; letter-spacing: 4px; color: var(--cov-accent);
+  text-transform: uppercase; margin-bottom: 26px;
+}
+.end-title { font-size: 40px; font-weight: 800; line-height: 1.2; margin-bottom: 26px; }
+.end-text { font-size: 15px; line-height: 1.8; color: var(--cov-muted); max-width: 560px; margin-bottom: 40px; }
+.end-loop {
+  font-family: 'JetBrains Mono', 'Liberation Mono', monospace;
+  font-size: 15px; color: var(--cov-title);
+  background: rgba(16,35,60,0.85); border: 1px solid rgba(77,168,218,0.35);
+  border-radius: 10px; padding: 18px 24px; display: inline-block;
+}
+.end-loop .a { color: var(--cov-accent); }
+</style>
+</head>
+<body>
+
+<!-- ==================== COVER ==================== -->
+<div class="cover">
+  <div class="cov-glow-a"></div>
+  <div class="cov-glow-b"></div>
+  <div class="cov-frame"></div>
+  <div class="cov-kicker">Complete Field Manual · Zero to Contest Ready</div>
+  <div class="cov-title">The IOI<br>Contest<br>Machine</div>
+  <div class="cov-sum">Everything between you and the medals: the terminal, the test cases,
+  the grader zips, the sample grader, judge scripts, stress testing, and the CMS contest
+  website — every keystroke explained, nothing assumed, exactly as it happens at the IOI.</div>
+  <div class="cov-term">
+    <div class="cov-term-bar">
+      <div class="cov-dot d1"></div><div class="cov-dot d2"></div><div class="cov-dot d3"></div>
+      <div class="cov-term-title">contest@ioi: ~/festival</div>
+    </div>
+    <pre><span class="cp">$</span> <span class="cc">./compile</span>
+<span class="co">g++ -std=gnu++20 -Wall -O2 -pipe -static -g -o festival grader.cpp festival.cpp</span>
+<span class="cp">$</span> <span class="cc">./run &lt; examples/01.in | diff - examples/01.out</span>
+<span class="cg">PASS — you are ready for IOI.</span></pre>
+  </div>
+  <div class="cov-meta">Field Manual for a Future Medalist</div>
+  <div class="cov-meta-sub">macOS edition · C++20 · Ubuntu 24.04 / GCC 13 · CMS contest system</div>
+  <div class="cov-date">Edition 1.0 — August 2026 — Prepared for IOI 2027 · Potsdam, Germany</div>
+</div>
+
+<!-- ==================== CONTENTS ==================== -->
+<div class="toc-page">
+  <div class="toc-kicker">Field Manual · Contents</div>
+  <div class="toc-title">What Is Inside</div>
+  <div class="toc-lead">Read it once from start to finish with your laptop open. After that,
+  Appendix A is the only page you will ever need during practice.</div>
+
+  <div class="toc-row"><div class="toc-num">P1</div><div class="toc-name">The IOI System</div><div class="toc-desc">Format, subtasks, scoring, feedback — the whole game</div></div>
+  <div class="toc-row"><div class="toc-num">P2</div><div class="toc-name">The Contest Machine</div><div class="toc-desc">What is actually on the computer you will sit at</div></div>
+  <div class="toc-row"><div class="toc-num">P3</div><div class="toc-name">Turn Your Mac Into It</div><div class="toc-desc">Terminal, compiler, Homebrew GCC, VS Code — full setup</div></div>
+  <div class="toc-row"><div class="toc-num">P4</div><div class="toc-name">Terminal From Zero</div><div class="toc-desc">pwd, ls, cd — every command, every keystroke</div></div>
+  <div class="toc-row"><div class="toc-num">P5</div><div class="toc-name">Compile &amp; Run C++</div><div class="toc-desc">The exact IOI compiler flags, debug builds, timing</div></div>
+  <div class="toc-row"><div class="toc-num">P6</div><div class="toc-name">Test Cases: .in / .out</div><div class="toc-desc">The file system behind every judge — redirection &amp; diff</div></div>
+  <div class="toc-row"><div class="toc-num">P7</div><div class="toc-name">The Modern IOI Task</div><div class="toc-desc">Attachment zips, interface files, sample graders</div></div>
+  <div class="toc-row"><div class="toc-num">P8</div><div class="toc-name">judge.sh — Your Own Grader</div><div class="toc-desc">One command to test everything, with PASS / FAIL</div></div>
+  <div class="toc-row"><div class="toc-num">P9</div><div class="toc-name">Stress Testing</div><div class="toc-desc">Random generators vs brute force — find bugs first</div></div>
+  <div class="toc-row"><div class="toc-num">P10</div><div class="toc-name">CMS — the Contest Website</div><div class="toc-desc">Submitting, reading feedback, asking questions</div></div>
+  <div class="toc-row"><div class="toc-num">P11</div><div class="toc-name">Mock Contest Day</div><div class="toc-desc">A full 5-hour simulation, minute by minute</div></div>
+  <div class="toc-row"><div class="toc-num">P12</div><div class="toc-name">Practice Resources</div><div class="toc-desc">Where to get real IOI tasks and official test data</div></div>
+  <div class="toc-row"><div class="toc-num">P13</div><div class="toc-name">The Exact-Replica Linux VM</div><div class="toc-desc">Optional: a 100% identical machine at home</div></div>
+  <div class="toc-row"><div class="toc-num">A</div><div class="toc-name">Contest Day Cheat Sheet</div><div class="toc-desc">One printable page with everything</div></div>
+  <div class="toc-row"><div class="toc-num">B</div><div class="toc-name">Troubleshooting</div><div class="toc-desc">Every error you will hit, and its fix</div></div>
+</div>
+
+<!-- ==================== BODY ==================== -->
+<div class="main-content">
+
+<!-- ============ PART 1 ============ -->
+<div class="chapter-header first">
+  <div class="part-tag">Part 01 — Orientation</div>
+  <div class="part-title">The IOI System: What Actually Happens</div>
+  <div class="part-bar"></div>
+</div>
+
+<p class="body">You have spent your competitive programming life on Codeforces and AtCoder, and
+that is excellent training — but those websites quietly do a job for you that nobody will do at
+the IOI. When you press <span class="kbd">Submit</span> on Codeforces, their servers compile your
+code, feed it hidden input files, capture your output, compare it against expected answers, and
+print a verdict. At the IOI, <b>you</b> sit in front of a Linux computer, and for five hours that
+machine is your entire world: you compile your own code in a terminal, you feed it test files
+yourself, you compare outputs yourself, and only the final submission goes to the contest server.
+Nothing here is difficult — but every step must be automatic, because in a five-hour contest every
+confused minute is a lost subtask.</p>
+
+<p class="body">This manual builds that automation into your hands, keystroke by keystroke. It is
+written for exactly one reader: a strong competitive programmer on a MacBook Pro who has never
+seriously touched a terminal. Everything in it is taken from the real, current IOI system — the
+official contest rules, the real 2025 and 2026 contest environments, and the actual task files that
+contestants downloaded at IOI 2025 in Bolivia. Nothing is simplified, shortened, or faked.</p>
+
+<div class="h"><span class="hn">1.1</span>The format of the game</div>
+
+<p class="body">The International Olympiad in Informatics runs <b>two contest days</b>. On each day
+you get <b>three tasks</b> and <b>five hours</b> to work on them. Each task is worth
+<b>100 points</b>, so a full IOI is scored out of 600. There is no rating, no leaderboard during
+the contest, and no hacks — just you, three problems, and a clock. Medals are awarded by final
+score: roughly the top tenth of contestants receive gold, the next fifth silver, and the next third
+bronze. The exact cutoffs are set after each contest, but the practical message never changes:
+<b>partial credit is everything</b>. A contestant who reliably extracts 40 points from problems
+they cannot fully solve is medaling; a contestant who only submits complete solutions is not.</p>
+
+<p class="body">Before the first contest day there is also a <b>two-hour practice competition</b>
+with the same software, the same submissions, and the same grading system. Its tasks are published
+in advance, and you are even allowed to bring printed solutions on paper for it. Treat that session
+as sacred: it is your one guaranteed chance to test the entire pipeline — login, download, compile,
+submit, feedback — with zero stakes. This manual ends with you being fully ready to squeeze every
+drop of value out of those two hours.</p>
+
+<div class="h"><span class="hn">1.2</span>Subtasks: how 100 points are actually split</div>
+
+<p class="body">Every IOI task is divided into <b>subtasks</b> — groups of hidden test cases, each
+group with its own point value and its own (easier) constraints. A subtask is scored
+<b>all-or-nothing within itself</b>: your solution must pass <i>every</i> test case in the group to
+earn its points. This is the single most important structural fact about the IOI, so let's make it
+concrete with the real task <b>Festival</b> from IOI 2025. Its official data contains 115 test
+cases grouped into 8 subtasks: the sample tests form subtask 0 worth 0 points, and the remaining
+seven scored subtasks carry the 100 points, ordered from tiny special cases (small <span class="m">N</span>,
+simple structures) up to the full-constraint final group.</p>
+
+<p class="body">The consequences are beautiful for a well-prepared contestant. First, the samples
+you can see in the statement are worth nothing by themselves — they exist to let you verify your
+understanding. Second, a brute-force program that only handles tiny inputs still earns real points
+in the early subtasks. Third, the subtask table in each statement is literally a menu of
+intermediate goals: when you are stuck at 100 points, the path to 60 is written down in front of
+you in the constraints column. You will learn to read that table the way a chess player reads a
+board.</p>
+
+<div class="h"><span class="hn">1.3</span>The scoring formula, precisely</div>
+
+<p class="body">The official rules define the scoring in three layers, and each layer works in
+your favor once you understand it:</p>
+
+<ul class="dash">
+<li><b>Per test case:</b> your program runs once per test. If it exceeds the time or memory limit,
+or crashes, or prints a wrong answer, that test scores 0.</li>
+<li><b>Per subtask:</b> the subtask's score is the <b>minimum</b> across its test cases — one
+failing test poisons the whole group.</li>
+<li><b>Per task:</b> your final score for each subtask is the <b>maximum</b> that subtask ever
+achieved across <b>all your submissions</b>, and the task score is their sum.</li>
+</ul>
+
+<p class="body">That last rule deserves a bold box in your head: <b>scores never go down when you
+resubmit.</b> The official rules even give a worked example: submit once and score 30 on subtask 1
+and 10 on subtask 2; submit again and score 0 on subtask 1 but 40 on subtask 2 — your final score
+is 70, the best of each. This is why the single most reliable IOI strategy is to
+<b>submit early, submit partial solutions, and keep improving</b>. A brute force submitted in the
+first hour banks points that no later bug can take away from you.</p>
+
+<div class="h"><span class="hn">1.4</span>What you may and may not do</div>
+
+<p class="body">The submission rules are short and worth memorizing, because violating them costs
+real contest time. You may submit at most <b>once per minute per task</b> (this rate limit is
+lifted in the last 15 minutes). You may make at most <b>50 submissions per task</b> across the
+whole contest — far more than you should ever need, but not infinite, so never submit blind. Your
+source file must be a single C++ file of at most <b>50 KiB</b>. The grading server must be able to
+compile it in 10 seconds and 512 MiB, which no honest program ever approaches. Multi-threading is
+allowed, but with a catch: the measured running time is the <b>sum of all threads' time</b>, so
+threads buy you nothing unless the task explicitly says otherwise. And since 2025, the defining
+rule: <b>your submission must not read standard input, write standard output, or touch any
+file</b> — all data flows through the task's official interface, which is exactly why Part 7 of
+this manual exists.</p>
+
+<div class="h"><span class="hn">1.5</span>Codeforces vs the IOI, side by side</div>
+
+<table class="tbl">
+<thead><tr><th style="width:19%">Dimension</th><th style="width:40%">Codeforces / AtCoder</th><th>The IOI</th></tr></thead>
+<tbody>
+<tr><td><b>Session</b></td><td>One problem set, 2–3 hours, all problems visible</td><td>Two days × 3 tasks × 5 hours</td></tr>
+<tr><td><b>Scoring</b></td><td>Per problem, mostly binary (solved / not)</td><td>Per subtask, partial credit is the whole game</td></tr>
+<tr><td><b>Verdicts</b></td><td>Per-test verdicts: WA, TLE, RE on visible lists</td><td>Subtask scores + one diagnostic status per weak subtask</td></tr>
+<tr><td><b>Submissions</b></td><td>Effectively unlimited</td><td>1 per minute, 50 per task, per task per day</td></tr>
+<tr><td><b>Where code runs</b></td><td>Their servers, in the browser</td><td>Locally on your contest machine; only submission is uploaded</td></tr>
+<tr><td><b>Input / output</b></td><td>stdin / stdout</td><td>Function interface via provided files; stdin/stdout is forbidden</td></tr>
+<tr><td><b>Test data</b></td><td>Invisible, on their servers</td><td>Invisible on the grader; examples + tools in a zip you download</td></tr>
+<tr><td><b>Environment</b></td><td>Any browser, any machine</td><td>Ubuntu Linux workstation, no internet, fixed software list</td></tr>
+<tr><td><b>Stakes</b></td><td>Rating goes up and down</td><td>Medals; every submission is final-grade material</td></tr>
+</tbody>
+</table>
+
+<p class="body">Read that table once more and notice what is <i>not</i> there: nothing
+intellectually harder than what you already do. The IOI does not test harder algorithms than
+Codeforces — it tests the same thinking inside a system where <b>you</b> are the judge
+infrastructure for five hours. The rest of this manual installs that infrastructure into your
+hands until it is boring.</p>
+
+<!-- ============ PART 2 ============ -->
+<div class="chapter-header">
+  <div class="part-tag">Part 02 — The Environment</div>
+  <div class="part-title">The Contest Machine You Will Sit At</div>
+  <div class="part-bar"></div>
+</div>
+
+<p class="body">At the IOI you do not bring your own computer. You sit down at a workstation the
+organizers prepared, and everything on it was published months in advance — because the IOI
+deliberately publishes the full hardware and software list so contestants can practice on an
+identical setup. Here is the real environment from the most recent IOI (Tashkent, Uzbekistan,
+August 2026), which is also the pattern IOI 2027 in Potsdam, Germany is expected to follow:</p>
+
+<table class="tbl">
+<thead><tr><th style="width:26%">Layer</th><th>What is installed</th></tr></thead>
+<tbody>
+<tr><td><b>Operating system</b></td><td>Ubuntu 24.04 LTS (Linux)</td></tr>
+<tr><td><b>Compiler</b></td><td>GCC 13.3.0 (C++ with <span class="m">-std=gnu++20</span>), Python 3.12.3</td></tr>
+<tr><td><b>Editors / IDEs</b></td><td>VS Code (with C++ extension), Sublime Text, Vim, Neovim, Emacs, Geany, Kate, Nano, and more</td></tr>
+<tr><td><b>Debuggers</b></td><td>GDB 15.1, DDD, Valgrind 3.22</td></tr>
+<tr><td><b>Terminal</b></td><td>GNOME Terminal, Konsole, Byobu</td></tr>
+<tr><td><b>Browser</b></td><td>Firefox — this is where the CMS contest website lives</td></tr>
+<tr><td><b>Documentation</b></td><td>Offline C/C++ reference and Python 3 docs (works with no internet)</td></tr>
+<tr><td><b>Hardware</b></td><td>Intel Core Ultra 5, 16 GB RAM, SSD, ISO-layout keyboard and wired mouse</td></tr>
+</tbody>
+</table>
+
+<p class="body">Three practical notes fall out of that table. First, <b>VS Code is installed at
+the IOI</b> — the exact editor you already use, keyboard shortcuts and all, so your muscle memory
+travels with you. Second, the machines use <b>ISO keyboards</b>, where the Enter key is tall and
+the backslash moves next to the left Shift; if you type <span class="m">\n</span> fast, expect one
+or two typos in the first hour. You may bring your own keyboard and mouse if they are wired and
+store no settings — many contestants do exactly that. Third, the machine has <b>no internet</b>;
+the only network thing that works is the contest grading system in Firefox.</p>
+
+<p class="body">One more tradition matters enormously for your preparation: every recent IOI has
+published an <b>official practice virtual machine</b> — a downloadable image of the contest
+computer you can run at home. IOI 2024 published theirs on the competition equipment page, IOI
+2026 on their grading equipment page, and IOI 2027 will do the same on their official site as the
+event approaches. Part 13 of this manual shows you how to use it. Until then, your Mac will do
+everything the contest machine can do, because macOS and Linux are cousins: the terminal you are
+about to learn speaks the same language on both.</p>
+
+<div class="callout info">
+<div class="ct">The one difference to keep in mind</div>
+<p>Your Mac's default compiler is Apple's (a rebranded Clang) while the IOI uses real GCC. For
+learning, they are identical: same flags, same C++20, same behavior for anything you will write.
+Two tiny differences (a missing <span class="m">&lt;bits/stdc++.h&gt;</span> header and occasional
+warning text) are handled in Part 3, and the optional real-GCC install removes them completely.</p>
+</div>
+
+<!-- ============ PART 3 ============ -->
+<div class="chapter-header">
+  <div class="part-tag">Part 03 — Setup</div>
+  <div class="part-title">Turn Your Mac Into the Contest Machine</div>
+  <div class="part-bar"></div>
+</div>
+
+<p class="body">This part installs your toolkit. Do it once, in order, and by the end you will
+have a terminal, a C++ compiler matching the IOI's, and a folder system identical to what you
+would build on the contest machine. Total time: about 20 minutes, most of it waiting for
+downloads. Every command here is complete — copy it exactly.</p>
+
+<div class="h"><span class="hn">3.1</span>Open Terminal, your new best friend</div>
+
+<div class="step">
+  <div class="step-n">1</div>
+  <div>
+    <div class="step-t">Find and open the Terminal app</div>
+    <div class="step-d">Press <span class="kbd">Cmd</span>+<span class="kbd">Space</span> to open
+    Spotlight, type <span class="m">Terminal</span>, and press <span class="kbd">Enter</span>. A
+    white (or black) window appears with a line ending in <span class="m">%</span>. That window is
+    the <b>Terminal</b>, and the program running inside it is called a <b>shell</b> (on your Mac it
+    is <span class="m">zsh</span>; the IOI machines run <span class="m">bash</span> — same
+    language for everything you will do). Pin Terminal to your Dock: right-click its Dock icon →
+    Options → Keep in Dock.</div>
+  </div>
+</div>
+
+<div class="step">
+  <div class="step-n">2</div>
+  <div>
+    <div class="step-t">Read the prompt</div>
+    <div class="step-d">The line looks like <span class="m">firstname@MacBook-Pro ~ %</span>. The
+    part before the <span class="m">%</span> tells you who and where you are; everything you type
+    goes after it. The <span class="m">~</span> means your home folder. You never need to type the
+    prompt itself — the shell prints it for you.</div>
+  </div>
+</div>
+
+<div class="h"><span class="hn">3.2</span>Install the compiler (Apple's, 2 minutes)</div>
+
+<p class="body">Macs ship without a compiler, but Apple provides one free through the Command
+Line Tools. In Terminal, type this line and press <span class="kbd">Enter</span>:</p>
+
+<div class="code">
+<div class="code-head"><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="code-title">Terminal — install Command Line Tools</div></div>
+<pre><span class="cp">$</span> <span class="cc">xcode-select --install</span>
+<span class="co">xcode-select: note: install requested for command line developer tools</span></pre>
+</div>
+
+<p class="body">A system window pops up asking to install the tools. Click <b>Install</b>, accept
+the license when asked, and wait for the progress bar (typically 2–5 minutes; it downloads around
+1.5 GB). When a small dialog says the installation completed, verify it worked:</p>
+
+<div class="code">
+<div class="code-head"><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="code-title">Terminal — verify the compiler exists</div></div>
+<pre><span class="cp">$</span> <span class="cc">g++ --version</span>
+<span class="co">Apple clang version 17.0.0 ...</span>
+<span class="co">Target: arm64-apple-darwin25.0.0</span>
+<span class="co">InstalledDir: /Library/Developer/CommandLineTools/usr/bin</span></pre>
+</div>
+
+<p class="body">Any version number means success. Note carefully what you are looking at: on a
+Mac, the command <span class="m">g++</span> is actually <b>Apple Clang</b> wearing GCC's name —
+and that is fine. It fully supports C++20 and every flag in this manual.</p>
+
+<div class="h"><span class="hn">3.3</span>Install real GCC (the contest's compiler, 10 minutes)</div>
+
+<p class="body">For a 100% contest-matching compiler — including the <span class="m">bits/stdc++.h</span>
+header that GCC has and Clang lacks — install Homebrew (the standard Mac package manager) and
+then GCC through it. This step is optional but recommended, and Part 5's template is written to
+work either way.</p>
+
+<div class="code split">
+<div class="code-head"><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="code-title">Terminal — Homebrew, then GCC</div></div>
+<pre><span class="cp">$</span> <span class="cc">/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</span>
+<span class="co">(enter your Mac password when asked; wait for the installer to finish)</span>
+
+<span class="ck"># The installer prints two lines under "Next steps" — run them, they add brew to your PATH:</span>
+<span class="cp">$</span> <span class="cc">echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' &gt;&gt; ~/.zprofile</span>
+<span class="cp">$</span> <span class="cc">eval "$(/opt/homebrew/bin/brew shellenv)"</span>
+
+<span class="cp">$</span> <span class="cc">brew install gcc</span>
+<span class="co">(several minutes of downloading and installing)</span>
+
+<span class="cp">$</span> <span class="cc">g++-15 --version</span>
+<span class="co">g++-15 (Homebrew GCC ...) 15.x.x</span></pre>
+</div>
+
+<div class="callout warn">
+<div class="ct">Two compilers, two names — keep this straight</div>
+<p>After this, <span class="m">g++</span> is still Apple Clang and <span class="m">g++-15</span>
+(or <span class="m">g++-14</span>, whatever version brew printed) is real GCC. Throughout this
+manual, commands use <span class="m">g++</span> for simplicity — substitute
+<span class="m">g++-15</span> if you want the contest compiler. The one visible difference you
+might hit: <span class="m">#include &lt;bits/stdc++.h&gt;</span> compiles with GCC but fails with
+Clang. The template in Part 5 avoids it entirely, so both compilers work everywhere in this
+manual.</p>
+</div>
+
+<div class="h"><span class="hn">3.4</span>Wire up VS Code</div>
+
+<div class="step">
+  <div class="step-n">1</div>
+  <div>
+    <div class="step-t">Open your practice folder in VS Code — not loose files</div>
+    <div class="step-d">At the IOI you work inside one task folder at a time; copy that habit now.
+    In VS Code: <span class="kbd">File</span> → <span class="kbd">Open Folder...</span> → create
+    and select a folder named <span class="m">ioi</span> in your home directory. The sidebar now
+    shows that folder as your workspace, and new files land inside it automatically.</div>
+  </div>
+</div>
+
+<div class="step">
+  <div class="step-n">2</div>
+  <div>
+    <div class="step-t">Learn the one shortcut that changes everything</div>
+    <div class="step-d">Press <span class="kbd">Ctrl</span>+<span class="kbd">`</span>
+    (Control + backtick, the key under <span class="kbd">Esc</span>). VS Code opens its
+    <b>integrated terminal</b> in a panel at the bottom — same shell, same commands, but now it
+    lives next to your code. Press the same shortcut to hide it. This single shortcut is how you
+    will work for the rest of your life: code on top, terminal below.</div>
+  </div>
+</div>
+
+<div class="step">
+  <div class="step-n">3</div>
+  <div>
+    <div class="step-t">Optional: the C/C++ extension</div>
+    <div class="step-d">Click the Extensions icon in the left sidebar (four squares), search
+    <span class="m">C/C++</span> (by Microsoft), and click Install. It adds IntelliSense
+    autocomplete and red squiggles for errors while you type. The IOI machines have it
+    preinstalled too. You do not need to configure anything — the terminal remains where
+    compiling actually happens.</div>
+  </div>
+</div>
+
+<div class="h"><span class="hn">3.5</span>Create the folder system</div>
+
+<p class="body">Organization is free speed. In the VS Code terminal (or Terminal.app — same
+thing), run these lines one by one. They build the exact structure you will recreate for every
+task at the IOI, and <span class="m">open .</span> pops it open in Finder so you can see what you
+built:</p>
+
+<div class="code">
+<div class="code-head"><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="code-title">Terminal — build the practice home</div></div>
+<pre><span class="cp">$</span> <span class="cc">mkdir -p ~/ioi/2025/festival</span>
+<span class="cp">$</span> <span class="cc">cd ~/ioi/2025/festival</span>
+<span class="cp">$</span> <span class="cc">pwd</span>
+<span class="co">/Users/yourname/ioi/2025/festival</span>
+<span class="cp">$</span> <span class="cc">open .</span></pre>
+</div>
+
+<p class="body">The logic of the layout: one <span class="m">ioi</span> home, one subfolder per
+year, one subfolder per task. Inside a task folder you will keep the files you are about to meet
+for the rest of the manual: <span class="m">sol.cpp</span>, test files, and scripts. When you
+practice ten tasks a month, this structure is the difference between finding last week's stress
+tester and rewriting it.</p>
+
+<div class="h"><span class="hn">3.6</span>Setup verification checklist</div>
+
+<div class="check"><div class="box"></div><div>Terminal opens, shows a prompt ending in <span class="m">%</span>, and I can type in it.</div></div>
+<div class="check"><div class="box"></div><div><span class="m">g++ --version</span> prints a version (Apple clang).</div></div>
+<div class="check"><div class="box"></div><div>Optional: <span class="m">g++-15 --version</span> prints a GCC version.</div></div>
+<div class="check"><div class="box"></div><div>VS Code opens the <span class="m">~/ioi</span> folder, and <span class="kbd">Ctrl</span>+<span class="kbd">`</span> toggles the integrated terminal.</div></div>
+<div class="check"><div class="box"></div><div>The folder <span class="m">~/ioi/2025/festival</span> exists and <span class="m">pwd</span> confirms I am inside it.</div></div>
+
+<!-- ============ PART 4 ============ -->
+<div class="chapter-header">
+  <div class="part-tag">Part 04 — Fundamentals</div>
+  <div class="part-title">Terminal From Absolute Zero</div>
+  <div class="part-bar"></div>
+</div>
+
+<p class="body">A terminal is a text window where you talk to the computer by typing commands
+instead of clicking icons. That is the entire mystery. Each command is a small program with a
+name — <span class="m">ls</span>, <span class="m">cd</span>, <span class="m">g++</span> — and
+learning the terminal is just learning a vocabulary of about fifteen words. You type a command,
+press <span class="kbd">Enter</span>, the computer answers, and a fresh prompt appears. Nothing
+you type in this part can break anything: worst case, an error message appears and you try
+again. Work through this part with a real terminal open, typing every line yourself — reading
+without typing builds nothing.</p>
+
+<div class="h"><span class="hn">4.1</span>Where am I? — pwd and ls</div>
+
+<p class="body">The two most-used commands in existence answer the only two questions a shell
+ever asks: <i>where am I?</i> and <i>what is here?</i></p>
+
+<div class="code">
+<div class="code-head"><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="code-title">pwd — print working directory</div></div>
+<pre><span class="cp">$</span> <span class="cc">pwd</span>
+<span class="co">/Users/yourname</span>
+<span class="ck"># "I am in my home folder." pwd never changes anything — it only reports.</span></pre>
+</div>
+
+<div class="code">
+<div class="code-head"><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="code-title">ls — list what is here</div></div>
+<pre><span class="cp">$</span> <span class="cc">ls</span>
+<span class="co">Desktop  Documents  Downloads  ioi  Movies  Pictures</span>
+<span class="cp">$</span> <span class="cc">ls -a</span>        <span class="ck"># -a = also show hidden files (names starting with a dot)</span>
+<span class="co">.  ..  .zshrc  Desktop  Documents  ioi ...</span>
+<span class="cp">$</span> <span class="cc">ls -l</span>        <span class="ck"># -l = one per line, with sizes and dates</span>
+<span class="co">drwxr-xr-x   5 yourname  staff   160 Aug 29 10:12 ioi</span></pre>
+</div>
+
+<p class="body">Those extra letters like <span class="m">-a</span> are called <b>flags</b>: they
+modify a command's behavior, always written with a dash. You will use the same idea with the
+compiler later — <span class="m">g++ -O2</span> is exactly this pattern. Flags can be combined
+(<span class="m">ls -la</span>), and this flag grammar is identical on your Mac and on the IOI's
+Linux machines.</p>
+
+<div class="h"><span class="hn">4.2</span>Moving around — cd</div>
+
+<p class="body">You move between folders with <b>cd</b> (change directory). Four shortcuts cover
+ninety percent of all movement: a folder's name to enter it, <span class="m">..</span> to go up
+one level, <span class="m">~</span> to jump home, and <span class="m">cd</span> alone to jump home
+as well. Watch a full trip:</p>
+
+<div class="code">
+<div class="code-head"><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="code-title">cd — the only movement command you need</div></div>
+<pre><span class="cp">$</span> <span class="cc">cd ioi</span>              <span class="ck"># enter the ioi folder</span>
+<span class="cp">$</span> <span class="cc">pwd</span>
+<span class="co">/Users/yourname/ioi</span>
+<span class="cp">$</span> <span class="cc">cd 2025/festival</span>   <span class="ck"># enter nested folders in one step</span>
+<span class="cp">$</span> <span class="cc">pwd</span>
+<span class="co">/Users/yourname/ioi/2025/festival</span>
+<span class="cp">$</span> <span class="cc">cd ..</span>               <span class="ck"># up one level</span>
+<span class="cp">$</span> <span class="cc">cd</span>                  <span class="ck"># bare cd = straight home</span>
+<span class="cp">$</span> <span class="cc">pwd</span>
+<span class="co">/Users/yourname</span></pre>
+</div>
+
+<p class="body">Two habits will save you from the classic beginner frustration. First,
+<b>Tab completion</b>: type <span class="m">cd fes</span> and press <span class="kbd">Tab</span> —
+the shell completes it to <span class="m">festival</span> automatically. If two folders start
+with the same letters, pressing Tab twice shows the options. Tab completes commands, folder
+names, and file names; professionals use it constantly, which is why they never typo paths.
+Second, <b>drag and drop</b>: dragging a folder from Finder onto the terminal window types its
+full path for you — handy for awkward locations.</p>
+
+<div class="h"><span class="hn">4.3</span>Making things — mkdir and touch</div>
+
+<div class="code">
+<div class="code-head"><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="code-title">mkdir and touch — create folders and empty files</div></div>
+<pre><span class="cp">$</span> <span class="cc">cd ~/ioi/2025/festival</span>
+<span class="cp">$</span> <span class="cc">mkdir tests</span>          <span class="ck"># make a folder named tests</span>
+<span class="cp">$</span> <span class="cc">mkdir -p a/b/c</span>      <span class="ck"># -p = create the whole chain at once</span>
+<span class="cp">$</span> <span class="cc">touch sol.cpp</span>        <span class="ck"># create an empty file (or update its date)</span>
+<span class="cp">$</span> <span class="cc">ls</span>
+<span class="co">a  sol.cpp  tests</span></pre>
+</div>
+
+<p class="body">In practice you will create code files from VS Code
+(<span class="kbd">File</span> → <span class="kbd">New File</span> → name it
+<span class="m">sol.cpp</span>), and <span class="m">touch</span> mainly earns its keep when a
+script or a quick example needs an empty file fast. Both ways end in the same place: a file on
+disk that the terminal can see.</p>
+
+<div class="h"><span class="hn">4.4</span>Reading files — cat, head, tail</div>
+
+<div class="code">
+<div class="code-head"><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="code-title">cat — print a file's whole content</div></div>
+<pre><span class="cp">$</span> <span class="cc">cat sol.cpp</span>          <span class="ck"># print the file to the screen</span>
+<span class="co">#include &lt;iostream&gt;</span>
+<span class="co">int main() { std::cout &lt;&lt; "hi"; }</span>
+<span class="cp">$</span> <span class="cc">head -3 sol.cpp</span>      <span class="ck"># first 3 lines only</span>
+<span class="cp">$</span> <span class="cc">tail -3 sol.cpp</span>      <span class="ck"># last 3 lines only</span></pre>
+</div>
+
+<p class="body">You will use <span class="m">cat</span> constantly with test files, because it is
+the fastest way to ask "what exactly is inside <span class="m">01.in</span>?" — a question you
+will ask hundreds of times in your IOI life. For long outputs, <span class="m">head</span> and
+<span class="m">tail</span> show just the ends, which is usually all you need.</p>
+
+<div class="h"><span class="hn">4.5</span>The keys that feel like superpowers</div>
+
+<table class="tbl">
+<thead><tr><th style="width:24%">Key</th><th>What it does</th></tr></thead>
+<tbody>
+<tr><td><span class="kbd">Tab</span></td><td>Complete the current file/folder/command name — your typo shield</td></tr>
+<tr><td><span class="kbd">↑</span> / <span class="kbd">↓</span></td><td>Walk through your command history — re-run anything without retyping</td></tr>
+<tr><td><span class="kbd">Ctrl</span>+<span class="kbd">C</span></td><td>Kill the running program <i>now</i> — your escape hatch from infinite loops</td></tr>
+<tr><td><span class="kbd">Ctrl</span>+<span class="kbd">D</span></td><td>Send "end of input" — tells a waiting program "I finished typing" (vital in Part 5)</td></tr>
+<tr><td><span class="kbd">Ctrl</span>+<span class="kbd">L</span></td><td>Clear the screen (same as the <span class="m">clear</span> command)</td></tr>
+<tr><td><span class="m">history</span></td><td>Print everything you have typed this session, numbered</td></tr>
+</tbody>
+</table>
+
+<p class="body">Of these, <span class="kbd">Ctrl</span>+<span class="kbd">C</span> deserves a
+highlight box of its own, because one day — guaranteed — you will write a program with an
+infinite loop, run it, and watch the terminal freeze. It is not frozen; it is busy forever.
+<span class="kbd">Ctrl</span>+<span class="kbd">C</span> kills it instantly and hands you back
+the prompt. Nothing is broken, nothing is lost; just fix the loop and run again. At the IOI, this
+keystroke has saved more contest hours than any algorithm trick.</p>
+
+<div class="h"><span class="hn">4.6</span>Exercise: build a task folder like a contestant</div>
+
+<p class="body">Type this sequence yourself (not copy-paste — typing is the point) and predict
+each output before pressing <span class="kbd">Enter</span>. It rehearses the exact skeleton you
+will build under time pressure at the contest:</p>
+
+<div class="code">
+<div class="code-head"><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="code-title">Exercise — the task folder ritual</div></div>
+<pre><span class="cp">$</span> <span class="cc">cd ~/ioi</span>
+<span class="cp">$</span> <span class="cc">mkdir -p 2025/festival/examples</span>
+<span class="cp">$</span> <span class="cc">cd 2025/festival</span>
+<span class="cp">$</span> <span class="cc">pwd</span>                  <span class="ck"># check: .../ioi/2025/festival</span>
+<span class="cp">$</span> <span class="cc">ls</span>                    <span class="ck"># check: one folder, examples</span>
+<span class="cp">$</span> <span class="cc">cd ex</span><span class="ck">&lt;Tab&gt;</span>            <span class="ck"># Tab completes to examples</span>
+<span class="cp">$</span> <span class="cc">cd ..</span>                 <span class="ck"># back to the task folder</span>
+<span class="cp">$</span> <span class="cc">history</span>               <span class="ck"># admire your session</span></pre>
+</div>
+
+<div class="callout info">
+<div class="ct">The 20% that gives 80%</div>
+<p>Real contestants at the IOI touch exactly these commands for five hours:
+<span class="m">cd</span>, <span class="m">ls</span>, <span class="m">mkdir</span>,
+<span class="m">cat</span>, <span class="m">diff</span>, <span class="m">time</span>, and the
+compile command. Everything else is decoration. If you can do the exercise above without
+thinking, you already know enough terminal to compete.</p>
+</div>
+
+<!-- ============ PART 5 ============ -->
+<div class="chapter-header">
+  <div class="part-tag">Part 05 — The Build Loop</div>
+  <div class="part-title">Compile and Run C++ the IOI Way</div>
+  <div class="part-bar"></div>
+</div>
+
+<p class="body">Compiling means translating your human-readable <span class="m">sol.cpp</span>
+into a machine-executable file. On Codeforces this happens invisibly on their servers; at the IOI
+it is a command you type. In this part you will compile your first program with the
+<b>exact flags the IOI grading system uses</b>, learn what each flag means, run programs with
+keyboard input, and set up debug and timing builds — the complete build loop of a contest day.</p>
+
+<div class="h"><span class="hn">5.1</span>Your first compile</div>
+
+<p class="body">In VS Code, inside your <span class="m">~/ioi/2025/festival</span> folder, create
+a file named <span class="m">sum.cpp</span> with this content — a program that reads two integers
+and prints their sum:</p>
+
+<div class="code">
+<div class="code-head"><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="code-title">sum.cpp</div></div>
+<pre><span class="ck">#include &lt;iostream&gt;</span>
+<span class="cc">using namespace std;</span>
+
+<span class="cc">int main() {</span>
+<span class="cc">    long long a, b;</span>
+<span class="cc">    cin &gt;&gt; a &gt;&gt; b;</span>
+<span class="cc">    cout &lt;&lt; a + b &lt;&lt; "\n";</span>
+<span class="cc">    return 0;</span>
+<span class="cc">}</span></pre>
+</div>
+
+<p class="body">Now compile it with the official IOI recipe. This is the real compile command
+from the IOI 2025 contest files, with one adjustment noted below:</p>
+
+<div class="code">
+<div class="code-head"><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="code-title">Terminal — compile with contest flags</div></div>
+<pre><span class="cp">$</span> <span class="cc">cd ~/ioi/2025/festival</span>
+<span class="cp">$</span> <span class="cc">g++ -std=gnu++20 -Wall -O2 -pipe -g -o sum sum.cpp</span>
+<span class="cp">$</span> <span class="cc">ls</span>
+<span class="co">examples  sum  sum.cpp</span></pre>
+</div>
+
+<p class="body">If the shell answers with silence and a new prompt — that is success. The
+compiler only speaks when something is wrong. Notice the new green (executable) file
+<span class="m">sum</span> sitting next to <span class="m">sum.cpp</span>: that binary <i>is</i>
+your program now. Here is what every piece of that command does, because at 3 hours into a
+contest you should be able to reconstruct it from understanding, not memory:</p>
+
+<table class="tbl">
+<thead><tr><th style="width:22%">Piece</th><th>Meaning</th></tr></thead>
+<tbody>
+<tr><td><span class="m">g++</span></td><td>The compiler itself (use <span class="m">g++-15</span> for the contest-matching GCC)</td></tr>
+<tr><td><span class="m">-std=gnu++20</span></td><td>Use the C++20 language standard — the one the IOI graders use</td></tr>
+<tr><td><span class="m">-Wall</span></td><td>Warn about all suspicious code (unused variables, comparing signed with unsigned...). Always on, always read them</td></tr>
+<tr><td><span class="m">-O2</span></td><td>Optimize for speed — this is what the grader measures, so test with it</td></tr>
+<tr><td><span class="m">-pipe</span></td><td>Minor speedup of the compiler itself (cosmetic, but part of the official line)</td></tr>
+<tr><td><span class="m">-g</span></td><td>Keep debug symbols in the binary, so crash messages and debuggers are useful</td></tr>
+<tr><td><span class="m">-o sum</span></td><td>Name the output executable <span class="m">sum</span> (otherwise it defaults to <span class="m">a.out</span>)</td></tr>
+<tr><td><span class="m">sum.cpp</span></td><td>The source file to compile</td></tr>
+</tbody>
+</table>
+
+<div class="callout info">
+<div class="ct">About -static, the one flag we dropped</div>
+<p>The official IOI script also passes <span class="m">-static</span>, which bakes the C++
+library into the binary so it runs on any machine. It is a server-side convenience that macOS's
+compiler does not fully support, so leave it off at home — it changes nothing about how your
+program behaves. On a Linux machine (or the VM from Part 13) the full official line
+<span class="m">g++ -std=gnu++20 -Wall -O2 -pipe -static -g</span> works as-is.</p>
+</div>
+
+<div class="h"><span class="hn">5.2</span>Run it — and feed it input by hand</div>
+
+<div class="code">
+<div class="code-head"><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="code-title">Terminal — run and type input</div></div>
+<pre><span class="cp">$</span> <span class="cc">./sum</span>
+<span class="cy">3 4</span>
+<span class="cg">7</span>
+<span class="cp">$</span></pre>
+</div>
+
+<p class="body">Three things happened there. The <span class="m">./</span> prefix means "the file
+named <span class="m">sum</span> <i>in this folder</i>" — the shell will not run programs from
+the current folder unless you spell that out, a safety rule shared by macOS and Linux. Then the
+program waited silently for input: you typed <span class="m">3 4</span>, pressed
+<span class="kbd">Enter</span>, and it printed <span class="m">7</span>. When the program waits
+for more input than you want to give, press <span class="kbd">Ctrl</span>+<span class="kbd">D</span>
+to signal "end of input" — remember that key, it ends the wait and lets the program finish.</p>
+
+<div class="h"><span class="hn">5.3</span>When compilation fails — read only the first error</div>
+
+<div class="code">
+<div class="code-head"><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="code-title">A typical error session</div></div>
+<pre><span class="cp">$</span> <span class="cc">g++ -std=gnu++20 -Wall -O2 -g -o sum sum.cpp</span>
+<span class="cr">sum.cpp:5:12: error: expected ';' after expression</span>
+<span class="co">    cout &lt;&lt; a + b &lt;&lt; "\n"</span>
+<span class="co">           ^</span>
+<span class="co">           ;</span>
+<span class="cp">$</span></pre>
+</div>
+
+<p class="body">Compiler errors look terrifying and are actually polite: they name the
+<b>file:line:column</b>, say what they expected, and often draw an arrow at the exact character.
+The iron rule is <b>fix only the first error, then recompile</b> — later errors are usually
+echoes of the first one and vanish with it. Also learn the difference in tone:
+<span class="m">error</span> means no binary was produced, while <span class="m">warning</span>
+means it compiled but the compiler suspects a bug. Treat warnings as free code review;
+contestants who read them find their bugs an hour earlier than contestants who do not.</p>
+
+<div class="h"><span class="hn">5.4</span>The debug build — your bug-hunting compiler</div>
+
+<p class="body">There is a second compile mode that trades speed for x-ray vision. The
+<span class="m">-fsanitize=address,undefined</span> flags make the program check itself while
+running: out-of-bounds array access, use of uninitialized memory, integer overflow — the exact
+bugs that silently pass samples and detonate on hidden tests. The sanitizer does not catch wrong
+<i>algorithms</i>, but it catches illegal <i>memory behavior</i>, which is roughly half of all
+contest crashes.</p>
+
+<div class="code">
+<div class="code-head"><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="code-title">Terminal — debug build</div></div>
+<pre><span class="cp">$</span> <span class="cc">g++ -std=gnu++20 -Wall -g -fsanitize=address,undefined -o sumdbg sum.cpp</span>
+<span class="cp">$</span> <span class="cc">./sumdbg</span>
+<span class="cy">3 4</span>
+<span class="cg">7</span></pre>
+</div>
+
+<p class="body">Keep the two builds side by side during practice: <span class="m">sum</span> is
+the fast build you will submit, <span class="m">sumdbg</span> is the truth-teller you run when
+something misbehaves. When <span class="m">sumdbg</span> crashes, it prints a report naming the
+exact line of the bad access — read the first paragraph of that report and you are usually
+done. The IOI machines support sanitizers too, and they cost nothing to have in your toolbox.</p>
+
+<div class="h"><span class="hn">5.5</span>Printing to yourself — cerr</div>
+
+<p class="body">The other debugging primitive is printing from inside the program. The trick is
+to print to <b>standard error</b> instead of standard output, with <span class="m">cerr</span>.
+Standard output is the sacred channel that gets compared against expected answers — pollute it
+and every correct program becomes wrong. Standard error is your private channel: it appears on
+screen, never reaches the answer comparison, and (this is official IOI policy) writing to it is
+explicitly <b>allowed</b> in submissions.</p>
+
+<div class="code">
+<div class="code-head"><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="code-title">cerr — debug prints that never count</div></div>
+<pre><span class="cc">int main() {</span>
+<span class="cc">    long long a, b;</span>
+<span class="cc">    cin &gt;&gt; a &gt;&gt; b;</span>
+<span class="cc">    cerr &lt;&lt; "debug: read a=" &lt;&lt; a &lt;&lt; " b=" &lt;&lt; b &lt;&lt; "\n";</span>   <span class="ck">// private channel</span>
+<span class="cc">    cout &lt;&lt; a + b &lt;&lt; "\n";</span>                              <span class="ck">// the real answer</span>
+<span class="cc">}</span></pre>
+</div>
+
+<p class="body">Build a reflex: the moment a program behaves strangely, drop one
+<span class="m">cerr</span> at each suspicious step — what did I actually read? what is the
+loop counter? did I even reach this branch? — and watch the story unfold. Before submitting,
+sweep the <span class="m">cerr</span> lines away (or keep them; they are legal). Many medalists
+leave them in permanently because they cost nothing on the grading server.</p>
+
+<div class="h"><span class="hn">5.6</span>How fast is it? — time</div>
+
+<div class="code">
+<div class="code-head"><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="code-title">time — measure a run</div></div>
+<pre><span class="cp">$</span> <span class="cc">time ./sum &lt; big.in</span>
+<span class="cg">1987654</span>
+<span class="co">real    0m0.84s</span>
+<span class="co">user    0m0.83s</span>
+<span class="co">sys     0m0.01s</span></pre>
+</div>
+
+<p class="body">The <span class="m">time</span> command runs another command and reports how long
+it took: <span class="m">real</span> is wall-clock time, which is the number that matters. Tasks
+at the IOI publish their time limit (often 1–3 seconds), and the rules promise limits are
+generous — roughly double what the intended solution needs. Your private rule of thumb during
+practice: if your solution takes more than <b>half</b> the stated limit on your laptop, it is
+too slow for the grading server, because server hardware differs from your Mac. Half the limit
+is green; the limit itself is a red alert.</p>
+
+<div class="h"><span class="hn">5.7</span>The contest template</div>
+
+<p class="body">Here is a starting template built for the IOI: no <span class="m">bits/stdc++.h</span>
+(so it compiles on both your Mac's Clang and the contest's GCC), fast input setup, and a debug
+macro that disappears unless you ask for it. Save it once as
+<span class="m">template.cpp</span> inside <span class="m">~/ioi</span> and copy it into every
+new task folder. Note: you may <b>not</b> carry prewritten code into the IOI contest hall, but a
+template like this is something you will retype from memory in ninety seconds, and practicing
+with it builds exactly that speed.</p>
+
+<div class="code split">
+<div class="code-head"><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="code-title">template.cpp — works on Mac and on the contest machine</div></div>
+<pre><span class="ck">#include &lt;bits/stdc++.h&gt;   // if you installed Homebrew GCC, you may use this single line</span>
+<span class="ck">                          // and delete the eight includes below — both versions work</span>
+<span class="cc">#include &lt;algorithm&gt;</span>
+<span class="cc">#include &lt;cmath&gt;</span>
+<span class="cc">#include &lt;cstdio&gt;</span>
+<span class="cc">#include &lt;iostream&gt;</span>
+<span class="cc">#include &lt;map&gt;</span>
+<span class="cc">#include &lt;queue&gt;</span>
+<span class="cc">#include &lt;set&gt;</span>
+<span class="cc">#include &lt;vector&gt;</span>
+
+<span class="cc">using namespace std;</span>
+
+<span class="cc">int main() {</span>
+<span class="cc">    ios_base::sync_with_stdio(false);</span>   <span class="ck">// the two lines that make cin/cout fast</span>
+<span class="cc">    cin.tie(nullptr);</span>
+
+<span class="cc">    long long n;</span>
+<span class="cc">    cin &gt;&gt; n;</span>
+
+<span class="cc">    cout &lt;&lt; n * 2 &lt;&lt; "\n";</span>
+<span class="cc">    return 0;</span>
+<span class="cc">}</span></pre>
+</div>
+
+<div class="callout warn">
+<div class="ct">long long, always long long</div>
+<p>Notice the template reads into <span class="m">long long</span> by default. IOI constraints
+routinely let products and sums exceed 32-bit range, and "works on samples, overflows on test
+40" is the most heart-breaking failure in the sport. When in doubt — and even when not in
+doubt — use <span class="m">long long</span> for anything that can grow.</p>
+</div>
+
+<!-- ============ PART 6 ============ -->
+<div class="chapter-header">
+  <div class="part-tag">Part 06 — The Core Skill</div>
+  <div class="part-title">Test Cases: the .in / .out System</div>
+  <div class="part-bar"></div>
+</div>
+
+<p class="body">This is the chapter you asked for when you said "I have seen the input output
+zip but I don't know how to use it." Here is the entire secret in one sentence: <b>a test case is
+just two text files</b> — an <span class="m">.in</span> file holding the input, and an
+<span class="m">.out</span> (sometimes <span class="m">.ans</span>) file holding the expected
+output. The judge runs your program with the <span class="m">.in</span> file poured into its
+standard input, captures what your program prints, and compares that against the
+<span class="m">.out</span> file. Every testing tool in the world — from the IOI graders to
+your own scripts — is a variation of that loop. Master the loop by hand once, and every system
+you ever meet becomes obvious.</p>
+
+<p class="body">First, orient yourself with the flow diagram. Every piece of it is a command you
+already know or are about to learn:</p>
+
+<div class="flow">
+  <div class="flow-step"><b>Input file</b> <span class="fm">01.in</span> — the data the judge will feed your program</div>
+  <div class="flow-arrow"></div>
+  <div class="flow-step"><b>Your program</b> <span class="fm">./sum &lt; 01.in</span> — reads it, computes, prints to standard output</div>
+  <div class="flow-arrow"></div>
+  <div class="flow-step"><b>Your output</b> <span class="fm">./sum &lt; 01.in &gt; my.out</span> — captured into a file</div>
+  <div class="flow-arrow"></div>
+  <div class="flow-step"><b>Comparison</b> <span class="fm">diff my.out 01.out</span> — identical means PASS, any difference means FAIL</div>
+</div>
+
+<div class="h"><span class="hn">6.1</span>Make a test case with your own hands</div>
+
+<p class="body">Stay in <span class="m">~/ioi/2025/festival</span> with the compiled
+<span class="m">sum</span> from Part 5. A test needs input and expected output, so create both.
+The fastest way to make a small file is <span class="m">echo</span>, which prints whatever you
+give it — and with <span class="m">&gt;</span> it prints <i>into a file</i>:</p>
+
+<div class="code">
+<div class="code-head"><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="code-title">Terminal — create the input file</div></div>
+<pre><span class="cp">$</span> <span class="cc">cd ~/ioi/2025/festival</span>
+<span class="cp">$</span> <span class="cc">mkdir tests</span>
+<span class="cp">$</span> <span class="cc">echo "3 4" &gt; tests/01.in</span>
+<span class="cp">$</span> <span class="cc">cat tests/01.in</span>
+<span class="co">3 4</span></pre>
+</div>
+
+<p class="body">(For longer tests, create the file in VS Code instead — right-click the
+<span class="m">tests</span> folder in the sidebar → New File → type the input → save. The file
+is the same file no matter which tool made it.) Now the moment of truth — feed the file to your
+program with <b>input redirection</b>, the <span class="m">&lt;</span> symbol:</p>
+
+<div class="code">
+<div class="code-head"><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="code-title">Terminal — feed input from a file</div></div>
+<pre><span class="cp">$</span> <span class="cc">./sum &lt; tests/01.in</span>
+<span class="cg">7</span></pre>
+</div>
+
+<p class="body">That output appeared on your screen, but for comparison you need it in a file.
+<b>Output redirection</b>, the <span class="m">&gt;</span> symbol, captures it. Then write the
+expected answer by hand and compare — this exact three-line ritual is the heartbeat of all
+competitive programming outside a browser:</p>
+
+<div class="code">
+<div class="code-head"><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="code-title">Terminal — capture, expect, compare</div></div>
+<pre><span class="cp">$</span> <span class="cc">./sum &lt; tests/01.in &gt; tests/01.my</span>   <span class="ck"># run, capture my output</span>
+<span class="cp">$</span> <span class="cc">echo "7" &gt; tests/01.out</span>             <span class="ck"># the expected answer (by hand)</span>
+<span class="cp">$</span> <span class="cc">diff tests/01.my tests/01.out</span>          <span class="ck"># compare mine vs expected</span>
+<span class="cp">$</span>                                             <span class="ck"># silence = identical = PASS</span></pre>
+</div>
+
+<div class="callout info">
+<div class="ct">diff's silence confuses everyone once</div>
+<p><span class="m">diff</span> prints <b>nothing at all when the two files are identical</b>.
+Beginners stare at the empty screen waiting for a "correct!" that never comes. Silence is the
+compliment: no differences found. When files differ, <span class="m">diff</span> prints the
+differing lines with <span class="m">&lt;</span> marking yours and <span class="m">&gt;</span>
+marking the expected — a compact, readable report of exactly how you are wrong.</p>
+</div>
+
+<div class="h"><span class="hn">6.2</span>The PASS / FAIL one-liner you will type forever</div>
+
+<p class="body">Shells have a wonderful feature: <span class="m">&amp;&amp;</span> chains two
+commands so the second runs only if the first <i>succeeded</i>, and <span class="m">||</span>
+runs its command only if the first <i>failed</i>. Since <span class="m">diff</span> succeeds
+exactly when files match, this composes into a self-announcing verdict:</p>
+
+<div class="code">
+<div class="code-head"><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="code-title">The verdict one-liner, both outcomes</div></div>
+<pre><span class="cp">$</span> <span class="cc">./sum &lt; tests/01.in | diff - tests/01.out &amp;&amp; echo PASS || echo FAIL</span>
+<span class="cg">PASS</span>
+
+<span class="cp">$</span> <span class="cc">./sum &lt; tests/01.in | diff - tests/01.out &amp;&amp; echo PASS || echo FAIL</span>
+<span class="cr">1c1</span>
+<span class="cr">&lt; 8</span>
+<span class="cr">---</span>
+<span class="cr">&gt; 7</span>
+<span class="cr">FAIL</span></pre>
+</div>
+
+<p class="body">Two new characters appeared there. The pipe <span class="m">|</span> sends the
+left command's output directly into the right command's input — so <span class="m">diff -</span>
+compares "whatever arrives through the pipe" (the dash means read from the pipe instead of a
+file) against the expected file. No temporary <span class="m">.my</span> file needed. This one
+line is the entire manual testing workflow, compressed: <b>run, pipe, diff, verdict</b>.</p>
+
+<div class="h"><span class="hn">6.3</span>Test them all — the loop</div>
+
+<p class="body">Real tasks have dozens of tests, so typing the one-liner per file gets old in
+about a minute. Shells solve this with the <span class="m">for</span> loop, which runs a block
+once per matching file. This is the honest grandparent of every auto-judge script, and later in
+Part 8 you will grow it into a full grader:</p>
+
+<div class="code">
+<div class="code-head"><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="code-title">Run every test in the folder</div></div>
+<pre><span class="cp">$</span> <span class="cc">for f in tests/*.in; do ./sum &lt; "$f" | diff - "${f%.in}.out" &gt; /dev/null &amp;&amp; echo "PASS $f" || echo "FAIL $f"; done</span>
+<span class="cg">PASS tests/01.in</span>
+<span class="cg">PASS tests/02.in</span>
+<span class="cr">FAIL tests/03.in</span></pre>
+</div>
+
+<p class="body">Read it slowly, because this line is dense but never mystical:
+<span class="m">for f in tests/*.in</span> walks every file ending in <span class="m">.in</span>
+(the <span class="m">*</span> wildcard matches any name, and the shell expands it before the
+loop even starts); <span class="m">"$f"</span> is the current file; and
+<span class="m">${f%.in}.out</span> is shell-speak for "the same name but ending in
+<span class="m">.out</span>" — it cuts the <span class="m">.in</span> suffix and glues on
+<span class="m">.out</span>, turning <span class="m">01.in</span> into <span class="m">01.out</span>.
+The <span class="m">&gt; /dev/null</span> throws away diff's chatter so only your PASS/FAIL
+verdicts remain.</p>
+
+<div class="h"><span class="hn">6.4</span>What the real files look like — naming conventions</div>
+
+<p class="body">Now that you can operate on test files, meet the naming styles you will actually
+download from the internet and meet at the contest. There are only two, and both are friendly:</p>
+
+<table class="tbl">
+<thead><tr><th style="width:30%">Pattern</th><th>Where you will see it</th></tr></thead>
+<tbody>
+<tr><td><span class="m">01.in</span> + <span class="m">01.out</span><br><span class="m">02.in</span> + <span class="m">02.out</span></td>
+<td>The <b>examples folder</b> inside the zip you download from CMS during the contest — the official samples from the statement</td></tr>
+<tr><td><span class="m">0-01.in</span> + <span class="m">0-01.out</span><br><span class="m">2-14.in</span> + <span class="m">2-14.out</span></td>
+<td>The <b>official post-contest test data</b> published each year on ioinformatics.org. First number = subtask, second = test index: <span class="m">2-14</span> is test 14 of subtask 2. Subtask 0 is always the samples, worth 0 points</td></tr>
+<tr><td><span class="m">xxx.in</span> + <span class="m">xxx.ans</span></td>
+<td>Older archives and other judges sometimes use <span class="m">.ans</span> ("answer") instead of <span class="m">.out</span>. Same concept, different letter — your scripts will accept both</td></tr>
+</tbody>
+</table>
+
+<p class="body">To make this concrete, here is the genuine inside of the Festival examples from
+IOI 2025 — the exact files every contestant downloaded that day in Bolivia. Notice there is
+nothing exotic: plain numbers, one test per pair, exactly what you now know how to consume:</p>
+
+<div class="code">
+<div class="code-head"><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="code-title">Real IOI 2025 files — festival/examples</div></div>
+<pre><span class="cp">$</span> <span class="cc">cat examples/01.in</span>
+<span class="co">4 13</span>
+<span class="co">4 1</span>
+<span class="co">500 3</span>
+<span class="co">8 3</span>
+<span class="co">14 4</span>
+<span class="cp">$</span> <span class="cc">cat examples/01.out</span>
+<span class="co">3</span>
+<span class="co">2 3 0</span></pre>
+</div>
+
+<div class="h"><span class="hn">6.5</span>Writing your own tests — the contestant's real weapon</div>
+
+<p class="body">Here is the fact that reframes everything: at the IOI you do <b>not</b> receive
+the 100+ hidden test files. Those live on the grading server, and the examples in the statement
+are all you officially get. Champions are separated from everyone else by what they do about
+that fact: they <b>manufacture their own tests</b> — small, nasty, aimed at the exact cases
+their algorithm might mishandle — and in Part 9 you will automate that with a random generator.
+Hand-written tests remain the scalpel: the moment you suspect "what if all values are equal?"
+you are one <span class="m">echo</span> away from checking:</p>
+
+<div class="code">
+<div class="code-head"><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="code-title">Instant edge-case testing</div></div>
+<pre><span class="cp">$</span> <span class="cc">echo "0 0" | ./sum</span>          <span class="ck"># pipe a quick input, see the answer instantly</span>
+<span class="cg">0</span>
+<span class="cp">$</span> <span class="cc">echo "1000000000 1000000000" | ./sum</span>   <span class="ck"># the overflow trap — did you use long long?</span>
+<span class="cg">2000000000</span>
+<span class="cp">$</span> <span class="cc">echo "-5 3" | ./sum</span>        <span class="ck"># negatives</span>
+<span class="cg">-2</span></pre>
+</div>
+
+<p class="body">Notice the pipe again — <span class="m">echo "..." | ./sum</span> is the
+quickest possible "run with this input" in existence, perfect for questions you want answered
+in two seconds. Keep a growing <span class="m">tests/</span> folder for every task you
+practice: each hand test you save today is a bug you will never see again.</p>
+
+<div class="h"><span class="hn">6.6</span>Pitfalls — the four classic false alarms</div>
+
+<ul class="dash">
+<li><b>Trailing whitespace and line breaks.</b> <span class="m">diff</span> compares byte by
+byte, so a stray space at a line's end reads as a difference even when the answer looks right.
+If diff complains about a line that looks identical, suspect invisible characters —
+<span class="m">cat -A tests/01.out</span> (on Linux) or turning on "render whitespace" in VS
+Code exposes them. The IOI graders are more forgiving than raw diff about trailing
+whitespace, but build the habit of clean output anyway: print numbers separated by single
+spaces and end lines with <span class="m">"\n"</span>.</li>
+<li><b>Missing final newline.</b> If your file lacks the last line break, diff prints a cryptic
+<span class="m">\ No newline at end of file</span>. Not fatal, but normalize it away by ending
+every output with a newline.</li>
+<li><b>Wrong extension pairing.</b> Your script hunts <span class="m">.out</span> but the
+download used <span class="m">.ans</span> — everything "fails" for no visible reason. The
+judge script in Part 8 checks both extensions automatically.</li>
+<li><b>Multiple valid answers.</b> Some tasks accept several correct outputs ("print any
+valid schedule"), where your answer and the expected file differ while both are right. Raw
+diff says FAIL; the real grader uses a special checker. When a statement says "any",
+believe it — and rely on the sample grader or the online judge instead of plain diff.</li>
+</ul>
+
+<!-- ============ PART 7 ============ -->
+<div class="chapter-header">
+  <div class="part-tag">Part 07 — The Real Thing</div>
+  <div class="part-title">The Modern IOI Task: Interface + Sample Grader</div>
+  <div class="part-bar"></div>
+</div>
+
+<p class="body">Now the most important modernization to understand — because if you practiced
+only with old IOI archives, contest day would surprise you. Since IOI 2025, tasks no longer read
+<span class="m">cin</span> and print <span class="m">cout</span>. Instead, each task gives you
+<b>an interface: a set of functions you must implement</b>, and a grader program that calls
+your functions for you. Your submission is still a single C++ file, but its shape changed.</p>
+
+<p class="body">Look at two genuine signatures from IOI 2025. In <b>Festival</b>, you implement
+one function and simply return the answer:</p>
+
+<div class="code">
+<div class="code-head"><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="code-title">festival.h — the real IOI 2025 interface</div></div>
+<pre><span class="cc">#include &lt;vector&gt;</span>
+
+<span class="cc">std::vector&lt;int&gt; max_coupons(int A, std::vector&lt;int&gt; P, std::vector&lt;int&gt; T);</span></pre>
+</div>
+
+<p class="body">In <b>Souvenirs</b>, the flow runs both ways: you implement
+<span class="m">buy_souvenirs</span>, and inside it you may <i>call</i> a grader function named
+<span class="m">transaction(...)</span> to interact with the (hidden) shop — up to 5000 calls
+per test. That style is called a <b>communication</b> or <b>interactive</b> task. A third style,
+<b>output-only</b>, asks you to submit answer files computed by any means you like, no program
+at all. One IOI now mixes all three styles across its six tasks, which is exactly why the
+downloadable task package matters so much.</p>
+
+<div class="h"><span class="hn">7.1</span>The zip you download from CMS</div>
+
+<p class="body">During the contest, each task's page on CMS offers a zip package. You saw
+people use these folders — here is the complete anatomy of a real one (Festival, IOI 2025), so
+"some other stuff" becomes five files you know by name:</p>
+
+<div class="tree">festival.zip
+├── cpp/
+│   ├── <span class="hl">festival.cpp</span>      <span class="dim">← the skeleton YOU edit — implement max_coupons here</span>
+│   ├── <span class="hl">festival.h</span>        <span class="dim">← the interface: declares every function you must/implement or may call</span>
+│   ├── <span class="hl">grader.cpp</span>        <span class="dim">← the sample grader: a main() that reads input, calls your function, prints results</span>
+│   ├── <span class="hl">compile</span>           <span class="dim">← ready-made script: compiles grader + your file with official flags</span>
+│   ├── <span class="hl">run</span>               <span class="dim">← ready-made script: runs the binary under contest memory limits</span>
+│   └── <span class="hl">submit</span>            <span class="dim">← optional helper that submits from the terminal (ioisubmit)</span>
+└── examples/
+    ├── 01.in, 01.out   <span class="dim">← sample input and expected grader output</span>
+    ├── 02.in, 02.out
+    └── 03.in, 03.out</div>
+
+<p class="body">Read the division of labor once and it locks in: <b>the header declares the
+contract</b> (function names and types — never edit it), <b>the skeleton is your workspace</b>
+(it already compiles, returning a dummy answer), and <b>the grader is the test harness</b> that
+connects input files to your function. The three scripts just automate what you learned in
+Parts 5 and 6. When you unzip the package, the official <span class="m">compile</span> script
+contains exactly this line, which you can now read fluently:</p>
+
+<div class="code">
+<div class="code-head"><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="code-title">The official compile script (from IOI 2025 data)</div></div>
+<pre><span class="cc">g++ -std=gnu++20 -Wall -O2 -pipe -static -g -o festival grader.cpp festival.cpp</span></pre>
+</div>
+
+<div class="h"><span class="hn">7.2</span>The skeleton — what you actually edit</div>
+
+<p class="body">Here is the entire <span class="m">festival.cpp</span> you receive, verbatim.
+It already compiles. Your whole job is to replace the dummy return with a real algorithm:</p>
+
+<div class="code">
+<div class="code-head"><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="code-title">festival.cpp — the official skeleton</div></div>
+<pre><span class="cc">#include "festival.h"</span>
+
+<span class="cc">std::vector&lt;int&gt; max_coupons(int A, std::vector&lt;int&gt; P, std::vector&lt;int&gt; T) {</span>
+<span class="cc">  return {};</span>   <span class="ck">// ← replace this with your algorithm</span>
+<span class="cc">}</span></pre>
+</div>
+
+<p class="body">Notice what is absent: no <span class="m">main()</span>, no
+<span class="m">cin</span>, no <span class="m">cout</span>. The grader's
+<span class="m">main()</span> reads the input file, calls <span class="m">max_coupons</span>
+once with the data, receives your return value, and prints the resulting answer in the
+expected format. You write the algorithm; the harness does the plumbing. If this feels like a
+straitjacket, remember the payoff: no input parsing bugs, no output formatting bugs — the two
+most pointless ways to lose points have been engineered out of existence.</p>
+
+<div class="h"><span class="hn">7.3</span>The full contest workflow, end to end</div>
+
+<p class="body">Time to run the real thing. This is the exact loop you will perform at IOI
+2027 — memorize it as one motion:</p>
+
+<div class="step">
+  <div class="step-n">1</div>
+  <div>
+    <div class="step-t">Unzip the package and enter the code folder</div>
+    <div class="step-d">After downloading from CMS (the browser saves it to your Downloads
+    folder), unzip and move in. On your Mac double-clicking the zip works too; at the contest
+    the terminal is faster: <span class="m">unzip festival.zip</span> then
+    <span class="m">cd festival/cpp</span>.</div>
+  </div>
+</div>
+
+<div class="step">
+  <div class="step-n">2</div>
+  <div>
+    <div class="step-t">Implement your algorithm in festival.cpp</div>
+    <div class="step-d">Open the task folder in VS Code, edit only
+    <span class="m">festival.cpp</span>, keep the exact function signature from the header.
+    Compile early and often — the skeleton compiles before you touch anything, so any error
+    that appears is yours and easy to locate.</div>
+  </div>
+</div>
+
+<div class="step">
+  <div class="step-n">3</div>
+  <div>
+    <div class="step-t">Compile with the official script</div>
+    <div class="step-d">Run <span class="m">./compile</span> from inside
+    <span class="m">cpp/</span>. First time only, the system may need one permission: if the
+    shell says <i>permission denied</i>, run <span class="m">chmod +x compile run</span> once to
+    mark the scripts executable. On the contest machines they arrive pre-permitted.</div>
+  </div>
+</div>
+
+<div class="step">
+  <div class="step-n">4</div>
+  <div>
+    <div class="step-t">Run against the sample tests</div>
+    <div class="step-d">The sample grader reads standard input, so your Part 6 skills apply
+    unchanged: <span class="m">./run &lt; ../examples/01.in</span> prints your answer to the
+    screen; compare it with the expected file using the one-liner you already own. Do all
+    three examples in one sweep with the loop from 6.3.</div>
+  </div>
+</div>
+
+<div class="step">
+  <div class="step-n">5</div>
+  <div>
+    <div class="step-t">Write more tests, stress, and iterate</div>
+    <div class="step-d">Copy the examples' format into your own <span class="m">tests/</span>
+    folder and aim cases at your algorithm's weak spots (Part 9 automates this). Every edit is
+    the same heartbeat: save, <span class="m">./compile</span>,
+    <span class="m">./run &lt; test.in</span>.</div>
+  </div>
+</div>
+
+<div class="step">
+  <div class="step-n">6</div>
+  <div>
+    <div class="step-t">Submit festival.cpp — just that one file — on CMS</div>
+    <div class="step-d">The grader files and scripts are yours to keep locally but are never
+    submitted. Upload the single source file through the task page (Part 10 covers the
+    clicking), or at some IOIs run <span class="m">./submit festival.cpp</span> from the
+    terminal, which calls the <span class="m">ioisubmit</span> helper installed on contest
+    machines.</div>
+  </div>
+</div>
+
+<p class="body">And here is that loop as one picture — screenshot it into your head:</p>
+
+<div class="flow">
+  <div class="flow-step"><b>CMS task page</b> <span class="fm">download festival.zip</span> — statement PDF + package</div>
+  <div class="flow-arrow"></div>
+  <div class="flow-step"><b>Unzip + edit</b> <span class="fm">festival.cpp</span> — implement the required function</div>
+  <div class="flow-arrow"></div>
+  <div class="flow-step"><b>Compile</b> <span class="fm">./compile</span> — grader + your code become one binary</div>
+  <div class="flow-arrow"></div>
+  <div class="flow-step"><b>Test</b> <span class="fm">./run &lt; ../examples/01.in | diff - ../examples/01.out</span></div>
+  <div class="flow-arrow"></div>
+  <div class="flow-step"><b>Submit</b> <span class="fm">festival.cpp → CMS</span> — read subtask feedback, iterate</div>
+</div>
+
+<div class="h"><span class="hn">7.4</span>The run script — and why 2 GB of stack matters</div>
+
+<p class="body">The official <span class="m">run</span> script is three lines, and the middle
+two are quietly important:</p>
+
+<div class="code">
+<div class="code-head"><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="code-title">The official run script (from IOI 2025 data)</div></div>
+<pre><span class="cc">memory=2097152</span>    <span class="ck"># 2 GB total memory cap — the contest limit</span>
+<span class="cc">stack_size=2097152</span> <span class="ck"># 2 GB STACK cap — deep recursion is legal here!</span>
+<span class="cc">ulimit -v "$memory"</span>
+<span class="cc">ulimit -s "$stack_size"</span>
+<span class="cc">./festival</span></pre>
+</div>
+
+<p class="body">Default Linux stacks are small (8 MB), which kills deep recursion — a plain
+<span class="m">dfs(200000)</span> crashes with a stack overflow on a default machine but runs
+happily under the IOI's 2 GB stack. The IOI does this on purpose: recursion depth is not a trap
+they want in the game. When you practice at home, run your binary the same way
+(<span class="m">ulimit -s 2097152; ./festival</span> works on your Mac too), and you will
+never discover a stack difference between home and the contest.</p>
+
+<div class="h"><span class="hn">7.5</span>The rules that come with the format</div>
+
+<div class="callout danger">
+<div class="ct">Protocol Violation — the modern way to score zero</div>
+<p>The grading rules state it plainly: submissions <b>must not perform explicit input or output
+operations</b> — no <span class="m">cin</span>/<span class="m">cout</span>, no
+<span class="m">scanf</span>/<span class="m">printf</span>, no file access, and no
+<span class="m">exit()</span> calls. All data flows through the task's interface functions.
+A program that violates this receives the <b>Protocol Violation</b> verdict and scores nothing
+for that subtask. The single allowed exception is <b>standard error</b>: your
+<span class="m">cerr</span> debug lines are legal and invisible to the grader. Before every
+submission, scan your file once for stray <span class="m">cout</span> — it is a 5-second check
+that has saved whole contests.</p>
+</div>
+
+<p class="body">A closing word on the other two task styles so nothing on contest day can
+surprise you. <b>Communication tasks</b> (like Souvenirs, or Migrations from the same year)
+give you extra grader functions to call inside your implementation, with a call budget printed
+in the statement; your Part 6 instincts still work — the sample grader still reads an input
+file and prints a report — but now debugging also means counting your own calls with a
+<span class="m">cerr</span> counter. <b>Output-only subtasks</b> hand you the input files up
+front and ask you to submit <span class="m">.out</span> files you produced by any method —
+brute force, heuristics, even by hand for tiny cases; CMS simply has an "output file" upload
+slot instead of a source slot. Both styles plug into exactly the workflow you already own.</p>
+
+<!-- ============ PART 8 ============ -->
+<div class="chapter-header">
+  <div class="part-tag">Part 08 — Automation</div>
+  <div class="part-title">judge.sh: Build Your Own Grader</div>
+  <div class="part-bar"></div>
+</div>
+
+<p class="body">You now own every ingredient of testing by hand. Time to make the machine do the
+typing. A <b>judge script</b> is a small text file of shell commands that runs your solution on
+every test in a folder, compares outputs, colors the verdict, times every run, and prints a
+summary — your personal Codeforces, living in your task folder, no internet required. Contestants
+who build this habit test ten times more often than contestants who type the loop by hand, and
+testing ten times more often is, mechanically, how you find more bugs than your rivals.</p>
+
+<div class="h"><span class="hn">8.1</span>Scripts 101 — the thirty-second version</div>
+
+<p class="body">A shell script is just commands saved in a file, executed top to bottom, exactly
+as if you typed them. Make your first one now. The first line — the <b>shebang</b> — tells the
+system which shell language the file is written in; always use <span class="m">bash</span> for
+scripts (the IOI machines' native shell), even though your interactive Mac prompt is zsh:</p>
+
+<div class="code">
+<div class="code-head"><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="code-title">hello.sh — your first script</div></div>
+<pre><span class="cp">$</span> <span class="cc">cd ~/ioi/2025/festival</span>
+<span class="cp">$</span> <span class="cc">echo 'echo "scripts work!"' &gt; hello.sh</span>
+<span class="cp">$</span> <span class="cc">bash hello.sh</span>          <span class="ck"># run it with bash explicitly</span>
+<span class="cg">scripts work!</span>
+<span class="cp">$</span> <span class="cc">chmod +x hello.sh</span>       <span class="ck"># one-time: mark it executable</span>
+<span class="cp">$</span> <span class="cc">./hello.sh</span>               <span class="ck"># now it runs directly, like a command</span>
+<span class="cg">scripts work!</span></pre>
+</div>
+
+<p class="body">That is the whole ceremony: write commands in a file, run it with
+<span class="m">bash file.sh</span>, or mark it executable once with <span class="m">chmod +x</span>
+and run it with <span class="m">./file.sh</span> forever after. The <span class="m">permission
+denied</span> error you may have already met simply means you skipped the
+<span class="m">chmod</span> step — Appendix B lists it, but now you know it cold.</p>
+
+<div class="h"><span class="hn">8.2</span>The minimal judge — five lines to memorize</div>
+
+<p class="body">Before the deluxe version, burn this one into memory, because you can retype it
+from scratch at the contest in twenty seconds. It is nothing more than the Part 6 loop wearing a
+file:</p>
+
+<div class="code">
+<div class="code-head"><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="code-title">minijudge.sh — the loop, weaponized</div></div>
+<pre><span class="ck">#!/bin/bash</span>
+<span class="cc">for f in tests/*.in; do</span>
+<span class="cc">  ./sol &lt; "$f" | diff - "${f%.in}.out" &gt; /dev/null &amp;&amp; echo "PASS  $f" || echo "FAIL  $f"</span>
+<span class="cc">done</span></pre>
+</div>
+
+<p class="body">Save it as <span class="m">minijudge.sh</span> next to your compiled
+<span class="m">sol</span> (or <span class="m">festival</span> — same idea), run
+<span class="m">bash minijudge.sh</span>, and watch a wall of verdicts. This five-liner already
+covers the classic stdin/stdout tasks and the modern grader tasks alike, because both are just
+"run binary, feed file, compare."</p>
+
+<div class="h"><span class="hn">8.3</span>The full judge — colors, timing, summary</div>
+
+<p class="body">Now the version you will actually use daily. It accepts the solution and test
+folder as arguments, handles both <span class="m">.out</span> and <span class="m">.ans</span>
+extensions, times each run with <span class="m">/usr/bin/time</span>, flags runs that flirt with
+the time limit, and prints a final tally. Create it once, copy it into every task folder, and
+edit only the <span class="m">LIMIT</span> line per task:</p>
+
+<div class="code split">
+<div class="code-head"><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="code-title">judge.sh — your personal grader</div></div>
+<pre><span class="ck">#!/bin/bash</span>
+<span class="ck"># judge.sh — run every test in a folder against a solution binary.</span>
+<span class="ck"># Usage:  bash judge.sh &lt;binary&gt; &lt;test-folder&gt;     e.g.  bash judge.sh festival examples</span>
+
+<span class="cc">SOL=${1:-sol}</span>          <span class="ck"># 1st argument: solution binary (default "sol")</span>
+<span class="cc">DIR=${2:-tests}</span>        <span class="ck"># 2nd argument: test folder  (default "tests")</span>
+<span class="cc">LIMIT=1.0</span>             <span class="ck"># time limit in seconds — EDIT PER TASK (statement!)</span>
+<span class="cc">GREEN='\033[32m'; RED='\033[31m'; YELL='\033[33m'; OFF='\033[0m'</span>
+
+<span class="cc">pass=0; fail=0</span>
+<span class="cc">for IN in "$DIR"/*.in; do</span>
+<span class="cc">  name=$(basename "$IN" .in)</span>
+<span class="cc">  ans="$DIR/$name.out"</span>
+<span class="cc">  [ -f "$ans" ] || ans="$DIR/$name.ans"</span>          <span class="ck"># accept either extension</span>
+
+<span class="cc">  /usr/bin/time -p "$SOL" &lt; "$IN" &gt; /tmp/j.out 2&gt; /tmp/j.time</span>
+<span class="cc">  sec=$(grep '^real' /tmp/j.time | awk '{print $2}')</span>
+
+<span class="cc">  if diff -q /tmp/j.out "$ans" &gt; /dev/null; then</span>
+<span class="cc">    printf "  ${GREEN}PASS${OFF}  %-12s  %ss\n" "$name" "$sec"</span>
+<span class="cc">    pass=$((pass+1))</span>
+<span class="cc">  else</span>
+<span class="cc">    printf "  ${RED}FAIL${OFF}  %-12s  %ss\n" "$name" "$sec"</span>
+<span class="cc">    fail=$((fail+1))</span>
+<span class="cc">  fi</span>
+
+<span class="cc">  slow=$(awk -v t="$sec" -v l="$LIMIT" 'BEGIN{print (t&gt;=l)?1:0}')</span>
+<span class="cc">  [ "$slow" = "1" ] &amp;&amp; printf "        ${YELL}over ${LIMIT}s — too slow for the server${OFF}\n"</span>
+<span class="cc">done</span>
+
+<span class="cc">echo "  --------------------------------"</span>
+<span class="cc">echo "  $pass passed, $fail failed"</span></pre>
+</div>
+
+<p class="body">Run it and it looks alive. This is the output you want burned into your
+imagination — green rivers of PASS are what confidence feels like at a keyboard:</p>
+
+<div class="code">
+<div class="code-head"><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="code-title">Terminal — the judge at work</div></div>
+<pre><span class="cp">$</span> <span class="cc">bash judge.sh festival examples</span>
+<span class="cg">  PASS  01            0.01s</span>
+<span class="cg">  PASS  02            0.01s</span>
+<span class="cr">  FAIL  03            0.01s</span>
+<span class="co">  --------------------------------</span>
+<span class="co">  2 passed, 1 failed</span>
+<span class="cp">$</span> <span class="cc">bash judge.sh sol tests</span>          <span class="ck"># works for classic tasks too</span>
+<span class="cg">  PASS  01            0.02s</span>
+<span class="cg">  PASS  02            0.19s</span>
+<span class="cg">  PASS  03            0.83s</span>
+<span class="cy">        over 1.0s — too slow for the server</span>
+<span class="co">  --------------------------------</span>
+<span class="co">  3 passed, 0 failed</span></pre>
+</div>
+
+<div class="h"><span class="hn">8.4</span>How every line works — so you can repair it under pressure</div>
+
+<table class="tbl">
+<thead><tr><th style="width:30%">Line</th><th>What it does</th></tr></thead>
+<tbody>
+<tr><td><span class="m">SOL=${1:-sol}</span></td><td>Take the 1st argument, or default to <span class="m">sol</span>. The <span class="m">${var:-default}</span> pattern means "if empty, use this"</td></tr>
+<tr><td><span class="m">for IN in "$DIR"/*.in</span></td><td>Loop over every input file; quotes keep spaces in paths safe</td></tr>
+<tr><td><span class="m">basename "$IN" .in</span></td><td>Strip folder and extension: <span class="m">tests/01.in → 01</span></td></tr>
+<tr><td><span class="m">[ -f "$ans" ] || ...</span></td><td>"If the .out file does not exist, try .ans instead" — one-line fallback</td></tr>
+<tr><td><span class="m">/usr/bin/time -p ...</span></td><td>Run the solution with input redirected, output captured to <span class="m">/tmp/j.out</span>, timing report to <span class="m">/tmp/j.time</span> (exists on both macOS and Linux)</td></tr>
+<tr><td><span class="m">grep '^real' | awk ...</span></td><td>Pull the wall-clock seconds out of the timing report</td></tr>
+<tr><td><span class="m">diff -q ... &gt; /dev/null</span></td><td>Quiet compare — exit code 0 means identical; the <span class="m">if</span> reads that exit code</td></tr>
+<tr><td><span class="m">printf ... ${GREEN}...${OFF}</span></td><td>Colored verdicts via ANSI escape codes; <span class="m">%-12s</span> pads names into a column</td></tr>
+<tr><td><span class="m">$((pass+1))</span></td><td>Shell arithmetic — double parentheses do math</td></tr>
+</tbody>
+</table>
+
+<p class="body">One honest caveat: the script does not <i>enforce</i> the time limit — if your
+program loops forever, the judge waits forever. Smash <span class="kbd">Ctrl</span>+<span class="kbd">C</span>,
+fix the loop, re-run. (Linux's <span class="m">timeout</span> command can kill runaway programs
+automatically, but macOS lacks it by default; your reflexes are portable.) Also note the timing
+measures your Mac, not the grading server — treat the numbers as a guide, with the half-the-limit
+rule from Part 5 as your safety margin.</p>
+
+<div class="callout info">
+<div class="ct">Keep it in every folder</div>
+<p>Copy <span class="m">judge.sh</span> into each task folder as you create it, the same way you
+copy the template. Two files — <span class="m">sol.cpp</span> and
+<span class="m">judge.sh</span> — are the complete furniture of a task folder, and at the
+contest you will retype judge.sh from memory in two minutes because Part 8 made you understand
+every line rather than copy it blindly.</p>
+</div>
+
+<!-- ============ PART 9 ============ -->
+<div class="chapter-header">
+  <div class="part-tag">Part 09 — The Medalist Skill</div>
+  <div class="part-title">Stress Testing: Find Bugs Before CMS Does</div>
+  <div class="part-bar"></div>
+</div>
+
+<p class="body">Samples are the tip of the iceberg — Festival had 3 examples and 112 hidden
+tests. Between "passes all three examples" and "passes all 115" lives the entire difference
+between participants and medalists, and the professional way across that gap is
+<b>stress testing</b>: make the computer invent thousands of random tests, and check your fast
+solution against a slow, obviously-correct one on every single test. It requires no creativity,
+no intuition, no staring at code — just the three files you are about to build. This is the
+single highest-leverage technique in this entire manual.</p>
+
+<div class="h"><span class="hn">9.1</span>The three files of a stress setup</div>
+
+<table class="tbl">
+<thead><tr><th style="width:22%">File</th><th>Role</th></tr></thead>
+<tbody>
+<tr><td><span class="m">sol.cpp</span></td><td><b>The candidate.</b> Your fast, clever, possibly buggy solution (compiled as <span class="m">sol</span>)</td></tr>
+<tr><td><span class="m">brute.cpp</span></td><td><b>The oracle.</b> A slow, stupid, bulletproof solution — brute force over everything. Correctness must be obvious, speed irrelevant (compiled as <span class="m">brute</span>)</td></tr>
+<tr><td><span class="m">gen.py</span></td><td><b>The factory.</b> A Python script that prints one random test, different every time it runs</td></tr>
+</tbody>
+</table>
+
+<p class="body">The logic: any test where <span class="m">sol</span> and <span class="m">brute</span>
+disagree is, with near certainty, a test where <span class="m">sol</span> is wrong (the brute
+force is too simple to be wrong). The computer generates, both programs answer, the shell
+compares, thousands of times per minute. When they disagree, the loop stops and hands you the
+exact input that breaks your solution — a bug you would otherwise have discovered as a red
+subtask on contest day.</p>
+
+<div class="h"><span class="hn">9.2</span>A complete worked example — with a real bug</div>
+
+<p class="body">Task: read <span class="m">n</span>, then <span class="m">n</span> integers, print
+the maximum. Here is a fast solution carrying the most classic bug in the sport — initializing
+the maximum to zero:</p>
+
+<div class="code">
+<div class="code-head"><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="code-title">sol.cpp — fast, and secretly broken</div></div>
+<pre><span class="cc">#include &lt;bits/stdc++.h&gt;</span>
+<span class="cc">using namespace std;</span>
+
+<span class="cc">int main() {</span>
+<span class="cc">    int n; cin &gt;&gt; n;</span>
+<span class="cc">    int best = 0;</span>                          <span class="ck">// the bug: fails when all values are negative</span>
+<span class="cc">    for (int i = 0; i &lt; n; i++) { int x; cin &gt;&gt; x; best = max(best, x); }</span>
+<span class="cc">    cout &lt;&lt; best &lt;&lt; "\n";</span>
+<span class="cc">}</span></pre>
+</div>
+
+<div class="code">
+<div class="code-head"><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="code-title">brute.cpp — slow, stupid, correct</div></div>
+<pre><span class="cc">#include &lt;bits/stdc++.h&gt;</span>
+<span class="cc">using namespace std;</span>
+
+<span class="cc">int main() {</span>
+<span class="cc">    int n; cin &gt;&gt; n;</span>
+<span class="cc">    vector&lt;int&gt; v(n);</span>
+<span class="cc">    for (auto &amp;x : v) cin &gt;&gt; x;</span>
+<span class="cc">    sort(v.begin(), v.end());</span>               <span class="ck">// sorting cannot be wrong about the max</span>
+<span class="cc">    cout &lt;&lt; v.back() &lt;&lt; "\n";</span>
+<span class="cc">}</span></pre>
+</div>
+
+<p class="body">The generator is where the art lives. Rules of a good
+<span class="m">gen.py</span>: keep tests <b>small</b> (so the brute force stays fast and
+boundary behavior shows clearly), make every parameter <b>random but biased toward the edges</b>
+(include minimum sizes, duplicates, negatives), and take a <b>seed argument</b> so any failing
+test can be regenerated on demand:</p>
+
+<div class="code">
+<div class="code-head"><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="code-title">gen.py — random tests, biased toward bugs</div></div>
+<pre><span class="ck">#!/usr/bin/env python3</span>
+<span class="cc">import random, sys</span>
+
+<span class="cc">seed = int(sys.argv[1]) if len(sys.argv) &gt; 1 else 0</span>
+<span class="cc">random.seed(seed)</span>
+
+<span class="cc">n = random.randint(1, 6)</span>                  <span class="ck"># tiny — brute force territory</span>
+<span class="cc">print(n)</span>
+<span class="cc">print(*[random.randint(-10, 10) for _ in range(n)])</span>  <span class="ck"># negatives included on purpose</span></pre>
+</div>
+
+<p class="body">And the loop that runs the whole factory — generate, run both, compare, stop on
+the first disagreement, keeping the criminal evidence:</p>
+
+<div class="code">
+<div class="code-head"><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="code-title">stress.sh — the infinite bug hunter</div></div>
+<pre><span class="ck">#!/bin/bash</span>
+<span class="cc">for i in $(seq 1 10000); do</span>
+<span class="cc">  python3 gen.py $i &gt; stress.in</span>
+<span class="cc">  ./brute &lt; stress.in &gt; stress.ans</span>
+<span class="cc">  ./sol   &lt; stress.in &gt; stress.out</span>
+<span class="cc">  if ! diff -q stress.out stress.ans &gt; /dev/null; then</span>
+<span class="cc">    echo "MISMATCH on seed $i — saved as stress.in"</span>
+<span class="cc">    echo "--- input:";     cat stress.in</span>
+<span class="cc">    echo "--- expected:"; cat stress.ans</span>
+<span class="cc">    echo "--- mine:";     cat stress.out</span>
+<span class="cc">    exit 0</span>
+<span class="cc">  fi</span>
+<span class="cc">done</span>
+<span class="cc">echo "10000 tests, no differences found."</span></pre>
+</div>
+
+<div class="code">
+<div class="code-head"><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="code-title">Terminal — the hunt succeeds in seconds</div></div>
+<pre><span class="cp">$</span> <span class="cc">g++ -std=gnu++20 -O2 -o sol sol.cpp &amp;&amp; g++ -std=gnu++20 -O2 -o brute brute.cpp</span>
+<span class="cp">$</span> <span class="cc">bash stress.sh</span>
+<span class="cr">MISMATCH on seed 3 — saved as stress.in</span>
+<span class="co">--- input:</span>
+<span class="co">4</span>
+<span class="co">-9 -3 -7 -1</span>
+<span class="co">--- expected:</span>
+<span class="co">-1</span>
+<span class="co">--- mine:</span>
+<span class="co">0</span></pre>
+</div>
+
+<p class="body">Read what just happened: in under a second, the factory found the exact bug,
+handed you a three-line reproduction, and made the fix obvious — initialize
+<span class="m">best</span> to the first element (or negative infinity) instead of zero. No
+staring, no guessing, no "works on my machine." This loop — <b>fast solution, brute oracle,
+random factory</b> — is how strong contestants spend the middle hours of every contest, and why
+their submissions score full subtasks on the first try.</p>
+
+<div class="h"><span class="hn">9.3</span>What to do the moment a mismatch appears</div>
+
+<ul class="dash">
+<li><b>Save the seed.</b> <span class="m">python3 gen.py 3</span> regenerates the exact failing
+test forever — paste the seed number into a comment in your code while you debug.</li>
+<li><b>Reproduce by hand.</b> <span class="m">./sol &lt; stress.in</span> and
+<span class="m">./brute &lt; stress.in</span> side by side; the difference between their
+outputs is the whole story.</li>
+<li><b>X-ray it.</b> Drop <span class="m">cerr</span> traces into
+<span class="m">sol.cpp</span> at the suspicious steps, or recompile with
+<span class="m">-fsanitize=address,undefined</span> (Part 5) if you suspect memory sins.</li>
+<li><b>Shrink it.</b> Edit <span class="m">stress.in</span> down to the smallest input that
+still fails — a two-element failure is understood ten times faster than a twenty-element
+one. Then fix, re-run <span class="m">stress.sh</span>, and let it run to 10000 clean tests
+before you trust the fix.</li>
+</ul>
+
+<div class="h"><span class="hn">9.4</span>The edge-case checklist — bugs love these</div>
+
+<p class="body">Random generators find broad classes of bugs automatically, but some corners
+need deliberate aiming. Before submitting any solution, interrogate it against this list —
+each line is a real subtask someone lost points to:</p>
+
+<div class="check"><div class="box"></div><div><b>Minimum size.</b> n = 1, empty sequence, single node, no edges — off-by-one bugs live here.</div></div>
+<div class="check"><div class="box"></div><div><b>Maximum size.</b> The full constraint values — for overflow, for time limit, for memory.</div></div>
+<div class="check"><div class="box"></div><div><b>All equal.</b> Every element identical breaks algorithms that rely on distinctness.</div></div>
+<div class="check"><div class="box"></div><div><b>All negative / all zeros.</b> The exact bug our stress hunt just caught.</div></div>
+<div class="check"><div class="box"></div><div><b>Ties and boundary values.</b> Sums hitting exactly the constraint limit, answers of exactly 0 or exactly k.</div></div>
+<div class="check"><div class="box"></div><div><b>Already sorted / reverse sorted.</b> The classic quicksort and DP killers.</div></div>
+<div class="check"><div class="box"></div><div><b>Impossible cases.</b> If the answer can be "−1" or "IMPOSSIBLE", make sure both branches are reachable and printed exactly as specified.</div></div>
+
+<div class="h"><span class="hn">9.5</span>Stress testing grader tasks — the modern twist</div>
+
+<p class="body">For interface tasks (Part 7) the same trio works with one adaptation:
+<span class="m">brute.cpp</span> implements the same interface slowly, and instead of compiling
+each solution alone, you compile each <i>with the sample grader</i>:
+<span class="m">g++ -std=gnu++20 -O2 -o sol grader.cpp festival.cpp</span> and
+<span class="m">g++ -std=gnu++20 -O2 -o brute grader.cpp brute.cpp</span> (keep the brute in a
+separate file that also includes <span class="m">festival.h</span>). The stress loop is then
+byte-for-byte identical — generate, run both binaries, diff. For interactive tasks, stress
+testing the full protocol is harder, but you can still stress the <i>algorithm</i> by writing
+your own tiny simulator of the grader's rules; even that partial honesty catches most
+bugs.</p>
+
+<div class="callout warn">
+<div class="ct">The 80/20 of contest debugging</div>
+<p>When CMS feedback says a subtask failed (Part 10), your first move is not rereading code —
+it is stress testing with constraints matching that subtask. Set
+<span class="m">gen.py</span>'s ranges to the subtask's limits, run the loop, and let the
+mismatch tell you what the hidden test contained. Debugging starts with reproduction; stress
+testing is reproduction on demand.</p>
+</div>
+
+<!-- ============ PART 10 ============ -->
+<div class="chapter-header">
+  <div class="part-tag">Part 10 — The Contest Website</div>
+  <div class="part-title">CMS: Where Submissions Live and Die</div>
+  <div class="part-bar"></div>
+</div>
+
+<p class="body">CMS — the <b>Contest Management System</b> — is the website where the entire
+contest actually happens. It runs on the organizers' servers, and during the contest it is the
+only thing your machine's browser can reach. You will log in on both contest days, download every
+statement and task package from it, upload every submission to it, watch your subtask scores
+appear on it, and (if needed) ask the jury questions through it. It is deliberately boring
+software — a handful of pages, no surprises — and after this part you will know every button
+that exists. CMS has run the IOI for many years running, including the most recent editions, so
+what you learn here is the actual interface waiting for you.</p>
+
+<div class="h"><span class="hn">10.1</span>Logging in and the overview page</div>
+
+<p class="body">On contest morning, the contest machines' Firefox opens to the CMS address by
+default (if not, the URL is on the printed card at your desk, along with your username and
+password). Type the credentials, log in, and you land on the <b>overview page</b>: the contest
+name, a live <b>countdown</b>, the list of announcements, and the task list. That countdown is
+your heartbeat for five hours — glance, never stare. Announcements appear here when the jury
+corrects or clarifies something for everyone; strong contestants re-check this page every time
+they switch tasks, because missing an announcement means solving yesterday's version of the
+problem.</p>
+
+<div class="h"><span class="hn">10.2</span>The task page and its downloads</div>
+
+<p class="body">Clicking a task opens its page, which holds four things: the <b>statement</b>
+(PDF — open it in the browser's viewer or download and open in any PDF reader), the
+<b>attachment package</b> (the zip from Part 7), the <b>submission box</b>, and your
+<b>submission history</b> for this task. Reading order that works: open the statement, read it
+fully once without writing code, then download the package and unzip it. The statement's
+subtask table tells you the point menu; the package's <span class="m">examples/</span> gives you
+the first verdicts. Both downloads are also linked from the practice competition, so you will
+have rehearsed this exact clicking before it counts.</p>
+
+<div class="h"><span class="hn">10.3</span>Submitting — the full ceremony</div>
+
+<div class="step">
+  <div class="step-n">1</div>
+  <div>
+    <div class="step-t">Open the task page, find the submission box</div>
+    <div class="step-d">A file chooser and a language selector. Select your
+    <span class="m">festival.cpp</span> — the single source file, never the compiled binary,
+    never the grader, never a zip. If the language selector exists, pick C++ (recent IOIs accept
+    only C++ anyway).</div>
+  </div>
+</div>
+
+<div class="step">
+  <div class="step-n">2</div>
+  <div>
+    <div class="step-t">Press submit and watch the statuses</div>
+    <div class="step-d">The submission appears in your history and moves through states:
+    <b>compiling</b> (the server runs the compiler — a compile error shows the message here,
+    fix and resubmit), then <b>evaluating</b> (your program runs against every hidden test,
+    one at a time), then the <b>score table</b> appears. Evaluation of a full submission
+    typically takes a minute or two; use the wait to re-read your code or start the next
+    thought.</div>
+  </div>
+</div>
+
+<div class="step">
+  <div class="step-n">3</div>
+  <div>
+    <div class="step-t">Read the feedback like a report card</div>
+    <div class="step-d">One row per subtask: points achieved out of the subtask's maximum. A
+    fully passed subtask shows full marks. For a subtask that is not fully solved, CMS
+    additionally reveals the <b>number of the first failing test among its lowest-scoring
+    tests</b>, plus a one-line reason. You never see the test contents or your program's output
+    — just enough to know <i>what kind</i> of failure happened where.</div>
+  </div>
+</div>
+
+<div class="step">
+  <div class="step-n">4</div>
+  <div>
+    <div class="step-t">Iterate</div>
+    <div class="step-d">Feedback says subtask 3 died with "Execution timed out" on test 3-07?
+    Your complexity is too high for those constraints. "Output isn't correct" on 3-02? Aim
+    <span class="m">gen.py</span> at subtask 3's constraints and stress (Part 9). This
+    feedback→hypothesis→fix→resubmit loop is the contest; everything else in this manual
+    exists to make this loop fast.</div>
+  </div>
+</div>
+
+<div class="h"><span class="hn">10.4</span>The feedback statuses — a translation table</div>
+
+<table class="tbl">
+<thead><tr><th style="width:34%">Status</th><th>Translation</th><th style="width:30%">First move</th></tr></thead>
+<tbody>
+<tr><td><span class="chip chip-ok">Output is correct</span></td><td>This test passed</td><td>Nothing — celebrate briefly</td></tr>
+<tr><td><span class="chip chip-bad">Output isn't correct</span></td><td>Wrong answer on this test</td><td>Stress test at those constraints</td></tr>
+<tr><td><span class="chip chip-mid">Output is partially correct</span></td><td>Partial-credit subtask: your answer scored some fraction</td><td>Read the scoring rule in the statement again</td></tr>
+<tr><td><span class="chip chip-bad">Execution timed out</span></td><td>Time limit exceeded</td><td>Complexity is too big — think asymptotics, not constants</td></tr>
+<tr><td><span class="chip chip-bad">Execution killed</span></td><td>Memory limit (or otherwise force-killed)</td><td>Check array sizes and big allocations</td></tr>
+<tr><td><span class="chip chip-bad">Execution failed (nonzero return)</span></td><td>Crash — usually an uncaught exit or runtime error</td><td>Sanitizer build on a similar-size test</td></tr>
+<tr><td><span class="chip chip-bad">Protocol Violation</span></td><td>You touched stdin/stdout/files or called exit() — forbidden (Part 7)</td><td>Search your file for cin/cout/exit and resubmit</td></tr>
+</tbody>
+</table>
+
+<div class="h"><span class="hn">10.5</span>Questions — your hotline to the jury</div>
+
+<p class="body">Every CMS has a questions page. Use it when a statement is genuinely ambiguous
+— an unclear constraint, a contradictory example, an undefined term — and phrase it as a
+yes/no question quoting the page and line ("Page 2, Subtask 3: does 'adjacent' include the
+capital itself?"). The jury answers to you privately, and if the answer matters to everyone it
+becomes a public announcement. Never ask "is my approach right" or "what does this task mean" —
+those get declined, and the wait costs you minutes. Between questions, the page doubles as your
+announcement inbox, which is the real reason to visit it periodically.</p>
+
+<div class="h"><span class="hn">10.6</span>Submission strategy — spend them like a rich person</div>
+
+<p class="body">You have 50 submissions per task and one per minute; the per-minute gate lifts
+for the final 15 minutes. Strategy in four rules. <b>First:</b> submit <i>something</i> early —
+the brute force from hour one banks the small subtasks permanently (scores never decrease,
+Part 1). <b>Second:</b> submit at every meaningful milestone, not just at completion; a 60-point
+version on the server is worth more than a 100-point version that never leaves your machine.
+<b>Third:</b> before the last 15 minutes, ensure your <b>best</b> current version of every task
+is the one most recently submitted — the final score is the max per subtask, but only for
+things you actually uploaded. <b>Fourth:</b> keep a mental budget: a typical medal run uses
+5–15 submissions per task; if you are past 30, you are debugging by resubmission, which is a
+smell — go back to stress testing.</p>
+
+<!-- ============ PART 11 ============ -->
+<div class="chapter-header">
+  <div class="part-tag">Part 11 — Dress Rehearsal</div>
+  <div class="part-title">Mock Contest Day: The Full Simulation</div>
+  <div class="part-bar"></div>
+</div>
+
+<p class="body">Knowledge becomes speed only through rehearsal under pressure. This part is your
+script for a full 5-hour simulation — do one per week in the months before the IOI, using real
+IOI tasks from Part 12, with the timer visible and the rules honored (no internet, no help).
+The first simulation feels awful for everyone; by the fourth, the timeline below will feel like
+a familiar road. That familiarity — not any single trick — is what you are actually
+building.</p>
+
+<div class="h"><span class="hn">11.1</span>The timeline of a winning day</div>
+
+<table class="tbl">
+<thead><tr><th style="width:20%">Clock</th><th>Phase and mission</th></tr></thead>
+<tbody>
+<tr><td><b>0:00 – 0:20</b></td><td><b>Setup and reconnaissance.</b> Login, verify CMS, download all three packages and statements. Read all three statements once. Rank tasks by (points you expect) ÷ (time you expect). Panic is forbidden; this phase is reading, not solving.</td></tr>
+<tr><td><b>0:20 – 0:50</b></td><td><b>First blood.</b> Take the easiest task. Type the brute force immediately, even before thinking hard — it becomes your oracle for stress and often earns subtask points by itself. Submit it if it compiles and passes examples.</td></tr>
+<tr><td><b>0:50 – 2:00</b></td><td><b>Deep work, task one.</b> Solve the easy task properly: algorithm, implement, judge.sh on all examples plus hand tests, stress if a brute exists, submit. Leave only when the remaining gap needs an idea you do not have.</td></tr>
+<tr><td><b>2:00 – 3:30</b></td><td><b>The middle game.</b> Move to task two. Same loop. If stuck for 30 consecutive minutes on one idea, switch tasks or switch subtasks — the 30-minute rule exists because sunk cost is the deadliest contest sin.</td></tr>
+<tr><td><b>3:30 – 4:30</b></td><td><b>Harvest.</b> Every task gets a current-best submission on the server. Return to whatever has the cheapest remaining points: an unfinished subtask 4 here, a special case there. Partial credit compounds.</td></tr>
+<tr><td><b>4:30 – 4:45</b></td><td><b>Stabilize.</b> No new algorithms. Fix known bugs, re-run judge.sh everywhere, re-submit best versions. Drink water, stretch your hands, breathe.</td></tr>
+<tr><td><b>4:45 – 5:00</b></td><td><b>The last 15.</b> Submission rate limit is lifted. Final versions out. Never let unsubmitted code exist at 4:50 — the clock does not negotiate.</td></tr>
+</tbody>
+</table>
+
+<div class="h"><span class="hn">11.2</span>The three iron rules of contest time</div>
+
+<ul class="dash">
+<li><b>The 30-minute rule.</b> Any single idea that has consumed 30 minutes without progress
+gets abandoned — switch task, switch subtask, or switch approach. The contest rewards
+opportunity-hopping, not heroism.</li>
+<li><b>The always-submitted rule.</b> At every moment of the contest, the server holds your
+best current solution for every task. Crashes, blackouts, and panics then cost you nothing.
+This rule alone has saved medal totals.</li>
+<li><b>The brute-first rule.</b> Before any clever algorithm, write the stupid one. It is your
+stress oracle, your partial credit, and often your understanding of the problem — the clever
+version arrives faster after the brute exists.</li>
+</ul>
+
+<div class="h"><span class="hn">11.3</span>Before the clock starts — the practice day and morning checklist</div>
+
+<p class="body">The day before contest day one is the <b>practice competition</b>: same CMS,
+same submissions, same grading. Its tasks are published in advance and you may bring printed
+solutions — so prepare them, and spend the session testing the pipeline, not the problems:
+log in, download a package, unzip, compile with <span class="m">./compile</span>, run the
+examples, submit, read feedback, ask one dummy question, and check the terminal's
+<span class="m">ulimit -s</span>. Ten minutes of ceremony, rehearsed once, removes all of its
+power to surprise you tomorrow.</p>
+
+<div class="check"><div class="box"></div><div>Slept 8 hours; ate breakfast; water bottle on desk.</div></div>
+<div class="check"><div class="box"></div><div>Own wired keyboard/mouse brought (if using) and tested at the practice session.</div></div>
+<div class="check"><div class="box"></div><div>Logged in, statements open, packages downloaded for all three tasks.</div></div>
+<div class="check"><div class="box"></div><div>Timer visible; scratch paper and pens ready (paper is allowed; calculators usually are not — check rules).</div></div>
+<div class="check"><div class="box"></div><div>Watch on the desk, not from CMS — your eyes should find the time without a click.</div></div>
+
+<div class="h"><span class="hn">11.4</span>When things go wrong — the emergency protocols</div>
+
+<ul class="dash">
+<li><b>Machine freezes or crashes.</b> Raise your hand immediately — staff exist for exactly
+this. Your submissions live on the server, and your files survive reboots; the contest clock
+keeps running only in the sense that staff can grant time compensation, which they do. Never
+spend five minutes self-repairing what a volunteer fixes in one.</li>
+<li><b>Your code file vanishes</b> (accidental overwrite, wrong folder). CMS kept every version
+you submitted — open your submission history and re-download your last
+<span class="m">festival.cpp</span>. This is the quiet superpower of the always-submitted
+rule.</li>
+<li><b>Panic arrives</b> (it visits everyone). The protocol: hands off keyboard, eyes closed,
+three slow breaths, then type the brute force for whatever task is in front of you. Brute
+force is the panic-proof activity — it needs no inspiration, and it always pays something.</li>
+<li><b>Announcement lands mid-solve.</b> Finish the current line of thought, then read it fully
+and re-check any constraint it touches before continuing.</li>
+</ul>
+
+<!-- ============ PART 12 ============ -->
+<div class="chapter-header">
+  <div class="part-tag">Part 12 — The Arsenal</div>
+  <div class="part-title">Practice Resources and Setup</div>
+  <div class="part-bar"></div>
+</div>
+
+<p class="body">You now own the complete machine — here is where to point it. The IOI ecosystem
+is unusually generous: after every contest, the organizers publish the statements, the full
+official test data, and even the model solutions, and a community judge mirrors the whole
+experience online. Everything below is real, current, and free.</p>
+
+<div class="h"><span class="hn">12.1</span>The four sources that matter</div>
+
+<table class="tbl">
+<thead><tr><th style="width:24%">Source</th><th>What it gives you</th></tr></thead>
+<tbody>
+<tr><td><b>oj.uz</b></td><td>An online judge hosting the full IOI archive (plus JOI, POI, CEOI, and more) with <b>IOI-style subtask feedback</b> — submit your file, see per-subtask scores exactly like CMS. Many tasks also offer their attachment package (sample graders) for download. This is your default place to train the modern workflow end-to-end.</td></tr>
+<tr><td><b>ioinformatics.org</b></td><td>The official IOI site. Each year's page links the statements (PDF), the <b>official test data zip</b>, the solutions zip, and the <b>practice-competition zip</b> — for example <span class="m">ioinformatics.org/files/ioi2025tests.zip</span>. Downloading a past year's tests and grading yourself locally (next section) is as close to the real thing as practice gets.</td></tr>
+<tr><td><b>Official practice VMs</b></td><td>Each recent host published a virtual machine image of the contest environment (IOI 2024: competition equipment page; IOI 2026: grading equipment page). Watch the IOI 2027 site for theirs — combined with Part 13, this is a pixel-perfect dress rehearsal.</td></tr>
+<tr><td><b>The IOI syllabus</b></td><td>The official list of topics that <i>can</i> and <i>cannot</i> appear. Read it once per season: it tells you exactly what to study — and, just as valuable, what to skip.</td></tr>
+</tbody>
+</table>
+
+<div class="h"><span class="hn">12.2</span>What is inside an official test-data zip</div>
+
+<p class="body">Download <span class="m">ioi2025tests.zip</span> once and unzip it, and you will
+meet the richest folder in this manual — the full judging data for an entire IOI. One task
+(Festival) looks like this, and every task follows the pattern:</p>
+
+<div class="tree">ioi2025tests/
+└── festival/
+    ├── attachments/festival.zip   <span class="dim">← the exact zip contestants downloaded that day (Part 7)</span>
+    ├── tests/                     <span class="dim">← all 115 hidden tests, finally public: 0-01.in, 0-01.out, 1-01.in, ... 7-14.out</span>
+    ├── subtasks/                  <span class="dim">← JSON files mapping tests to subtasks with scores</span>
+    ├── graders/festival.h, grader.cpp   <span class="dim">← the OFFICIAL grader (stricter than the sample one)</span>
+    ├── checker/checker.cpp        <span class="dim">← the special judge, when multiple answers are valid</span>
+    ├── problem.json               <span class="dim">← machine-readable limits: time 1.0s, memory 2 GB, task type</span>
+    └── solutions/                 <span class="dim">← the jury's own solutions: correct, incorrect, too-slow, model</span></div>
+
+<p class="body">Two golden details hide in there. First, the official
+<span class="m">tests/*.in</span> files begin with a secret anti-tampering line, which is why
+you must grade them with the <b>official</b> grader from <span class="m">graders/</span>, not
+the sample grader from the attachment zip. Second, <span class="m">subtasks/*.json</span> plus
+<span class="m">problem.json</span> contain everything needed to score yourself exactly like
+the server did. Which means one small script gives you a private IOI judge.</p>
+
+<div class="h"><span class="hn">12.3</span>ioi_judge.py — grade yourself on official data</div>
+
+<p class="body">Save this next to your unzipped task folder. It compiles your solution with the
+official grader, runs every test in its subtask groups, and prints the score table you would
+have seen on CMS. (Note it compares token-by-token rather than byte-by-byte, which politely
+ignores whitespace differences — the same forgiveness real graders extend.)</p>
+
+<div class="code split">
+<div class="code-head"><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="code-title">ioi_judge.py — your private IOI grader</div></div>
+<pre><span class="ck">#!/usr/bin/env python3</span>
+<span class="ck"># Usage: python3 ioi_judge.py &lt;task-folder&gt; &lt;your-solution.cpp&gt;</span>
+<span class="ck">#   e.g. python3 ioi_judge.py festival my_festival.cpp</span>
+<span class="cc">import json, glob, os, subprocess, sys, time</span>
+
+<span class="cc">task = sys.argv[1]</span>
+<span class="cc">sol  = sys.argv[2]</span>
+<span class="cc">name = os.path.splitext(os.path.basename(sol))[0]</span>
+
+<span class="cc">meta = json.load(open(f"{task}/problem.json"))</span>
+<span class="cc">limit = meta["time_limit"]</span>
+<span class="cc">binary = f"{name}_official"</span>
+
+<span class="ck"># compile with the OFFICIAL grader — it speaks the secret test format</span>
+<span class="cc">subprocess.run(["g++", "-std=gnu++20", "-O2", "-o", binary,</span>
+<span class="cc">               f"{task}/graders/grader.cpp", sol], check=True)</span>
+
+<span class="cc">total = earned = 0</span>
+<span class="cc">for sub in sorted(glob.glob(f"{task}/subtasks/*.json")):</span>
+<span class="cc">    info = json.load(open(sub))</span>
+<span class="cc">    ok = True; worst = 0.0</span>
+<span class="cc">    for tc in info["testcases"]:</span>
+<span class="cc">        tin  = open(f"{task}/tests/{tc}.in")</span>
+<span class="cc">        t0 = time.time()</span>
+<span class="cc">        r = subprocess.run([f"./{binary}"], stdin=tin,</span>
+<span class="cc">                           capture_output=True, text=True)</span>
+<span class="cc">        worst = max(worst, time.time() - t0)</span>
+<span class="cc">        want = open(f"{task}/tests/{tc}.out").read().split()</span>
+<span class="cc">        if r.stdout.split() != want: ok = False</span>
+<span class="cc">    mark = "PASS" if ok else "FAIL"</span>
+<span class="cc">    print(f"  {mark}  subtask {info['score']:>5.1f} pts   worst {worst:.2f}s / {limit}s")</span>
+<span class="cc">    total += info["score"]; earned += info["score"] if ok else 0</span>
+
+<span class="cc">print(f"  ------------------------------------------")</span>
+<span class="cc">print(f"  YOU SCORED: {earned:.1f} / {total:.1f}")</span></pre>
+</div>
+
+<div class="code">
+<div class="code-head"><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="code-title">Terminal — grading a whole IOI task at home</div></div>
+<pre><span class="cp">$</span> <span class="cc">python3 ioi_judge.py festival my_festival.cpp</span>
+<span class="cg">  PASS  subtask   0.0 pts   worst 0.01s / 1.0s</span>
+<span class="cg">  PASS  subtask   7.0 pts   worst 0.03s / 1.0s</span>
+<span class="cr">  FAIL  subtask  11.0 pts   worst 0.44s / 1.0s</span>
+<span class="cg">  PASS  subtask  15.0 pts   worst 0.18s / 1.0s</span>
+<span class="co">  ...</span>
+<span class="co">  YOU SCORED: 63.0 / 100.0</span></pre>
+</div>
+
+<div class="callout warn">
+<div class="ct">One honest limitation</div>
+<p>Tasks with <b>partial or multiple-valid-answer scoring</b> (like World Map, where many maps
+earn different scores) are graded by a special checker, not by output equality — for those,
+plain comparison can under- or over-count, so verify your final score on oj.uz, which runs the
+real checker. For exact-match tasks like Festival, the script above is exact.</p>
+</div>
+
+<div class="h"><span class="hn">12.4</span>The starter ladder — ten tasks in order</div>
+
+<p class="body">Do these in order, all available on oj.uz, each one fully (all subtasks, stress
+tested, judged locally where data exists). The ladder climbs from "learn the system" to "real
+medal difficulty", and each step adds one new skill:</p>
+
+<table class="tbl">
+<thead><tr><th style="width:8%">#</th><th style="width:36%">Task</th><th>What it trains</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>IOI 2024 Practice — A+B</td><td>The pipeline itself: package, grader, submit</td></tr>
+<tr><td>2</td><td>IOI 2016 — Detecting Molecules</td><td>Two pointers, subtask thinking, stress setup</td></tr>
+<tr><td>3</td><td>IOI 2018 — Combo</td><td>Implementation care under interaction-style interfaces</td></tr>
+<tr><td>4</td><td>IOI 2025 — Festival</td><td>The modern grader workflow on a full 8-subtask task (this manual's running example)</td></tr>
+<tr><td>5</td><td>IOI 2019 — Shoes</td><td>Observation + counting; classic batch style</td></tr>
+<tr><td>6</td><td>IOI 2021 — Keys</td><td>Graph exploration and careful brute-force baselines</td></tr>
+<tr><td>7</td><td>IOI 2020 — Plants</td><td>Harder structure discovery; partial-credit harvesting</td></tr>
+<tr><td>8</td><td>IOI 2025 — World Map</td><td>Partial-scoring output thinking (special judge)</td></tr>
+<tr><td>9</td><td>IOI 2025 — Souvenirs</td><td>Communication tasks and call budgets</td></tr>
+<tr><td>10</td><td>Any full Day from 2023–2025</td><td>The 5-hour simulation itself, under Part 11's timeline</td></tr>
+</tbody>
+</table>
+
+<div class="h"><span class="hn">12.5</span>The weekly training rhythm</div>
+
+<p class="body">Skills decay without a schedule; here is the one that works in the months before
+an IOI. <b>Once a week</b>: a full 5-hour mock (Part 11) with three tasks you have never seen —
+this is the anchor, non-negotiable. <b>Twice a week</b>: upsolve — finish every task from the
+last mock completely, stress test everything, and grade on official data; this is where the
+learning actually consolidates. <b>Daily, 30–60 minutes</b>: one subtask-focused session — pick
+a task, take only its early subtasks, optimize your time-to-first-PASS; speed is a skill that
+compounds. And once a month, re-read the IOI syllabus and spend a day on its weakest topic for
+you. When the official practice VM for the coming IOI appears, add one full mock inside it
+(Part 13).</p>
+
+<!-- ============ PART 13 ============ -->
+<div class="chapter-header">
+  <div class="part-tag">Part 13 — Optional · The Last Mile</div>
+  <div class="part-title">The Exact-Replica Linux VM</div>
+  <div class="part-bar"></div>
+</div>
+
+<p class="body">Everything in this manual works identically on your Mac and at the IOI — with
+the tiny caveats already flagged (compiler name, <span class="m">-static</span>,
+<span class="m">timeout</span>). If you want even those gone, you can run a genuine Ubuntu
+24.04 machine inside your MacBook, in about an hour, for free. Do this <b>after</b> you are
+fluent on the Mac (Parts 3–9), roughly two to four weeks before the IOI — its purpose is
+removing the last psychological novelty from contest day, not replacing daily practice.</p>
+
+<div class="h"><span class="hn">13.1</span>Install UTM and Ubuntu 24.04 (Apple Silicon)</div>
+
+<div class="step">
+  <div class="step-n">1</div>
+  <div>
+    <div class="step-t">Install UTM</div>
+    <div class="step-d">Download UTM from <span class="m">mac.getutm.app</span> (free) or the
+    Mac App Store, and drag it to Applications. UTM is the standard virtual-machine app for
+    Apple Silicon Macs — it uses the native Virtualization framework, so Linux runs at near
+    native speed.</div>
+  </div>
+</div>
+
+<div class="step">
+  <div class="step-n">2</div>
+  <div>
+    <div class="step-t">Get Ubuntu 24.04 for ARM</div>
+    <div class="step-d">From <span class="m">ubuntu.com/download/server/arm</span> download the
+    Ubuntu 24.04 ARM ISO (the IOI machines are x86, but everything you care about — GCC, bash,
+    VS Code, the terminal — behaves identically on ARM). In UTM: Create a New Virtual Machine →
+    Virtualize → Linux → select the ISO → give it 4+ GB RAM and 40+ GB disk → boot it and
+    install Ubuntu following the prompts.</div>
+  </div>
+</div>
+
+<div class="step">
+  <div class="step-n">3</div>
+  <div>
+    <div class="step-t">Install the toolchain inside Ubuntu</div>
+    <div class="step-d">Open the Terminal app inside the VM and run the contest-software
+    starter pack:</div>
+  </div>
+</div>
+
+<div class="code">
+<div class="code-head"><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="code-title">Inside the VM — the IOI starter pack</div></div>
+<pre><span class="cp">$</span> <span class="cc">sudo apt update &amp;&amp; sudo apt install -y build-essential gdb python3 unzip</span>
+<span class="cp">$</span> <span class="cc">g++ --version</span>          <span class="ck"># real GCC, like the contest</span>
+<span class="co">g++ (Ubuntu 13.x.0-...) 13.x.0</span></pre>
+</div>
+
+<div class="step">
+  <div class="step-n">4</div>
+  <div>
+    <div class="step-t">Add VS Code and share a folder with your Mac</div>
+    <div class="step-d">Download the VS Code .deb for ARM from
+    <span class="m">code.visualstudio.com</span> and install it with
+    <span class="m">sudo apt install ./code_*.deb</span>. To move files between Mac and VM,
+    UTM's shared-folder feature (VM settings → Sharing) mounts a Mac folder inside Ubuntu —
+    perfect for carrying your task folders and scripts in.</div>
+  </div>
+</div>
+
+<div class="h"><span class="hn">13.2</span>The dress rehearsal inside the VM</div>
+
+<p class="body">With the VM running, repeat the entire manual once, at speed, inside Linux: the
+official compile line <i>with</i> <span class="m">-static</span>, a task package unzipped and
+graded with <span class="m">judge.sh</span>, a stress hunt, a <span class="m">timeout</span>-wrapped
+run (Linux has it — use it), and one full task from the oj.uz archive under a 5-hour clock. The
+differences you will meet — the Ubuntu desktop's look, <span class="m">apt</span> instead of
+Homebrew, GNOME Terminal's colors — are exactly the differences, and after one rehearsal they
+stop being differences at all. When the organizers of the coming IOI publish their official
+practice VM, import that image into UTM (or their recommended player) and do the same
+rehearsal inside <i>their</i> exact environment — that is the final dress before the real
+performance.</p>
+
+<div class="callout info">
+<div class="ct">Perspective, from your coach</div>
+<p>Virtual machines are the last mile, not the race. Ninety percent of your readiness comes
+from the Mac-side loop you already own — compile, run, diff, submit — executed hundreds of
+times on real tasks. The VM's job is only to make contest morning feel like home; the skill
+was built long before you booted it.</p>
+</div>
+
+<!-- ============ APPENDIX A ============ -->
+<div class="chapter-header">
+  <div class="part-tag">Appendix A — Print Me</div>
+  <div class="part-title">The Contest Day Cheat Sheet</div>
+  <div class="part-bar"></div>
+</div>
+
+<p class="body">One page, everything. Print it, fold it, keep it beside your laptop during every
+practice session until the day you realize you no longer look at it — that day, you are
+ready.</p>
+
+<div class="cheat-grid">
+<div class="cheat-row">
+  <div class="cheat-card">
+    <h5>Navigate</h5>
+    <pre>pwd                    where am I
+ls                     what is here
+cd folder              enter folder
+cd ..                  up one level
+cd / cd ~              home
+mkdir -p a/b           make folder chain
+touch file.cpp         make empty file
+cat file               show file
+open .                 (mac) show in Finder</pre>
+  </div>
+  <div class="cheat-card">
+    <h5>Compile (official flags)</h5>
+    <pre>g++ -std=gnu++20 -Wall -O2 -pipe -g \
+   -o sol sol.cpp        contest build
+
+g++ -std=gnu++20 -Wall -g \
+   -fsanitize=address,undefined \
+   -o sold sol.cpp       debug build
+
+./compile               grader task script
+(g++ ... grader.cpp task.cpp)</pre>
+  </div>
+</div>
+<div class="cheat-row">
+  <div class="cheat-card">
+    <h5>Test one case</h5>
+    <pre>./sol &lt; tests/01.in            run with input
+./sol &lt; tests/01.in &gt; my.out     capture output
+diff my.out tests/01.out        compare
+                                 silence = PASS
+./sol &lt; 01.in | diff - 01.out \
+   &amp;&amp; echo PASS || echo FAIL    verdict one-liner
+echo "3 4" | ./sol              quick pipe test</pre>
+  </div>
+  <div class="cheat-card">
+    <h5>Test everything</h5>
+    <pre>for f in tests/*.in; do
+  ./sol &lt; "$f" | diff - \
+    "${f%.in}.out" &gt; /dev/null \
+    &amp;&amp; echo "PASS $f" \
+    || echo "FAIL $f"
+done
+
+bash judge.sh sol tests         full judge
+bash judge.sh festival examples grader task</pre>
+  </div>
+</div>
+<div class="cheat-row">
+  <div class="cheat-card">
+    <h5>Stress hunt</h5>
+    <pre>for i in $(seq 1 10000); do
+  python3 gen.py $i &gt; s.in
+  ./brute &lt; s.in &gt; s.ans
+  ./sol   &lt; s.in &gt; s.out
+  diff -q s.out s.ans \
+    || { echo "BUG seed $i"; break; }
+done</pre>
+  </div>
+  <div class="cheat-card">
+    <h5>Time &amp; stack</h5>
+    <pre>time ./sol &lt; big.in            measure (real = wall)
+ulimit -s 2097152               2 GB stack
+                                 (deep recursion OK)
+./sol &lt; big.in &gt; /dev/null      timing, hide output</pre>
+  </div>
+</div>
+<div class="cheat-row">
+  <div class="cheat-card">
+    <h5>Grader task loop</h5>
+    <pre>unzip festival.zip
+cd festival/cpp
+# edit festival.cpp only
+./compile
+./run &lt; ../examples/01.in
+./run &lt; ../examples/01.in \
+  | diff - ../examples/01.out
+# submit festival.cpp on CMS</pre>
+  </div>
+  <div class="cheat-card">
+    <h5>Emergency keys</h5>
+    <pre>Ctrl+C    kill running program
+Ctrl+D    end of input
+Ctrl+L    clear screen
+Tab       complete name
+↑ / ↓     command history
+chmod +x script.sh   fix permission denied</pre>
+  </div>
+</div>
+</div>
+
+<div class="callout info">
+<div class="ct">CMS quick numbers</div>
+<p>Two days × 3 tasks × 5 hours · 100 pts per task · subtask = min over its tests · final subtask
+= max over all submissions · 1 submission per minute (free in the last 15) · 50 per task ·
+source ≤ 50 KiB · no stdin/stdout in submissions (cerr is fine) · Protocol Violation = touched
+forbidden channels · feedback = subtask scores + first failing test + reason.</p>
+</div>
+
+<!-- ============ APPENDIX B ============ -->
+<div class="chapter-header">
+  <div class="part-tag">Appendix B — First Aid</div>
+  <div class="part-title">Troubleshooting: Every Error, Every Fix</div>
+  <div class="part-bar"></div>
+</div>
+
+<p class="body">You will meet every one of these. Each has a one-move fix. Read this appendix
+once now, so that when the message appears your hands already know the answer. First, the
+errors of the machine and its tools — the ones that strike while you are setting up:</p>
+
+<table class="tbl keep">
+<thead><tr><th style="width:34%">The message</th><th>What it means</th><th style="width:26%">The fix</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="m">zsh: command not found: g++</span></td>
+<td>Command Line Tools are not installed (Part 3 was skipped)</td>
+<td>Run <span class="m">xcode-select --install</span>, wait, retry</td>
+</tr>
+<tr>
+<td><span class="m">fatal error: 'bits/stdc++.h' file not found</span></td>
+<td>You are compiling with Apple Clang, which lacks that header</td>
+<td>Use the explicit-includes template (5.7), or compile with <span class="m">g++-15</span> from Homebrew</td>
+</tr>
+<tr>
+<td><span class="m">g++-15: command not found</span></td>
+<td>Homebrew's bin folder is not in your PATH (or GCC not installed)</td>
+<td>Run the two <span class="m">brew shellenv</span> lines from 3.3, open a new terminal, retry</td>
+</tr>
+<tr>
+<td><span class="m">zsh: permission denied: ./judge.sh</span></td>
+<td>The script exists but is not marked executable</td>
+<td><span class="m">chmod +x judge.sh</span> once — or simply run <span class="m">bash judge.sh</span> forever</td>
+</tr>
+<tr>
+<td><span class="m">zsh: no such file or directory: ./sol</span></td>
+<td>No compiled binary in this folder — wrong directory, or compile failed</td>
+<td><span class="m">pwd</span> + <span class="m">ls</span> to check where you are; recompile</td>
+</tr>
+<tr>
+<td><span class="m">zsh: no matches found: tests/*.in</span></td>
+<td>The folder is empty — zsh errors on wildcards that match nothing</td>
+<td>Create tests first; and run scripts with <span class="m">bash</span>, which tolerates it</td>
+</tr>
+<tr>
+<td>Program prints nothing, cursor blinks</td>
+<td>It is waiting for input on standard input</td>
+<td>Type the input, press <span class="kbd">Enter</span>, then <span class="kbd">Ctrl</span>+<span class="kbd">D</span> to end it</td>
+</tr>
+<tr>
+<td>Terminal frozen, nothing responds</td>
+<td>Infinite loop is consuming everything</td>
+<td><span class="kbd">Ctrl</span>+<span class="kbd">C</span> kills it instantly; fix, recompile, rerun</td>
+</tr>
+</tbody>
+</table>
+
+<p class="body">And now the subtler ones — comparison surprises, grader mistakes, and the
+messages that arrive from CMS after a submission:</p>
+
+<table class="tbl keep">
+<thead><tr><th style="width:34%">The message</th><th>What it means</th><th style="width:26%">The fix</th></tr></thead>
+<tbody>
+<tr>
+<td><span class="m">diff</span> prints nothing and returns to prompt</td>
+<td><b>That is success</b> — the files are identical</td>
+<td>Nothing to fix; add <span class="m">&amp;&amp; echo PASS</span> to make it say so</td>
+</tr>
+<tr>
+<td>Everything FAILs but outputs look right</td>
+<td>Extension mismatch (.out vs .ans) or invisible whitespace</td>
+<td>Check <span class="m">ls tests/</span>; use the both-extensions judge (8.3); inspect with whitespace visible</td>
+</tr>
+<tr>
+<td>Compile error about <span class="m">task.h</span> not found</td>
+<td>You are compiling your solution alone, but it includes the interface header</td>
+<td>Compile it <i>together with the grader</i>: <span class="m">g++ ... grader.cpp festival.cpp</span> (or run <span class="m">./compile</span>)</td>
+</tr>
+<tr>
+<td>CMS says <b>compilation failed</b>, local compiles fine</td>
+<td>Rare version difference, or your file needs something the server forbids</td>
+<td>Read the server's error text; usually an include or a stray <span class="m">#pragma</span>; simplify and resubmit</td>
+</tr>
+<tr>
+<td>CMS: <b>Protocol Violation</b></td>
+<td>Your submission touched stdin/stdout/files or called <span class="m">exit()</span></td>
+<td>Remove every <span class="m">cin/cout/scanf/printf/exit</span>; keep only <span class="m">cerr</span>; resubmit</td>
+</tr>
+<tr>
+<td>Passes locally, times out on CMS</td>
+<td>Server hardware differs; or the failing hidden test is bigger than any local test</td>
+<td>Generate a max-size test; aim for ≤ half the limit locally; think asymptotics</td>
+</tr>
+<tr>
+<td>VS Code terminal opens in the wrong folder</td>
+<td>Integrated terminals inherit the workspace root</td>
+<td>Open the task folder itself (File → Open Folder), or <span class="m">cd</span> to it</td>
+</tr>
+<tr>
+<td><span class="m">./run</span> says permission denied</td>
+<td>Downloaded scripts arrive without the executable bit</td>
+<td><span class="m">chmod +x compile run submit</span> once, or run <span class="m">bash run</span></td>
+</tr>
+</tbody>
+</table>
+
+<div class="callout info">
+<div class="ct">The meta-rule of debugging</div>
+<p>When anything breaks, do not fight the message — <b>read it out loud, slowly</b>. Every
+terminal error names a file, a place, or a permission; the fix is usually literally written in
+the sentence you skimmed past. Contest time is too expensive for skimming.</p>
+</div>
+
+
+
+</div>
+
+<!-- ==================== ENDING ==================== -->
+<div class="ending">
+  <div class="end-glow"></div>
+  <div class="end-inner">
+    <div class="end-kicker">Closing Transmission</div>
+    <div class="end-title">The machine is<br>not your enemy.</div>
+    <div class="end-text">Every year, contestants lose medals not to harder problems but to
+    friction: a compiler flag they never tested, a diff they could not read, a submission made
+    ninety seconds too late. You have just removed all of that friction from your future. Train
+    the loop until your hands move on their own, and on contest day the machine will feel like
+    your own desk at home.</div>
+    <div class="end-loop">compile <span class="a">→</span> run <span class="a">→</span> diff <span class="a">→</span> submit <span class="a">→</span> repeat</div>
+  </div>
+</div>
+
+</body>
+</html>

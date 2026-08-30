@@ -1,0 +1,2 @@
+# G. Alone
+https://atcoder.jp/contests/abc346/tasks/abc346_g

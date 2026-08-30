@@ -1,1 +1,0 @@
-// Solution: Problems for Codeforces

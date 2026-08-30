@@ -1,2 +1,0 @@
-# Notes: CJ · Spin Doctor
-

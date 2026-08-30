@@ -1,2 +1,0 @@
-# Notes: Shipping containers
-

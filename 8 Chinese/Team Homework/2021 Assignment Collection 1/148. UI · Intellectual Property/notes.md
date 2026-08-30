@@ -1,2 +1,0 @@
-# Notes: UI · Intellectual Property
-

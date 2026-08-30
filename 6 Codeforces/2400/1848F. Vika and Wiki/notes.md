@@ -1,1 +1,0 @@
-# Notes: Vika and Wiki

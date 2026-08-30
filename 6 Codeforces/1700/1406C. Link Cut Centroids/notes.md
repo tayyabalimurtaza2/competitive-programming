@@ -1,1 +1,0 @@
-# Notes: Link Cut Centroids

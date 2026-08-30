@@ -1,1 +1,0 @@
-# Notes: Sergey's problem

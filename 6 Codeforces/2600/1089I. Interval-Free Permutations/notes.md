@@ -1,1 +1,0 @@
-# Notes: Interval-Free Permutations

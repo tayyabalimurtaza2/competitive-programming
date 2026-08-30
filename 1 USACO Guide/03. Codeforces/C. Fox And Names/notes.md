@@ -1,2 +1,0 @@
-# Notes: Fox And Names
-

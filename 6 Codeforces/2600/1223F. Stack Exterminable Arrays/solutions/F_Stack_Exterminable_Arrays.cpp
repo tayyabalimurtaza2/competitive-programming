@@ -1,1 +1,0 @@
-// Solution: Stack Exterminable Arrays

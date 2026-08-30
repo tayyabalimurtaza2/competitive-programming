@@ -1,2 +1,0 @@
-# Notes: Seats 3
-

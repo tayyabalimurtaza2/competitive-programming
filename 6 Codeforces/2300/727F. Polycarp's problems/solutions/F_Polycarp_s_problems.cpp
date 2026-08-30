@@ -1,1 +1,0 @@
-// Solution: Polycarp's problems

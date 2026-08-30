@@ -1,1 +1,0 @@
-// Solution: Turing's Award

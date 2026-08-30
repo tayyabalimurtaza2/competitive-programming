@@ -1,2 +1,0 @@
-# Notes: Alikhan and studying
-

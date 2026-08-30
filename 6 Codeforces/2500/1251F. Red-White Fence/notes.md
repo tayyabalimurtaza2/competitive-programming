@@ -1,1 +1,0 @@
-# Notes: Red-White Fence

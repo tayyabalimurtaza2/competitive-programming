@@ -1,2 +1,0 @@
-# Notes: Max Indep Set
-

@@ -1,2 +1,0 @@
-# Notes: QD · Dividing Marbles
-

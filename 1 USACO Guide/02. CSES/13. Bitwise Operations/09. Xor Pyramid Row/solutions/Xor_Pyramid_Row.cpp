@@ -1,1 +1,0 @@
-// Xor Pyramid Row

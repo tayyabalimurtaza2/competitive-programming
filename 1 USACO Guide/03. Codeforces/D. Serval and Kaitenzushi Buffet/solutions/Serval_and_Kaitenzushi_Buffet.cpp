@@ -1,1 +1,0 @@
-// Serval and Kaitenzushi Buffet

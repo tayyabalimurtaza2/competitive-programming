@@ -1,2 +1,0 @@
-# Notes: FJ · Miniature Golf
-

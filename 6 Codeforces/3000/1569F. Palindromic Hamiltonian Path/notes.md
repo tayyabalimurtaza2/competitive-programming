@@ -1,1 +1,0 @@
-# Notes: Palindromic Hamiltonian Path

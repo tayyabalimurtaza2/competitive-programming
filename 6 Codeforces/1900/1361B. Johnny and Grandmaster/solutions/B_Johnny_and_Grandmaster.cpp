@@ -1,1 +1,0 @@
-// Solution: Johnny and Grandmaster

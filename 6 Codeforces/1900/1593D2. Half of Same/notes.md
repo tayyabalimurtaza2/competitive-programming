@@ -1,1 +1,0 @@
-# Notes: Half of Same

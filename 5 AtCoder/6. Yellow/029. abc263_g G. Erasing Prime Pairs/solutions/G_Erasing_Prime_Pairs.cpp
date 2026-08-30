@@ -1,1 +1,0 @@
-// G. Erasing Prime Pairs

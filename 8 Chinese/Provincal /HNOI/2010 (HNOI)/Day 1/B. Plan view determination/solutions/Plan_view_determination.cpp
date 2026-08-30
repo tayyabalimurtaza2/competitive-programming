@@ -1,1 +1,0 @@
-// Plan view determination

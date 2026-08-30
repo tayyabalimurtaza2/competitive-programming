@@ -1,2 +1,0 @@
-# Notes: D. Two Xor
-

@@ -1,2 +1,0 @@
-# Notes: Independent set problem
-

@@ -1,1 +1,0 @@
-// Stacje benzynowe

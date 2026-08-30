@@ -1,1 +1,0 @@
-# Approach: Greedy Pie Eaters

@@ -1,1 +1,0 @@
-// Solution: Plus and Multiply

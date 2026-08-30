@@ -1,1 +1,0 @@
-// Solution: Cutting Rectangle

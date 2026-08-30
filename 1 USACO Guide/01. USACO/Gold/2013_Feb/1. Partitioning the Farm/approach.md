@@ -1,1 +1,0 @@
-# Approach: Partitioning the Farm

@@ -1,1 +1,0 @@
-// F. Fraction of Fractal

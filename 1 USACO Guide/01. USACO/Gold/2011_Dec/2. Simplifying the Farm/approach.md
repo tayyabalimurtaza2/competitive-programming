@@ -1,1 +1,0 @@
-# Approach: Simplifying the Farm

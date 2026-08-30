@@ -1,2 +1,0 @@
-# Notes: Daily Check-in
-

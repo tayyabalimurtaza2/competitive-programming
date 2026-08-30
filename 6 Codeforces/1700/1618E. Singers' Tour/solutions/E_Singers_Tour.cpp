@@ -1,1 +1,0 @@
-// Solution: Singers' Tour

@@ -1,1 +1,0 @@
-// Solution: Concatenation with intersection

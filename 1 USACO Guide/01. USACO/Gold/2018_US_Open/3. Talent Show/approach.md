@@ -1,1 +1,0 @@
-# Approach: Talent Show

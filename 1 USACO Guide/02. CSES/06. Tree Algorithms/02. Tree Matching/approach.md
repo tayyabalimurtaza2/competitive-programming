@@ -1,2 +1,0 @@
-# Approach: Tree Matching
-Problem: [Tree Matching](https://cses.fi/problemset/task/1130)

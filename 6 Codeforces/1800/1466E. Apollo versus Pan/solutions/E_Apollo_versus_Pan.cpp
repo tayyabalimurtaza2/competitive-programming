@@ -1,1 +1,0 @@
-// Solution: Apollo versus Pan

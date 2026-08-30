@@ -1,1 +1,0 @@
-# Notes: Oranges and Apples

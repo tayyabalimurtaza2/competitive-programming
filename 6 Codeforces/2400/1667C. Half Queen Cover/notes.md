@@ -1,1 +1,0 @@
-# Notes: Half Queen Cover

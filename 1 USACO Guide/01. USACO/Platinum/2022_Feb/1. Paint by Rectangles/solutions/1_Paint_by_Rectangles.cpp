@@ -1,1 +1,0 @@
-// Solution: Paint by Rectangles

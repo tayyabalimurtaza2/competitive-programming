@@ -1,1 +1,0 @@
-# Notes: Oleg and chess

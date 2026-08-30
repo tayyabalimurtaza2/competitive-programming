@@ -1,2 +1,0 @@
-# Notes: djq student biology
-

@@ -1,1 +1,0 @@
-# Notes: Timofey and remoduling

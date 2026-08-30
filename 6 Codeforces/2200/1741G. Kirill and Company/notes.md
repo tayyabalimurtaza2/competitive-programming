@@ -1,1 +1,0 @@
-# Notes: Kirill and Company

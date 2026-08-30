@@ -1,1 +1,0 @@
-// Sprawiedliwy podział

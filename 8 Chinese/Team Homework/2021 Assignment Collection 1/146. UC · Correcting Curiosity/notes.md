@@ -1,2 +1,0 @@
-# Notes: UC · Correcting Curiosity
-

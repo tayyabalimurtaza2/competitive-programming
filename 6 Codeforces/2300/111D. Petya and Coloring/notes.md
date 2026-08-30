@@ -1,1 +1,0 @@
-# Notes: Petya and Coloring

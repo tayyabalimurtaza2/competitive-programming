@@ -1,1 +1,0 @@
-# Notes: Arthur and Questions

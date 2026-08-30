@@ -1,1 +1,0 @@
-# Approach: Where's Bessie?

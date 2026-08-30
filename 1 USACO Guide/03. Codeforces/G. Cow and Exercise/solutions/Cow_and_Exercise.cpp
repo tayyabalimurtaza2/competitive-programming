@@ -1,1 +1,0 @@
-// Cow and Exercise

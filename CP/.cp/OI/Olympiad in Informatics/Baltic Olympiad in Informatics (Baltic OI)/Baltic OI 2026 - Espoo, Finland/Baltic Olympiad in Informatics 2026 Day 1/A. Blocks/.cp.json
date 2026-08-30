@@ -1,0 +1,19 @@
+{
+  "judge": "qoj",
+  "id": "3717-17626",
+  "title": "Blocks",
+  "url": "https://qoj.ac/contest/3717/problem/17626",
+  "category": "",
+  "contestName": "Baltic Olympiad in Informatics 2026 Day 1",
+  "timeLimit": "1.0 s",
+  "memory": "512 MB",
+  "subCategory": "Baltic Olympiad in Informatics 2026 Day 1",
+  "categoryPath": [
+    "Olympiad in Informatics",
+    "Baltic Olympiad in Informatics (Baltic OI)",
+    "Baltic OI 2026 - Espoo, Finland"
+  ],
+  "letter": "A",
+  "contestId": "3717",
+  "problemLetter": "17626"
+}

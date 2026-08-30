@@ -1,1 +1,0 @@
-// Solution: Multiple Choice Test

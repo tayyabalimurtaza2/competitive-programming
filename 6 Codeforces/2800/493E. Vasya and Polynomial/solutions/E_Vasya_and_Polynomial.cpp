@@ -1,1 +1,0 @@
-// Solution: Vasya and Polynomial

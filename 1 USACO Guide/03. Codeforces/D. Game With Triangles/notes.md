@@ -1,2 +1,0 @@
-# Notes: Game With Triangles
-

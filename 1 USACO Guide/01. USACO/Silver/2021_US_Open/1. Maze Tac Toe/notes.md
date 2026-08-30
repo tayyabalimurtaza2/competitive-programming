@@ -1,1 +1,0 @@
-# Notes: Maze Tac Toe

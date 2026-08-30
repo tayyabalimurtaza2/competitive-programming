@@ -1,2 +1,0 @@
-# Notes: NF · Frightful Formula
-

@@ -1,1 +1,0 @@
-// Solution: Secret Cow Code

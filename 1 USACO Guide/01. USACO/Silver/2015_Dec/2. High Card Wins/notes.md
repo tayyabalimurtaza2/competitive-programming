@@ -1,1 +1,0 @@
-# Notes: High Card Wins

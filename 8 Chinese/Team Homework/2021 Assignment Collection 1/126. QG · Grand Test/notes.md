@@ -1,2 +1,0 @@
-# Notes: QG · Grand Test
-

@@ -1,1 +1,0 @@
-// Vasya and Endless Credits

@@ -1,1 +1,0 @@
-# Notes: Rock, Paper, Scissors

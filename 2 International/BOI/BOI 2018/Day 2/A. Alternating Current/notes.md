@@ -1,2 +1,0 @@
-# Notes: Alternating Current
-

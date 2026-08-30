@@ -1,1 +1,0 @@
-// G. Teleporting Takahashi

@@ -1,1 +1,0 @@
-# Notes: Parquet Re-laying

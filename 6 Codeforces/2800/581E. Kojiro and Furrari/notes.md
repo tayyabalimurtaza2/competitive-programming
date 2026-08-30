@@ -1,1 +1,0 @@
-# Notes: Kojiro and Furrari

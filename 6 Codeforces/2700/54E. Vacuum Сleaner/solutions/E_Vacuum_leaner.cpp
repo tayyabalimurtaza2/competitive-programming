@@ -1,1 +1,0 @@
-// Solution: Vacuum Сleaner

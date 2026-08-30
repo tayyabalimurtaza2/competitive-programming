@@ -1,1 +1,0 @@
-# Notes: Madhouse (Hard version)

@@ -1,1 +1,0 @@
-// Solution: Sasha and Array

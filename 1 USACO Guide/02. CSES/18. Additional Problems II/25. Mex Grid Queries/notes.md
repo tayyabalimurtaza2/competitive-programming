@@ -1,1 +1,0 @@
-# Notes: Mex Grid Queries

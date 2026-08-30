@@ -1,1 +1,0 @@
-// C. Digit Sum Minimization

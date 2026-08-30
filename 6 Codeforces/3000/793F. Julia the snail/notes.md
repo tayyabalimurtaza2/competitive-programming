@@ -1,1 +1,0 @@
-# Notes: Julia the snail

@@ -1,1 +1,0 @@
-// Siec spolecznosciowa

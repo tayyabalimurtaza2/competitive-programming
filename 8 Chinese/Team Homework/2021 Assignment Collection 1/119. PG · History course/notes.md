@@ -1,2 +1,0 @@
-# Notes: PG · History course
-

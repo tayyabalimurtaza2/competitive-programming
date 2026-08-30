@@ -1,2 +1,0 @@
-# Notes: Pod starim krovovima
-

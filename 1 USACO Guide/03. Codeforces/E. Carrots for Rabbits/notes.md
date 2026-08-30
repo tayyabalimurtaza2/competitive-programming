@@ -1,2 +1,0 @@
-# Notes: Carrots for Rabbits
-

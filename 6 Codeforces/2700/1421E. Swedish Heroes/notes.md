@@ -1,1 +1,0 @@
-# Notes: Swedish Heroes

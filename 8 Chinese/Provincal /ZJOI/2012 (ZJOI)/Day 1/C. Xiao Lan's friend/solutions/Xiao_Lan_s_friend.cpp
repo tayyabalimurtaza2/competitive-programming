@@ -1,1 +1,0 @@
-// Xiao Lan's friend

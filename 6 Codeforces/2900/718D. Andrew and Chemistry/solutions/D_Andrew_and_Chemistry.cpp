@@ -1,1 +1,0 @@
-// Solution: Andrew and Chemistry

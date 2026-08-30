@@ -1,2 +1,0 @@
-# Notes: Small wooden stick
-

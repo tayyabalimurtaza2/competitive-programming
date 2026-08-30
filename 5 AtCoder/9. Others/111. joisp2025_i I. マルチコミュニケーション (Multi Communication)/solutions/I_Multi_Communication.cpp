@@ -1,1 +1,0 @@
-// I. マルチコミュニケーション (Multi Communication)

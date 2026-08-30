@@ -1,2 +1,0 @@
-# Notes: Terrifying slave owners
-

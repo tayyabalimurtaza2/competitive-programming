@@ -1,2 +1,0 @@
-# Notes: Bikes vs Cars
-

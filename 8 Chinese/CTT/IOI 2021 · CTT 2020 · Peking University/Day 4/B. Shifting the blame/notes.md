@@ -1,2 +1,0 @@
-# Notes: Shifting the blame
-

@@ -1,2 +1,0 @@
-# Notes: Xoractive (interactive)
-

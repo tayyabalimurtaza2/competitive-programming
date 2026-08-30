@@ -1,1 +1,0 @@
-// Minimum Variance Spanning Tree

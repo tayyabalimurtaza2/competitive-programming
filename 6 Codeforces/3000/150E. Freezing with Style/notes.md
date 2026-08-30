@@ -1,1 +1,0 @@
-# Notes: Freezing with Style

@@ -1,2 +1,0 @@
-# Notes: Red-blue table
-

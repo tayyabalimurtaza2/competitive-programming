@@ -1,1 +1,0 @@
-# Approach: Grazing Patterns

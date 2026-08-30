@@ -1,2 +1,0 @@
-# Notes: Ivan and Burgers
-

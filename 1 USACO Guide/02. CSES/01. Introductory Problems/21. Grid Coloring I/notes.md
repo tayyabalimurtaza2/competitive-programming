@@ -1,1 +1,0 @@
-# Notes: Grid Coloring I

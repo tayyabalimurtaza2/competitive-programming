@@ -1,1 +1,0 @@
-# Notes: Gargari and Bishops

@@ -1,1 +1,0 @@
-// Solution: More Cow Photos

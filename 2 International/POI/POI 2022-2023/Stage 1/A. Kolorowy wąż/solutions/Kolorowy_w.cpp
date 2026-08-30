@@ -1,1 +1,0 @@
-// Kolorowy wąż

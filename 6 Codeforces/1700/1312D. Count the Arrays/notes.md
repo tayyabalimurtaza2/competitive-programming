@@ -1,1 +1,0 @@
-# Notes: Count the Arrays

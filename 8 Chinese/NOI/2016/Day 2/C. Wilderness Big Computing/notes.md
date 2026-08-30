@@ -1,2 +1,0 @@
-# Notes: Wilderness Big Computing
-

@@ -1,1 +1,0 @@
-// E. Yet Another Minimization

@@ -1,1 +1,0 @@
-# Notes: MAX-MEX Cut

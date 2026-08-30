@@ -1,1 +1,0 @@
-// Wybredny Bajtazar

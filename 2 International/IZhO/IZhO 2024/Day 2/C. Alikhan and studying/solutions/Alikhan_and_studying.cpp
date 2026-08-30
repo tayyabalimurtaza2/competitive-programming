@@ -1,1 +1,0 @@
-// Alikhan and studying

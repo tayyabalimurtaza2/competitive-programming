@@ -1,1 +1,0 @@
-// Solution: Adam and Tree

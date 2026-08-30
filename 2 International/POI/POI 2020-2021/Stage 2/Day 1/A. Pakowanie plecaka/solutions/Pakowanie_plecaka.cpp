@@ -1,1 +1,0 @@
-// Pakowanie plecaka

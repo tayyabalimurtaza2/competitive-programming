@@ -1,2 +1,0 @@
-# Notes: Slot Machine
-

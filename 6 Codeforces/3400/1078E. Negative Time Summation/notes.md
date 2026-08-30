@@ -1,1 +1,0 @@
-# Notes: Negative Time Summation

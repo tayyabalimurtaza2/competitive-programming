@@ -1,0 +1,3 @@
+# 1474F.1 2 3 4 ...
+
+https://codeforces.com/contest/1474/problem/F

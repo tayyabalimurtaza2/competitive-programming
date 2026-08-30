@@ -1,2 +1,0 @@
-# Notes: k small cut
-

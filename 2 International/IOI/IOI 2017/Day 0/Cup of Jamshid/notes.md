@@ -1,2 +1,0 @@
-# Notes: Cup of Jamshid
-

@@ -1,1 +1,0 @@
-// H. Average and Median

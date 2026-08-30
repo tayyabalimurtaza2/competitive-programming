@@ -1,2 +1,0 @@
-# Notes: Non-palindrome string
-

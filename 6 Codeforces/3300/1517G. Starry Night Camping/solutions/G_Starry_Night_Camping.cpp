@@ -1,1 +1,0 @@
-// Solution: Starry Night Camping

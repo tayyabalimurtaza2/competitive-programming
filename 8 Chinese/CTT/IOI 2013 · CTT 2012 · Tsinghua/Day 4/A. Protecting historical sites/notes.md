@@ -1,2 +1,0 @@
-# Notes: Protecting historical sites
-

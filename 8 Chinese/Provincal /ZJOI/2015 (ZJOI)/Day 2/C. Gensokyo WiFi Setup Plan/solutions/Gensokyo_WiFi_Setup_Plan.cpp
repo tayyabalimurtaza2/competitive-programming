@@ -1,1 +1,0 @@
-// Gensokyo WiFi Setup Plan

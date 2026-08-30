@@ -1,1 +1,0 @@
-# Notes: Keep it Beautiful

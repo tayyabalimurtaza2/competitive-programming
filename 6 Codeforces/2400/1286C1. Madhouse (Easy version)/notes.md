@@ -1,1 +1,0 @@
-# Notes: Madhouse (Easy version)

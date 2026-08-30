@@ -1,2 +1,0 @@
-# Notes: Suma liczb pierwszych
-

@@ -1,1 +1,0 @@
-// Solution: Pursuit For Artifacts

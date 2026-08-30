@@ -1,2 +1,0 @@
-# Notes: Take a Guess
-

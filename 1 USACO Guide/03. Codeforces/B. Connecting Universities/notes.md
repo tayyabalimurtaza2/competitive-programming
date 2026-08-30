@@ -1,2 +1,0 @@
-# Notes: Connecting Universities
-

@@ -1,1 +1,0 @@
-// Układanie kart

@@ -1,1 +1,0 @@
-# Notes: Coprime Arrays

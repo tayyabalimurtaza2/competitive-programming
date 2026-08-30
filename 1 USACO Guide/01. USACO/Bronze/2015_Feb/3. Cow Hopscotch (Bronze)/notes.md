@@ -1,1 +1,0 @@
-# Notes: Cow Hopscotch (Bronze)

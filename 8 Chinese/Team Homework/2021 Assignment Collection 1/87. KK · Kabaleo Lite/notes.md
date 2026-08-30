@@ -1,2 +1,0 @@
-# Notes: KK · Kabaleo Lite
-

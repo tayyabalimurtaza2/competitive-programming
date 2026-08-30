@@ -1,1 +1,0 @@
-// D. Detonate a Dynamite

@@ -1,2 +1,0 @@
-# Notes: Student course selection
-

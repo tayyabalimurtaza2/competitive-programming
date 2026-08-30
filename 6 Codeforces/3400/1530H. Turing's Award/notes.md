@@ -1,1 +1,0 @@
-# Notes: Turing's Award

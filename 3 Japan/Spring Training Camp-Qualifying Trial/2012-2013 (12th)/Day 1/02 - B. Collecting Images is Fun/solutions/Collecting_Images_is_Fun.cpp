@@ -1,1 +1,0 @@
-// Collecting Images is Fun

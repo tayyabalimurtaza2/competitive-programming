@@ -1,2 +1,0 @@
-# Notes: H. Nim Counting
-

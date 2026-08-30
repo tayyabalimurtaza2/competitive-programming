@@ -1,2 +1,0 @@
-# Notes: Constructing a circuit
-

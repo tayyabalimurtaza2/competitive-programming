@@ -1,1 +1,0 @@
-# Notes: Warrior and Archer

@@ -1,1 +1,0 @@
-# Notes: Student's Camp

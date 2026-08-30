@@ -1,1 +1,0 @@
-// F. Three Variables Game

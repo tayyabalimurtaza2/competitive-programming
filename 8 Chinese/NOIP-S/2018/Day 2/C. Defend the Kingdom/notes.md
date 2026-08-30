@@ -1,2 +1,0 @@
-# Notes: Defend the Kingdom
-

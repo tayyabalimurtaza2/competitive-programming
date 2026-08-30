@@ -1,1 +1,0 @@
-# Notes: Enemy is weak

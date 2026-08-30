@@ -1,1 +1,0 @@
-// Solution: Misha and Paintings

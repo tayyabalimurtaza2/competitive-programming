@@ -1,2 +1,0 @@
-# Notes: Run Enumerate
-

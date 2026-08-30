@@ -1,1 +1,0 @@
-# Notes: Line of Sight

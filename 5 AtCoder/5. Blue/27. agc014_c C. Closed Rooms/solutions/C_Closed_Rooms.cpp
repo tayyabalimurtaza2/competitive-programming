@@ -1,1 +1,0 @@
-// C. Closed Rooms

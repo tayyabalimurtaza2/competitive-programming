@@ -1,1 +1,0 @@
-// Solution: Arctic Acquisition

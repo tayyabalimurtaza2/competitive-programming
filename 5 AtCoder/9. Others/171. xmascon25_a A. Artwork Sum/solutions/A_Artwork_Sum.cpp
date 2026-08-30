@@ -1,1 +1,0 @@
-// A. Artwork Sum

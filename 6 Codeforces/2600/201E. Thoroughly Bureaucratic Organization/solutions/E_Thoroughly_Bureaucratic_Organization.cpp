@@ -1,1 +1,0 @@
-// Solution: Thoroughly Bureaucratic Organization

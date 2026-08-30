@@ -1,1 +1,0 @@
-// G. Grid Card Game

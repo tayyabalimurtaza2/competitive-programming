@@ -1,1 +1,0 @@
-# Notes: Pastoral Oddities

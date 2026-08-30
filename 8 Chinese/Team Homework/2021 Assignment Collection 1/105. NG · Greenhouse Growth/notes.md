@@ -1,2 +1,0 @@
-# Notes: NG · Greenhouse Growth
-

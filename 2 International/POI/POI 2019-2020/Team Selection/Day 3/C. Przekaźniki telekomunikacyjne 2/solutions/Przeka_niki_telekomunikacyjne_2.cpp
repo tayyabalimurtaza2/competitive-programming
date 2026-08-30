@@ -1,1 +1,0 @@
-// Przekaźniki telekomunikacyjne 2

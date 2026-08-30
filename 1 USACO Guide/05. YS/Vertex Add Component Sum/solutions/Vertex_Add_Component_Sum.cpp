@@ -1,1 +1,0 @@
-// Vertex Add Component Sum

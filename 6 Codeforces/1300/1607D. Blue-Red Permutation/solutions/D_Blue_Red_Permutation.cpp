@@ -1,1 +1,0 @@
-// Solution: Blue-Red Permutation

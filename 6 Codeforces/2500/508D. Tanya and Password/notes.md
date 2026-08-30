@@ -1,1 +1,0 @@
-# Notes: Tanya and Password

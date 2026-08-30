@@ -1,2 +1,0 @@
-# Notes: Ex. Enumerate Pairs
-

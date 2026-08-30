@@ -1,2 +1,0 @@
-# Notes: Crazy old lady
-

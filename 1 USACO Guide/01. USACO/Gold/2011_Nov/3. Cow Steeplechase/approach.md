@@ -1,1 +1,0 @@
-# Approach: Cow Steeplechase

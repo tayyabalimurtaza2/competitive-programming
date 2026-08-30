@@ -1,2 +1,0 @@
-# Notes: Sphinx's Riddle
-

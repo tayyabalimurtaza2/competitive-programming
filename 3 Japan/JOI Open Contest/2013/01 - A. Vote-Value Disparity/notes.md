@@ -1,2 +1,0 @@
-# Notes: Vote-Value Disparity
-

@@ -1,1 +1,0 @@
-# Notes: GukiZ and GukiZiana

@@ -1,1 +1,0 @@
-// E. Mr.Aoki Incubator

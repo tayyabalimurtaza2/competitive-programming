@@ -1,1 +1,0 @@
-# Notes: Balancing the Barns

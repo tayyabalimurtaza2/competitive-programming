@@ -1,2 +1,0 @@
-# Notes: B. Range Argmax
-

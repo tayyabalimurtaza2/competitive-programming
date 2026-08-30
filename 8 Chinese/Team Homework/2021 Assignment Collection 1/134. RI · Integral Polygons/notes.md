@@ -1,2 +1,0 @@
-# Notes: RI · Integral Polygons
-

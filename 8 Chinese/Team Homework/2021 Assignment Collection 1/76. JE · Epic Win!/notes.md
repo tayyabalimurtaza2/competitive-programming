@@ -1,2 +1,0 @@
-# Notes: JE · Epic Win!
-

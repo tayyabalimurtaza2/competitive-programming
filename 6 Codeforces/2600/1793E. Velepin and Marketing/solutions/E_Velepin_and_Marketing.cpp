@@ -1,1 +1,0 @@
-// Solution: Velepin and Marketing

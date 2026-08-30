@@ -1,1 +1,0 @@
-// D. Almost Multiplication Table

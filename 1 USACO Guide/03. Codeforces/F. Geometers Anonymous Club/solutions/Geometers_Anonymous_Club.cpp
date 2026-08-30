@@ -1,1 +1,0 @@
-// Geometers Anonymous Club

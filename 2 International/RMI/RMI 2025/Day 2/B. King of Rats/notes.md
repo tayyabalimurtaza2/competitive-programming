@@ -1,2 +1,0 @@
-# Notes: King of Rats
-

@@ -1,1 +1,0 @@
-// Solution: Canteen (Hard Version)

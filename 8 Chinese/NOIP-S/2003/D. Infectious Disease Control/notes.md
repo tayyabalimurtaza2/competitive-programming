@@ -1,2 +1,0 @@
-# Notes: Infectious Disease Control
-

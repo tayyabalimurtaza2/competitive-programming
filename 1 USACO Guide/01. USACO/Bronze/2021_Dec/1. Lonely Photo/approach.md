@@ -1,1 +1,0 @@
-# Approach: Lonely Photo

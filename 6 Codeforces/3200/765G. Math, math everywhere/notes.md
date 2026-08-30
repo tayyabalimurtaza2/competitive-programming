@@ -1,1 +1,0 @@
-# Notes: Math, math everywhere

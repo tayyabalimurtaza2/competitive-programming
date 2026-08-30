@@ -1,1 +1,0 @@
-# Notes: Almost Arithmetic Progression

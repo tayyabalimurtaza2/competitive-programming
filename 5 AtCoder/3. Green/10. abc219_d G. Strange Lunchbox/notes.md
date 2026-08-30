@@ -1,2 +1,0 @@
-# Notes: G. Strange Lunchbox
-

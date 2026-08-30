@@ -1,1 +1,0 @@
-# Notes: Formalism for Formalism

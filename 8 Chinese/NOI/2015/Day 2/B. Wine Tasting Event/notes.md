@@ -1,2 +1,0 @@
-# Notes: Wine Tasting Event
-

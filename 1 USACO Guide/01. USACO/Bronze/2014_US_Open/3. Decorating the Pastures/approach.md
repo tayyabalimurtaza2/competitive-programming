@@ -1,1 +1,0 @@
-# Approach: Decorating the Pastures

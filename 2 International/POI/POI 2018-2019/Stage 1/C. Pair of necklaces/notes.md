@@ -1,2 +1,0 @@
-# Notes: Pair of necklaces
-

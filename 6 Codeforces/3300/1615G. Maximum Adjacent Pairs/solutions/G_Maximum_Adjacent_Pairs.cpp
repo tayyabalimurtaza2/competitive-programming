@@ -1,1 +1,0 @@
-// Solution: Maximum Adjacent Pairs

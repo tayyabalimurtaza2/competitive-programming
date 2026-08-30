@@ -1,1 +1,0 @@
-# Notes: Escaping on Beaveractor

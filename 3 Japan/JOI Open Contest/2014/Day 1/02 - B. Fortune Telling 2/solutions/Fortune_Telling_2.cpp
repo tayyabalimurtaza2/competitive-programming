@@ -1,1 +1,0 @@
-// Fortune Telling 2

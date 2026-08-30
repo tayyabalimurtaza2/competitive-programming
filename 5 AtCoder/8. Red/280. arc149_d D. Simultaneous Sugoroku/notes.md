@@ -1,2 +1,0 @@
-# Notes: D. Simultaneous Sugoroku
-

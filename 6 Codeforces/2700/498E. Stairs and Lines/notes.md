@@ -1,1 +1,0 @@
-# Notes: Stairs and Lines

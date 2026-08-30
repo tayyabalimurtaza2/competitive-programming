@@ -1,1 +1,0 @@
-# Approach: More Cow Photos

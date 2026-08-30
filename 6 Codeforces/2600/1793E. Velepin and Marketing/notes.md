@@ -1,1 +1,0 @@
-# Notes: Velepin and Marketing

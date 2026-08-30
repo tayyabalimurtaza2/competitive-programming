@@ -1,1 +1,0 @@
-# Notes: Houses and Schools

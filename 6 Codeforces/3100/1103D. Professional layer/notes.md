@@ -1,1 +1,0 @@
-# Notes: Professional layer

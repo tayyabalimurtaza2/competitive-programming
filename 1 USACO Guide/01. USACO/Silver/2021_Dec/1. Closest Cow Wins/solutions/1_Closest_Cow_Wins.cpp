@@ -1,1 +1,0 @@
-// Solution: Closest Cow Wins

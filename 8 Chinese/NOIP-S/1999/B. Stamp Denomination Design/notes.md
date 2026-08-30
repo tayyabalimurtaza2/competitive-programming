@@ -1,2 +1,0 @@
-# Notes: Stamp Denomination Design
-

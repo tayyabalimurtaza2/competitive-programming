@@ -1,2 +1,0 @@
-# Notes: Joy with Permutations
-

@@ -1,2 +1,0 @@
-# Notes: Boxes with souvenirs
-
