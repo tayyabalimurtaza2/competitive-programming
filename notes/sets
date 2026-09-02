@@ -1,0 +1,9 @@
+set<int> s;
+order dont matter 
+only uniqute 
+s.insert(5);
+{1,2,3} == {2,3,1} yes 
+s.erase(x)
+s.empty() it is empty 
+s.count(x) output the place where it is 
+s.erase(x) reomve that thing form the set 

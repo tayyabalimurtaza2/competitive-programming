@@ -1,0 +1,21 @@
+{
+  "judge": "codeforces",
+  "id": "A",
+  "title": "Team",
+  "url": "https://codeforces.com/problemset/problem/231/A",
+  "category": "",
+  "timeLimit": "2 seconds",
+  "memory": "256 megabytes",
+  "guide": {
+    "path": [
+      "General",
+      "1. Getting Started",
+      "1.8 Expected Knowledge",
+      "Easier"
+    ],
+    "label": "General · Getting Started · Expected Knowledge",
+    "uid": "cf-231A"
+  },
+  "contestId": "231",
+  "problemLetter": "A"
+}

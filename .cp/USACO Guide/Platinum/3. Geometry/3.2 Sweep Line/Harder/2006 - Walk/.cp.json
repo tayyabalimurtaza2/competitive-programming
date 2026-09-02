@@ -1,0 +1,20 @@
+{
+  "judge": "ojuz",
+  "id": "CEOI06_walk",
+  "title": "2006 - Walk",
+  "url": "https://oj.uz/problem/view/CEOI06_walk",
+  "category": "",
+  "timeLimit": "1000 ms",
+  "memory": "128 MiB",
+  "guide": {
+    "path": [
+      "Platinum",
+      "3. Geometry",
+      "3.2 Sweep Line",
+      "Harder"
+    ],
+    "label": "Platinum · Geometry · Sweep Line",
+    "uid": "ceoi-06-walk"
+  },
+  "problemLetter": "CEOI06_walk"
+}

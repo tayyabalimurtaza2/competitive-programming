@@ -1,0 +1,19 @@
+{
+  "judge": "qoj",
+  "id": "653-1140",
+  "title": "Distributing Candies",
+  "url": "https://qoj.ac/contest/653/problem/1140",
+  "category": "",
+  "contestName": "International Olympiad in Informatics 2021 Day 1",
+  "timeLimit": "4 s",
+  "memory": "2048 MB",
+  "subCategory": "International Olympiad in Informatics 2021 Day 1",
+  "categoryPath": [
+    "Olympiad in Informatics",
+    "International Olympiad in Informatics (IOI)",
+    "IOI 2021 - Singapore"
+  ],
+  "letter": "A",
+  "contestId": "653",
+  "problemLetter": "1140"
+}

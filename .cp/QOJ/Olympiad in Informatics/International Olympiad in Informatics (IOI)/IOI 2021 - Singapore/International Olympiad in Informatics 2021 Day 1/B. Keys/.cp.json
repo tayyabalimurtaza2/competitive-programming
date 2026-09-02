@@ -1,0 +1,19 @@
+{
+  "judge": "qoj",
+  "id": "653-1141",
+  "title": "Keys",
+  "url": "https://qoj.ac/contest/653/problem/1141",
+  "category": "",
+  "contestName": "International Olympiad in Informatics 2021 Day 1",
+  "timeLimit": "2 s",
+  "memory": "2048 MB",
+  "subCategory": "International Olympiad in Informatics 2021 Day 1",
+  "categoryPath": [
+    "Olympiad in Informatics",
+    "International Olympiad in Informatics (IOI)",
+    "IOI 2021 - Singapore"
+  ],
+  "letter": "B",
+  "contestId": "653",
+  "problemLetter": "1141"
+}

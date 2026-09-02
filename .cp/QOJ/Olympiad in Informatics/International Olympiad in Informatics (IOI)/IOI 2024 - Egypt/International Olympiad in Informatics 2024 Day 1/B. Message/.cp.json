@@ -1,0 +1,19 @@
+{
+  "judge": "qoj",
+  "id": "1782-9237",
+  "title": "Message",
+  "url": "https://qoj.ac/contest/1782/problem/9237",
+  "category": "",
+  "contestName": "International Olympiad in Informatics 2024 Day 1",
+  "timeLimit": "8 s",
+  "memory": "2048 MB",
+  "subCategory": "International Olympiad in Informatics 2024 Day 1",
+  "categoryPath": [
+    "Olympiad in Informatics",
+    "International Olympiad in Informatics (IOI)",
+    "IOI 2024 - Egypt"
+  ],
+  "letter": "B",
+  "contestId": "1782",
+  "problemLetter": "9237"
+}
