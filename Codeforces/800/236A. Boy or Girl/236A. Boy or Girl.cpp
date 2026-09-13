@@ -1,3 +1,5 @@
+/* In the name of Allah the most gracious and the most merciful
+   Author: Tayyab Ali Murtaza */
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -86,11 +88,12 @@ void start() {
 }
 
 void solve() {
-    int x,y; cin>>x>>y;
-    if(y%2==0 && 2*x <= y && y <= 4*x ){
-        cout << "Yes";
-    }
-    else cout << "No";
+    string s;
+cin >> s;
+
+cout << (set<char>(s.begin(), s.end()).size() % 2 == 0
+         ? "CHAT WITH HER!"
+         :"IGNORE HIM!"   );
 }
 
 int main() {

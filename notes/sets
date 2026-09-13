@@ -7,3 +7,5 @@ s.erase(x)
 s.empty() it is empty 
 s.count(x) output the place where it is 
 s.erase(x) reomve that thing form the set 
+
+cout << set<char> (s.begin(), s.end()).size();

@@ -1,0 +1,19 @@
+{
+  "judge": "usaco",
+  "id": "1059",
+  "title": "Do You Know Your ABCs?",
+  "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=1059",
+  "category": "",
+  "contestName": "2020 December Contest",
+  "guide": {
+    "path": [
+      "General",
+      "1. Getting Started",
+      "1.8 Expected Knowledge",
+      "Easier"
+    ],
+    "label": "General · Getting Started · Expected Knowledge",
+    "uid": "usaco-1059"
+  },
+  "problemLetter": "1059"
+}

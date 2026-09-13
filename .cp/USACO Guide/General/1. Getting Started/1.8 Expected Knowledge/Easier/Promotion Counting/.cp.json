@@ -1,0 +1,19 @@
+{
+  "judge": "usaco",
+  "id": "591",
+  "title": "Promotion Counting",
+  "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=591",
+  "category": "",
+  "contestName": "2016 January Contest",
+  "guide": {
+    "path": [
+      "General",
+      "1. Getting Started",
+      "1.8 Expected Knowledge",
+      "Easier"
+    ],
+    "label": "General · Getting Started · Expected Knowledge",
+    "uid": "usaco-591"
+  },
+  "problemLetter": "591"
+}

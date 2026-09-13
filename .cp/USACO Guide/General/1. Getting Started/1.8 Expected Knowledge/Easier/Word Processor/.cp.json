@@ -1,0 +1,19 @@
+{
+  "judge": "usaco",
+  "id": "987",
+  "title": "Word Processor",
+  "url": "http://www.usaco.org/index.php?page=viewproblem2&cpid=987",
+  "category": "",
+  "contestName": "2020 January Contest",
+  "guide": {
+    "path": [
+      "General",
+      "1. Getting Started",
+      "1.8 Expected Knowledge",
+      "Easier"
+    ],
+    "label": "General · Getting Started · Expected Knowledge",
+    "uid": "usaco-987"
+  },
+  "problemLetter": "987"
+}

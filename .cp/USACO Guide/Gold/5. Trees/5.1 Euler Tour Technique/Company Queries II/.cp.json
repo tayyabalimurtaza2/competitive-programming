@@ -1,0 +1,19 @@
+{
+  "judge": "cses",
+  "id": "1688",
+  "title": "Company Queries II",
+  "url": "https://cses.fi/problemset/task/1688",
+  "category": "",
+  "timeLimit": "1.00 s",
+  "memory": "512 MB",
+  "guide": {
+    "path": [
+      "Gold",
+      "5. Trees",
+      "5.1 Euler Tour Technique"
+    ],
+    "label": "Gold · Trees · Euler Tour Technique",
+    "uid": "cses-1688"
+  },
+  "problemLetter": "1688"
+}

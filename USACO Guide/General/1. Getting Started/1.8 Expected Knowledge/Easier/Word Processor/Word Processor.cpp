@@ -31,9 +31,6 @@ using vpll = vector<pll>;
 #define mp make_pair
 #define fi first
 #define se second
-#define rep(i, a, b) for (int i = (a); i < (b); ++i)
-#define rrep(i, a, b) for (int i = (a); i >= (b); --i)
-#define each(e, v) for (auto&& e : v)
 
 constexpr int MOD = 1e9 + 7;
 constexpr ll INF = 4e18;
@@ -80,21 +77,30 @@ int topbit(ll x) { return (x == 0 ? -1 : 63 - __builtin_clzll(x)); }
 int lowbit(ll x) { return (x == 0 ? -1 : __builtin_ctzll(x)); }
 int popcount(ll x) { return __builtin_popcountll(x); }
 
-void start() {
+void start(const string& name) {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
+    freopen((name + ".in").c_str(), "r", stdin);
+    freopen((name + ".out").c_str(), "w", stdout);
 }
 
 void solve() {
-    int x,y; cin>>x>>y;
-    if(y%2==0 && 2*x <= y && y <= 4*x ){
-        cout << "Yes";
+     int a,b; cin>>a>>b;
+    int cl = 0;
+    for(int i=0;i<a;i++){
+        string s; cin>>s;
+        cl += s.size();
+        if(cl>b){
+            cl = s.size() ; 
+            cout << endl;
+            cout << s;
+        }
+        else cout << s  << " "; 
     }
-    else cout << "No";
 }
 
 int main() {
-    start();
+    start("word");
     solve();
     return 0;
 }

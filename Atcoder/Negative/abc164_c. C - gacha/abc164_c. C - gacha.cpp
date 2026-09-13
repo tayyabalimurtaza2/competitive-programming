@@ -86,11 +86,21 @@ void start() {
 }
 
 void solve() {
-    int x,y; cin>>x>>y;
-    if(y%2==0 && 2*x <= y && y <= 4*x ){
-        cout << "Yes";
-    }
-    else cout << "No";
+    set<string> s;
+
+int n;
+cin >> n;
+
+for (int i = 0; i < n; i++) {
+    string a;
+    cin >> a;
+    s.insert(a);
+}
+
+cout << s.size();
+
+
+
 }
 
 int main() {
